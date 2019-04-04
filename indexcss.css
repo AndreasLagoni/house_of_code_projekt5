@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+body {
+  background-color: #f1f1f1;
+}
+h1 {
+  font-size: 40px;
+}
+h1,
+h2,
+a,
+p,
+input,
+button {
+  font-family: "Roboto Mono", monospace;
+}
+/* mainWrapper styling */
+.mainWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* LOGO og titel */
+.imgAndTitel {
+  position: relative;
+  top: 59px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+.imgAndTitel h1 {
+  position: relative;
+  top: -70px;
+  color: #515f6d;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+/* Input styling */
+.inputs {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+.inputs input {
+  border: 0;
+  font-size: 18;
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+/* Checkbox styling  */
+.checkBox {
+  margin: 0 auto;
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+}
+.checkBox input {
+  border: 0;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.checkBox p {
+  font-size: 16px;
+  color: #515f6d;
+}
+/* Glemt adgangskode  */
+.forgotPassword {
+  margin: 0 auto;
+  margin-top: 4px;
+}
+.forgotPassword a {
+  color: #515f6d;
+  font-size: 16px;
+}
+/* Login buttons  */
+.loginButtons {
+  margin: 0 auto;
+  margin-top: 18px;
+  display: flex;
+}
+.standardBtn {
+  width: 190px;
+  height: 50px;
+  border: 1px solid #707070;
+  background-color: #515f6d;
+  color: white;
+  font-size: 20px;
+  padding: 12px 61px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+  cursor: pointer;
+}
+/* Country selection  */
+.countrySelection {
+  margin: 0 auto;
+  margin-top: 49px;
+  text-align: center;
+}
+.countrySelection a {
+  margin-right: 20px;
+}
+.countrySelection .countryImg {
+  width: 36px;
+  height: 21px;
+}
+/* Redirect page styling  */
+.redirectWrapper {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  align-items: center;
+}
+.redirectContent h2 {
+  color: #515f6d;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+.redirect {
+  transition: all 0.5s ease;
+  visibility: visible;
+  opacity: 100;
+  font-weight: bold;
+}
