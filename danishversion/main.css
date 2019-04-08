@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+a,
+p,
+input,
+button {
+  font-family: "Roboto Mono", monospace;
+}
+p,
+span,
+h3 {
+  font-family: "Abel", sans-serif;
+}
+/* BG Image */
+.bgimg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  background-image: url("../billeder/BG.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Main */
+main {
+  z-index: 100;
+}
+/* LOGO og titel */
+.imgAndTitel {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.imgAndTitel h1 {
+  position: relative;
+  top: -40px;
+  color: #515f6d;
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-size: 30px;
+}
+.imgAndTitel img {
+  width: 450px;
+}
+/* section NAV */
+.navSection ul {
+  width: 80%;
+  height: 74px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navSection ul li {
+  width: 239px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background-color: #515f6d;
+  list-style: none;
+  text-align: center;
+}
+.navSection ul li a {
+  font-size: 25px;
+  color: white;
+  text-decoration: white;
+  cursor: pointer;
+}
+.navSection ul li a:after,
+.navSection ul li a:before {
+  transition: all 0.5s;
+}
+.navSection ul li a:hover {
+  color: #d8764e;
+}
+/* stroke */
+.navSection ul li a {
+  position: relative;
+}
+.navSection ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #d8764e;
+  height: 3px;
+}
+.navSection ul li a:hover:after {
+  width: 100%;
+}
+/* different colors on hover */
+#purple:after {
+  background: #aa81ac;
+}
+#purple:hover {
+  color: #aa81ac;
+}
+#yellow:after {
+  background: #d8a55a;
+}
+#yellow:hover {
+  color: #d8a55a;
+}
+#green:after {
+  background: #a6bb75;
+}
+#green:hover {
+  color: #a6bb75;
+}
