@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html>
+<html da="en">
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
@@ -20,49 +20,49 @@
   <body>
     <main class="mainWrapper">
       <div class="imgAndTitel">
-        <img src="billeder/HoC-logobig.png" alt="" />
+        <img src="../billeder/HoC-logobig.png" alt="" />
         <h1>Digital MUS</h1>
       </div>
       <div class="inputs">
-        <input type="text" placeholder="Brugernavn..." />
-        <input type="password" placeholder="Adgangskode..." />
+        <input type="text" placeholder="Username..." />
+        <input type="password" placeholder="Password..." />
       </div>
       <div class="checkBox">
         <input type="checkbox" />
-        <p>Husk mig</p>
+        <p>Remember me</p>
       </div>
       <div class="forgotPassword">
-        <a href="#">Glemt adgangskode?</a>
+        <a href="#">Forgot password?</a>
       </div>
       <div class="loginButtons">
-        <button class="standardBtn" onclick="redirectAnsat()">Ansat</button>
-        <button class="standardBtn" onclick="redirectLeder()">Leder</button>
+        <button class="standardBtn" onclick="redirectAnsat()">Employee</button>
+        <button class="standardBtn" onclick="redirectLeder()">Employer</button>
       </div>
       <div class="countrySelection">
-        <a href="#"
-          ><img src="billeder/denmark.png" class="countryImg" alt=""
+        <a href="../index.html"
+          ><img src="../billeder/denmark.png" class="countryImg" alt=""
         /></a>
-        <a href="englishversion/index.html"
-          ><img src="billeder/english.png" class="countryImg" alt=""
+        <a href="#"
+          ><img src="../billeder/english.png" class="countryImg" alt=""
         /></a>
       </div>
     </main>
     <modal class="redirectWrapper" id="redirectAnsat">
       <div class="imgAndTitel">
-        <img src="billeder/HoC-logobig.png" alt="" />
+        <img src="../billeder/HoC-logobig.png" alt="" />
         <h1>Digital MUS</h1>
       </div>
       <div class="redirectContent">
-        <h2>Velkommen tilbage Andreas</h2>
+        <h2>Welcome back Andreas</h2>
       </div>
     </modal>
     <modal class="redirectWrapper" id="redirectLeder">
       <div class="imgAndTitel">
-        <img src="billeder/HoC-logobig.png" alt="" />
+        <img src="../billeder/HoC-logobig.png" alt="" />
         <h1>Digital MUS</h1>
       </div>
       <div class="redirectContent">
-        <h2>Velkommen tilbage Henrik</h2>
+        <h2>Welcome back Henrik</h2>
       </div>
     </modal>
     <script src="index.js" async defer></script>
