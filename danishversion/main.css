@@ -126,18 +126,28 @@ main {
 }
 /* Skew breaker styling */
 .skewBreaker {
+  opacity: 1;
   width: 100%;
-  height: 283px;
+  height: 200px;
   background-color: white;
   position: relative;
-  margin-top: 400px;
+  margin-top: 300px;
   bottom: 0;
+  background-image: url("../billeder/Skærmbillede\ 2019-04-01\ kl.\ 11.51.39.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* SocialEvents */
 .socialeventWrapper {
+  position: relative;
   width: 100%;
   height: auto;
   background-color: #515f6d;
+  background-image: url("../billeder/priscilla-du-preez-623040-unsplash.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   padding-top: 100px;
 }
 .socialEvent {
@@ -145,8 +155,10 @@ main {
   width: 90%;
   margin: 0 auto;
   height: auto;
-  background-color: white;
   text-align: center;
+
+  background-color: white;
+  opacity: 1;
 }
 .socialEvent hr {
   width: 90%;
