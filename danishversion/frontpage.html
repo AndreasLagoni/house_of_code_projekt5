@@ -12,6 +12,16 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="bgimg"></div>
@@ -29,10 +39,28 @@
             <li><a href="http://" id="yellow">Evaluere</a></li>
           </ul>
         </article>
+        <article class="scrollDown">
+          <a href="#socialEvents">
+            <p>events</p>
+            <i class="fas fa-angle-down"></i>
+          </a>
+        </article>
+        <article class="topNav">
+          <a href="">
+            <i class="material-icons">
+              chat
+            </i>
+          </a>
+          <a href=""
+            ><i class="material-icons">
+              account_circle
+            </i>
+          </a>
+        </article>
       </section>
       <section class="skewBreaker"></section>
       <section class="socialeventWrapper">
-        <article class="socialEvent">
+        <article class="socialEvent" id="socialEvents">
           <h1>Social Events:</h1>
           <hr />
           <div class="socialeventItem">
@@ -117,6 +145,7 @@
           </div>
         </article>
       </section>
+      <modal class="messages"> </modal>
     </main>
 
     <script src="" async defer></script>
