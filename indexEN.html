@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="da">
+<html da="en">
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
@@ -16,10 +11,6 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Abel"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <main class="mainWrapper">
@@ -28,25 +19,25 @@
         <h1>"Come in be awesome"</h1>
       </div>
       <div class="inputs">
-        <input type="text" placeholder="Brugernavn..." />
-        <input type="password" placeholder="Adgangskode..." />
+        <input type="text" placeholder="Username..." />
+        <input type="password" placeholder="Password..." />
       </div>
       <div class="checkBox">
         <input type="checkbox" />
-        <p>Husk mig</p>
+        <p>Remember me</p>
       </div>
       <div class="forgotPassword">
-        <a href="#">Glemt adgangskode?</a>
+        <a href="#">Forgot password?</a>
       </div>
       <div class="loginButtons">
-        <button class="standardBtn" onclick="redirectAnsat()">Ansat</button>
-        <button class="standardBtn" onclick="redirectLeder()">Leder</button>
+        <button class="standardBtn" onclick="redirectAnsat()">Employee</button>
+        <button class="standardBtn" onclick="redirectLeder()">Employer</button>
       </div>
       <div class="countrySelection">
-        <a href="#"
+        <a href="../index.html"
           ><img src="billeder/denmark.png" class="countryImg" alt=""
         /></a>
-        <a href="indexEN.html"
+        <a href="#"
           ><img src="billeder/english.png" class="countryImg" alt=""
         /></a>
       </div>
@@ -57,7 +48,7 @@
         <h1>"Come in be awesome"</h1>
       </div>
       <div class="redirectContent">
-        <h2>Velkommen tilbage Andreas</h2>
+        <h2>Welcome back Andreas</h2>
       </div>
     </modal>
     <modal class="redirectWrapper" id="redirectLeder">
@@ -66,7 +57,7 @@
         <h1>"Come in be awesome"</h1>
       </div>
       <div class="redirectContent">
-        <h2>Velkommen tilbage Henrik</h2>
+        <h2>Welcome back Henrik</h2>
       </div>
     </modal>
     <script>
@@ -74,7 +65,7 @@
         let modal = document.getElementById("redirectAnsat");
         modal.classList.add("redirect");
         setTimeout(function() {
-          window.location.replace("danishversion/frontpageDA.html");
+          window.location.replace("englishversion/frontpageEN.html");
         }, 3000);
       }
       function redirectLeder() {
