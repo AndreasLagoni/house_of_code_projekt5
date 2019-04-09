@@ -46,12 +46,12 @@
           </a>
         </article>
         <article class="topNav">
-          <a href="">
+          <a href="javascript:openModal()" id="messageBtn">
             <i class="material-icons">
               chat
             </i>
           </a>
-          <a href=""
+          <a href="" id="accountBtn"
             ><i class="material-icons">
               account_circle
             </i>
@@ -145,9 +145,59 @@
           </div>
         </article>
       </section>
-      <modal class="messages"> </modal>
+      <modal class="messages" id="messageModal">
+        <div class="messagesTriangle"></div>
+        <h2 class="messageTitle">Beskeder</h2>
+        <article class="messageItem new">
+          <div class="messagePic">
+            <img src="../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory event">Event</h3>
+            <h2 class="messageName">Marianne Larsen</h2>
+            <p class="messageTopic">
+              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">25. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+      </modal>
     </main>
 
-    <script src="" async defer></script>
+    <script src="danishjs.js" async defer></script>
   </body>
 </html>
