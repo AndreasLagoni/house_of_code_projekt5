@@ -1,0 +1,420 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+a,
+p,
+input,
+button,
+h3 {
+  font-family: "Roboto Mono", monospace;
+}
+p,
+span {
+  font-family: "Abel", sans-serif;
+}
+/* BG Image */
+.bgimg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  background-image: url("../billeder/BG.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
+/* Main */
+main {
+  z-index: 100;
+  width: 100%;
+  height: auto;
+}
+.frontWrapper {
+  width: 100%;
+  height: 100vh;
+}
+/* LOGO og titel */
+.imgAndTitel {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.imgAndTitel h1 {
+  position: relative;
+  top: -70px;
+  color: #515f6d;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+.imgAndTitel img {
+  width: 600px;
+}
+/* section NAV */
+.navSection ul {
+  width: 80%;
+  height: 74px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navSection ul li {
+  width: 239px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background-color: #515f6d;
+  list-style: none;
+  text-align: center;
+}
+.navSection ul li a {
+  font-size: 25px;
+  color: white;
+  text-decoration: white;
+  cursor: pointer;
+}
+.navSection ul li a:after,
+.navSection ul li a:before {
+  transition: all 0.5s;
+}
+.navSection ul li a:hover {
+  color: #d36d75;
+}
+/* stroke on nav buttons*/
+.navSection ul li a {
+  position: relative;
+}
+.navSection ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #d36d75;
+  height: 3px;
+}
+.navSection ul li a:hover:after {
+  width: 100%;
+}
+/* different colors on hover */
+#purple:after {
+  background: #aa81ac;
+}
+#purple:hover {
+  color: #aa81ac;
+}
+#yellow:after {
+  background: #d8a55a;
+}
+#yellow:hover {
+  color: #d8a55a;
+}
+#green:after {
+  background: #a6bb75;
+}
+#green:hover {
+  color: #a6bb75;
+}
+/* Scrolldown */
+.scrollDown {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 220px;
+}
+.scrollDown p,
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #515f6d;
+}
+/* Top nav with userprofile and messages */
+.topNav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.topNav a {
+  margin: 5px 10px;
+}
+.topNav a i {
+  color: #515f6d;
+  font-size: 40px;
+  transition: 0.2s all;
+}
+.topNav a i:hover {
+  color: #6696ac;
+}
+.topNav .newMessage {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #d36d75;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topNav .newMessage h2 {
+  font-size: 16px;
+}
+/* Modal styling of messages */
+.messages {
+  width: 480px;
+  height: auto;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+.messagesTriangle {
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid white;
+}
+.messageTitle {
+  margin: 20px;
+  color: #606060;
+  font-size: 20px;
+}
+.messageItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid gray;
+  background-color: white;
+}
+.messages article:last-of-type {
+  border-bottom: 1px solid gray;
+}
+.messagePic {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.messagePic img {
+  width: 80%;
+  height: 100%;
+}
+.new {
+  background-color: #ebebebab;
+}
+.messageInfo {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.messageInfo .messageCategory {
+  font-size: 10px;
+}
+.work {
+  color: #a6bb75;
+}
+.event {
+  color: #aa81ac;
+}
+.messageName {
+  font-size: 16px;
+  margin: 0;
+  color: #606060;
+}
+.messageTopic {
+  font-size: 14px;
+  color: #606060;
+}
+.messageDate {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.messageDate .date {
+  font-size: 10px;
+  color: #606060;
+  font-weight: 200;
+}
+.allMessages {
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.allMessages a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515f6d;
+  position: relative;
+}
+.allMessages a:after,
+.allMessages a:before {
+  transition: all 0.5s;
+}
+/* stroke on ALL Message link */
+.allMessages a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #515f6d;
+  height: 2px;
+}
+.allMessages a:hover:after {
+  width: 100%;
+}
+/* ALL MAIN WRAPPER STYLE STOPPING */
+/* Skew breaker styling */
+.skewBreaker {
+  opacity: 1;
+  z-index: 100;
+  width: 100%;
+  height: 170px;
+  position: absolute;
+  background-color: white;
+  bottom: -130px;
+  background-image: url("../billeder/frontpagemiddle.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* SocialEvents */
+.socialeventWrapper {
+  margin-top: 80px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: #515f6d;
+  background-image: url("../billeder/priscilla-du-preez-623040-unsplash.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.socialEvent {
+  margin-top: 100px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+
+  background-color: white;
+  opacity: 1;
+}
+.socialEvent hr {
+  width: 90%;
+  margin: 0 auto;
+}
+.socialEvent h1 {
+  padding-top: 70px;
+  font-size: 75px;
+  color: #515f6d;
+}
+/* Standard BTN */
+.standardBtn {
+  height: 50px;
+  border: 1px solid #707070;
+  background-color: #515f6d;
+  color: white;
+  font-size: 20px;
+  padding: 12px 61px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.standardBtn:hover {
+  color: #515f6d;
+  background-color: white;
+}
+/* SocialEvent specific items */
+.socialeventItem {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  height: 126px;
+  border-bottom: 1px solid gray;
+}
+.socialDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+.socialDate h3 {
+  font-size: 20px;
+  color: #515f6d;
+}
+.socialDate h2 {
+  font-size: 45px;
+  color: #515f6d;
+}
+.socialInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+.socialButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}

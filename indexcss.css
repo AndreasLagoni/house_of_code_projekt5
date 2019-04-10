@@ -137,11 +137,6 @@ button {
   flex-direction: column;
   align-items: center;
 }
-.redirectContent h2 {
-  color: #515f6d;
-  font-size: 40px;
-  letter-spacing: 10px;
-}
 .redirect {
   transition: all 0.5s ease;
   visibility: visible;
