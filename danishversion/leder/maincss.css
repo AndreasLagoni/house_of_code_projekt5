@@ -24,7 +24,7 @@ span {
 /* MAIN NAV */
 .mainNav {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   height: 140px;
 }
 .mainNav ul {
@@ -40,7 +40,7 @@ span {
 .mainNav ul li a {
   position: relative;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
 }
@@ -75,28 +75,16 @@ span {
 .mainNav ul li a:before {
   transition: all 0.5s;
 }
-.mainNav ul li a:hover {
-  color: #d36d75;
-}
 /* 
   /* different colors on hover */
 #purple:after {
   background: #aa81ac;
 }
-#purple:hover {
-  color: #aa81ac;
-}
 #blue:after {
   background: #6696ac;
 }
-#blue:hover {
-  color: #6696ac;
-}
 #green:after {
   background: #a6bb75;
-}
-#green:hover {
-  color: #a6bb75;
 }
 
 /* Top nav with userprofile and messages */
@@ -264,4 +252,78 @@ span {
 }
 .allMessages a:hover:after {
   width: 100%;
+}
+/* Main content on the page */
+.maincontent {
+  padding-top: 60px;
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+}
+/* Path links */
+.pathlinks {
+  margin: 25px 0px;
+  color: white;
+  font-size: 14px;
+}
+.pathlinks a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.pathlinks a:last-child {
+  padding-left: 10px;
+}
+.medarbejderList {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.medarbejder {
+  z-index: 1;
+  width: 380px;
+  height: 380px;
+  background-image: url("../../billeder/medarbejder/medarbejder01x2.png");
+}
+.medarbejderHover {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0;
+  background-color: #6696acb7;
+  width: 380px;
+  height: 380px;
+  transition: all 1s;
+}
+.medarbejderContent {
+  opacity: 1;
+  position: relative;
+  top: 100px;
+  left: 40px;
+  transition: transform 1s;
+}
+.medarbejder:hover #medarbejderbghover {
+  opacity: 1;
+}
+
+.medarbejderContent .name {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.medarbejderContent .status {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 15px;
+}
+.medarbejderContent a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }

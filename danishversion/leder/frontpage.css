@@ -59,7 +59,7 @@ main {
 }
 /* section NAV */
 .navSection ul {
-  width: 80%;
+  width: 90%;
   height: 74px;
   display: flex;
   margin: 0 auto;
@@ -68,7 +68,7 @@ main {
   align-items: center;
 }
 .navSection ul li {
-  width: 259px;
+  width: 300px;
   padding: 10px 25px;
   box-sizing: border-box;
   background-color: #515f6d;
@@ -76,7 +76,7 @@ main {
   text-align: center;
 }
 .navSection ul li a {
-  font-size: 22px;
+  font-size: 25px;
   color: white;
   text-decoration: white;
   cursor: pointer;
