@@ -272,18 +272,22 @@ span {
   color: white;
   font-size: 14px;
 }
+.pathlinks a:nth-child(2) {
+  padding-left: 10px;
+}
 .pathlinks a:last-child {
   padding-left: 10px;
 }
+/* Medarbejder liste */
 .medarbejderList {
-  position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .medarbejder {
+  position: relative;
   z-index: 1;
   width: 380px;
   height: 380px;
@@ -291,25 +295,51 @@ span {
 }
 .medarbejderHover {
   position: absolute;
+  visibility: hidden;
   opacity: 0;
   top: 0px;
   left: 0;
   background-color: #6696acb7;
   width: 380px;
   height: 380px;
-  transition: all 1s;
+  transition: all 0.3s;
+}
+#medarbejderbghover01 {
+  background-color: #aca266b7;
+}
+#medarbejderbghover03 {
+  background-color: #31459cb7;
 }
 .medarbejderContent {
   opacity: 1;
   position: relative;
-  top: 100px;
+  top: 150px;
   left: 40px;
-  transition: transform 1s;
+  transition: transform 0.3s;
 }
-.medarbejder:hover #medarbejderbghover {
+/* Medarbejder transition on hover */
+#medarbejder01:hover #medarbejderbghover01 {
+  visibility: visible;
   opacity: 1;
 }
-
+#medarbejder01:hover #medcontent01 {
+  transform: translateY(100px);
+}
+#medarbejder02:hover #medarbejderbghover02 {
+  visibility: visible;
+  opacity: 1;
+}
+#medarbejder02:hover #medcontent02 {
+  transform: translateY(100px);
+}
+#medarbejder03:hover #medarbejderbghover03 {
+  visibility: visible;
+  opacity: 1;
+}
+#medarbejder03:hover #medcontent03 {
+  transform: translateY(100px);
+}
+/* Medarbejder content styling */
 .medarbejderContent .name {
   font-size: 22px;
   color: white;
@@ -326,4 +356,27 @@ span {
   color: white;
   font-size: 20px;
   font-weight: bold;
+}
+/* Medarbejder section styling - Styling for every individual employee */
+.medarbejderSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.medarbejderInfo {
+  width: 25%;
+  min-width: 380px;
+}
+.myData {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.myData h2 {
+  color: white;
+  font-size: 22px;
+  padding: 10px 0;
 }

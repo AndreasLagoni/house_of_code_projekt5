@@ -11,7 +11,7 @@
     <title>House of Code - Medarbejdere</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="maincss.css" />
+    <link rel="stylesheet" href="../maincss.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -32,11 +32,13 @@
     <main class="contentWrapper">
       <nav class="mainNav">
         <ul>
-          <li><a href="#" id="green">Medarbejdere</a></li>
+          <li>
+            <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
+          </li>
           <li id="kalender"><a href="http://" id="purple">Kalender</a></li>
 
-          <a href="DAfrontpageLED.html" id="logo">
-            <img src="../../billeder/HoC_logo_white.svg" alt=""
+          <a href="../DAfrontpageLED.html" id="logo">
+            <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
           <li id="events"><a href="http://">Events</a></li>
@@ -63,7 +65,7 @@
         <h2 class="messageTitle">Beskeder</h2>
         <article class="messageItem new">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory event">Event</h3>
@@ -78,7 +80,7 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
@@ -94,7 +96,7 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
@@ -114,44 +116,37 @@
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="DAfrontpageLED.html">Startside</a>//<a href="#"
-            >Medarbejdere</a
-          >
+          <a href="../DAfrontpageLED.html">Startside</a>
+          //
+          <a href="../DAmedarbejdereLED.html"> Medarbejdere</a>
+          //
+          <a href="#">Jonas Svanegård</a>
         </article>
-        <article class="medarbejderList">
-          <div class="medarbejder" id="medarbejder01">
-            <div class="medarbejderHover" id="medarbejderbghover01">
-              <div class="medarbejderContent" id="medcontent01">
-                <h2 class="name">Jonas Svanegård</h2>
-                <h2 class="status">Seniorudvikler</h2>
-                <a href="medarbejdere/medarbejder-01.html">Se profil ></a>
+        <section class="medarbejderSection">
+          <aside class="medarbejderInfo">
+            <img
+              src="../../../billeder/medarbejder/medarbejder01x2.png"
+              alt=""
+            />
+            <div class="myData">
+              <h2>Mine data</h2>
+              <div><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></div>
+              <div><i class="fas fa-phone"></i><span>+45112112</span></div>
+              <div>
+                <i class="fas fa-envelope"></i
+                ><a href="#">jonas@houseofcode.io</a>
               </div>
             </div>
-          </div>
-
-          <div class="medarbejder" id="medarbejder02">
-            <img src="../../billeder/medarbejder/medarbejder02x2.png" alt="" />
-            <div class="medarbejderHover" id="medarbejderbghover02">
-              <div class="medarbejderContent" id="medcontent02">
-                <h2 class="name">Winnie Andersen</h2>
-                <h2 class="status">Tester og udvikler-trainee</h2>
-                <a href="#">Se profil ></a>
-              </div>
+            <div class="medarbejderRoles">
+              <h2>Tildelte rolle(r)</h2>
+              <i class="fas fa-check-square"></i><span>Event Adminstrator</span>
             </div>
-          </div>
-          <div class="medarbejder" id="medarbejder03">
-            <img src="../../billeder/medarbejder/medarbejder03x2.png" alt="" />
-            <div class="medarbejderHover" id="medarbejderbghover03">
-              <div class="medarbejderContent" id="medcontent03">
-                <h2 class="name">Henrik Grove</h2>
-                <h2 class="status">HR- og driftschef</h2>
-                <a href="#">Se profil ></a>
-              </div>
-            </div>
-          </div>
-        </article>
+          </aside>
+          <article class="medarbejderContent"></article>
+          <article class="medarbejderHistory"></article>
+        </section>
       </section>
     </main>
-    <script src="../js/danishjs.js" async defer></script>
+    <script src="../../js/danishjs.js" async defer></script>
   </body>
 </html>
