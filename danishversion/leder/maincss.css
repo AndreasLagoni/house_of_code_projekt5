@@ -366,17 +366,88 @@ span {
   flex-wrap: wrap;
 }
 .medarbejderInfo {
-  width: 25%;
   min-width: 380px;
+}
+.medarbejderInfo i {
+  margin-right: 15px;
+  font-size: 22px;
+  color: white;
+}
+.medarbejderInfo span {
+  font-size: 16px;
+  color: white;
+}
+.medarbejderInfo a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+.medarbejderInfo h2 {
+  color: white;
+  font-size: 22px;
+  padding: 10px 0;
 }
 .myData {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.myData h2 {
+.myData div {
+  padding: 14px 0;
+}
+/* Medarbejder main content. Her er info omkring de enkelte medarbejdere. */
+.medarbejderMainContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0px 50px;
+  box-sizing: border-box;
+}
+.medarbejderMainContent h1,
+h2,
+h3,
+p {
   color: white;
-  font-size: 22px;
+}
+.medarbejderMainContent h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.medarbejderMainContent h2 {
+  font-size: 26px;
   padding: 10px 0;
+}
+.medarbejderMainContent p {
+  font-size: 22px;
+}
+.employeeGoals {
+  margin-top: 82px;
+}
+.employeeGoals h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.employeeGoals p {
+  font-size: 20px;
+}
+/* Medarbejder historik på alle samtaler der har været */
+.medarbejderHistory {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.musHistoryItem {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.musHistoryItem:first-child {
+  margin-top: 0;
 }
