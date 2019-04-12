@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Medarbejdere</title>
+    <title>House of Code - Jonas Svanegaard</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../maincss.css" />
@@ -35,14 +35,18 @@
           <li>
             <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
           </li>
-          <li id="kalender"><a href="http://" id="purple">Kalender</a></li>
+          <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
 
           <a href="../DAfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
           <li id="events"><a href="http://">Events</a></li>
-          <li><a href="http://" id="blue">Evalueringer</a></li>
+          <li>
+            <a href="../evaluering/DAevalueringLED.html" id="blue"
+              >Åben evaluering</a
+            >
+          </li>
         </ul>
       </nav>
       <section class="topNav">
@@ -120,7 +124,9 @@
           //
           <a href="../DAmedarbejdereLED.html"> Medarbejdere</a>
           //
-          <a href="#">Jonas Svanegård</a>
+          <a href="DAmedarbejder-01.html">Jonas Svanegård</a>
+          //
+          <a href="#">Historik</a>
         </article>
         <section class="medarbejderSection">
           <aside class="medarbejderInfo">
@@ -142,36 +148,7 @@
               <i class="fas fa-check-square"></i><span>Event Adminstrator</span>
             </div>
           </aside>
-          <article class="medarbejderMainContent" id="medarbejderMainContent">
-            <h1>Jonas Svanegaard</h1>
-            <br />
-            <h2>Seniorudvikler</h2>
-            <br />
-            <p>
-              Jeg er Andriod-udvikler. Kort fortalt betyder det, at jeg udvkler
-              frontend til android-apps. Det er mig du skal takke for, at
-              android- versionen fungere ligeså godt som iOS-versionen
-            </p>
-            <br />
-            <p>Fun Fact:</p>
-            <p>"Jeg stinker til fun facts"</p>
-            <br />
-
-            <div class="employeeGoals">
-              <h1>Mine mål for 2019</h1>
-              <p>
-                Her vil du se de mål dig og din medarbejder har lavet sidste
-                gang i havde MUS.
-              </p>
-              <h3>Mål 1</h3>
-              <p>Kursus om digital markedsføring d. 06/06 - 2019.</p>
-              <h3>Mål 2</h3>
-              <p>Være mere positiv overfor konstruktiv kritik</p>
-              <h3>Mål 3</h3>
-              <p>Deltag i flere sociale arrangementer</p>
-            </div>
-          </article>
-          <article class="medarbejderHistory" id="medarbejderHistory">
+          <article class="medarbejderHistory all" id="medarbejderHistory">
             <h2>Historik</h2>
             <div class="musHistoryItem">
               <div class="conversationName">
@@ -192,7 +169,7 @@
                 <h2>Henrik Grove</h2>
               </div>
               <div class="conversationInfo">
-                <h3>Klippekort</h3>
+                <h3>MUS</h3>
                 <p>20-03-2017</p>
               </div>
               <div class="linkConversation">
@@ -229,11 +206,27 @@
                 </a>
               </div>
             </div>
-            <button class="standardBtn white">Historik</button>
           </article>
         </section>
       </section>
     </main>
-    <script src="../../js/medarbejderload.js" async defer></script>
+    <script>
+      window.onload = function() {
+        let historyContent = document.getElementById("medarbejderHistory");
+        historyContent.style.opacity = "100";
+        historyContent.style.left = "50px";
+        let myData = document.getElementById("myData");
+        myData.style.opacity = "100";
+        myData.style.top = "0";
+        let employeeRoles = document.getElementById("employeeRoles");
+        employeeRoles.style.opacity = "100";
+        employeeRoles.style.top = "0";
+      };
+      var messageModal = document.getElementById("messageModal");
+      function openModal() {
+        messageModal.classList.toggle("open");
+        document.getElementById("newMessage").style.display = "none";
+      }
+    </script>
   </body>
 </html>

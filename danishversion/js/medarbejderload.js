@@ -12,3 +12,8 @@ window.onload = function() {
   employeeRoles.style.opacity = "100";
   employeeRoles.style.top = "0";
 };
+var messageModal = document.getElementById("messageModal");
+function openModal() {
+  messageModal.classList.toggle("open");
+  document.getElementById("newMessage").style.display = "none";
+}

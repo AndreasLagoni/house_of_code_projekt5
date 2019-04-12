@@ -8,10 +8,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Medarbejdere</title>
+    <title>House of Code - Jonas Svanegaard</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="maincss.css" />
+    <link rel="stylesheet" href="../maincss.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -33,20 +33,16 @@
       <nav class="mainNav">
         <ul>
           <li>
-            <a href="DAmedarbejdereLED.html" id="green">Medarbejdere</a>
+            <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
           </li>
           <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
 
-          <a href="DAfrontpageLED.html" id="logo">
+          <a href="../DAfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
           <li id="events"><a href="http://">Events</a></li>
-          <li>
-            <a href="evaluering/DAevalueringLED.html" id="blue"
-              >Åben evaluering</a
-            >
-          </li>
+          <li><a href="http://" id="blue">Åben evaluering</a></li>
         </ul>
       </nav>
       <section class="topNav">
@@ -69,7 +65,7 @@
         <h2 class="messageTitle">Beskeder</h2>
         <article class="messageItem new">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory event">Event</h3>
@@ -84,7 +80,7 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
@@ -100,7 +96,7 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
@@ -120,44 +116,59 @@
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="DAfrontpageLED.html">Startside</a>//<a href="#"
-            >Medarbejdere</a
-          >
+          <a href="../DAfrontpageLED.html">Startside</a>
+          //
+          <a href="../DAmedarbejdereLED.html">Evaluering</a>
         </article>
-        <article class="medarbejderList">
-          <div class="medarbejder" id="medarbejder01">
-            <div class="medarbejderHover" id="medarbejderbghover01">
-              <div class="medarbejderContent" id="medcontent01">
-                <h2 class="name">Jonas Svanegård</h2>
-                <h2 class="status">Seniorudvikler</h2>
-                <a href="medarbejdere/DAmedarbejder-01.html">Se profil ></a>
+        <section class="evalueringWrapper">
+          <article class="evalueringList">
+            <div class="evalueringItem">
+              <div class="evalueringItemName">
+                <h3>Evaluering</h3>
+                <h2>Winnie Andersen</h2>
+              </div>
+              <div class="evalueringItemDate">
+                <div>
+                  <h3>Idag</h3>
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div>
+                  <h3>Specifik dato</h3>
+                  <input type="checkbox" name="" id="" />
+                  <input type="date" name="" id="" />
+                  <input type="datetime" name="" id="" />
+                </div>
+              </div>
+              <div class="evalueringItemCheckbox">
+                <input type="checkbox" name="" id="" />
               </div>
             </div>
-          </div>
-
-          <div class="medarbejder" id="medarbejder02">
-            <img src="../../billeder/medarbejder/medarbejder02x2.png" alt="" />
-            <div class="medarbejderHover" id="medarbejderbghover02">
-              <div class="medarbejderContent" id="medcontent02">
-                <h2 class="name">Winnie Andersen</h2>
-                <h2 class="status">Tester og udvikler-trainee</h2>
-                <a href="medarbejdere/DAmedarbejder-02.html">Se profil ></a>
-              </div>
-            </div>
-          </div>
-          <div class="medarbejder" id="medarbejder03">
-            <img src="../../billeder/medarbejder/medarbejder03x2.png" alt="" />
-            <div class="medarbejderHover" id="medarbejderbghover03">
-              <div class="medarbejderContent" id="medcontent03">
-                <h2 class="name">Henrik Grove</h2>
-                <h2 class="status">HR- og driftschef</h2>
-                <a href="#">Se profil ></a>
-              </div>
-            </div>
-          </div>
-        </article>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </article>
+        </section>
       </section>
     </main>
-    <script src="../js/danishjs.js" async defer></script>
+    <script>
+      window.onload = function() {
+        let historyContent = document.getElementById("medarbejderHistory");
+        historyContent.style.opacity = "100";
+        historyContent.style.left = "50px";
+        let myData = document.getElementById("myData");
+        myData.style.opacity = "100";
+        myData.style.top = "0";
+        let employeeRoles = document.getElementById("employeeRoles");
+        employeeRoles.style.opacity = "100";
+        employeeRoles.style.top = "0";
+      };
+      var messageModal = document.getElementById("messageModal");
+      function openModal() {
+        messageModal.classList.toggle("open");
+        document.getElementById("newMessage").style.display = "none";
+      }
+    </script>
   </body>
 </html>
