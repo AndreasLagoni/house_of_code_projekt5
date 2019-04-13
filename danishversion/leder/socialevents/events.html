@@ -41,8 +41,12 @@
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
-          <li id="events"><a href="../socialevents/events.html">Events</a></li>
-          <li><a href="http://" id="blue">Åben evaluering</a></li>
+          <li id="events"><a href="http://">Events</a></li>
+          <li>
+            <a href="../evaluering/DAevalueringLED.html" id="blue"
+              >Åben evaluering</a
+            >
+          </li>
         </ul>
       </nav>
       <section class="topNav">
@@ -118,57 +122,98 @@
         <article class="pathlinks">
           <a href="../DAfrontpageLED.html">Startside</a>
           //
-          <a href="../DAmedarbejdereLED.html">Evaluering</a>
+          <a href="../DAmedarbejdereLED.html">Events</a>
         </article>
-        <section class="evalueringWrapper">
-          <article class="evalueringList">
-            <div class="evalueringItem">
-              <div class="evalueringItemName">
-                <h3>Evaluering</h3>
-                <h2>Winnie Andersen</h2>
-              </div>
-              <div class="evalueringItemDate">
-                <div>
-                  <h3>Idag</h3>
-                  <input type="checkbox" name="" id="" />
+        <section class="eventSection">
+          <section class="socialeventWrapper">
+            <article class="socialEvent" id="socialEvents">
+              <h1>Social Events:</h1>
+              <hr />
+              <div class="socialeventItem">
+                <div class="socialDate">
+                  <h3>April.</h3>
+                  <h2>20</h2>
                 </div>
-                <div>
-                  <h3>Specifik dato</h3>
-                  <input type="checkbox" name="check" id="" />
-                  <input type="date" name="" id="" class="dateInput" />
-                  <input type="datetime" name="" id="" class="dateTimeinput" />
+                <div class="socialInfo">
+                  <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
+                  <p style="color: #515F6D; font-size: 30px;">
+                    Spisning hos Pasfall m. Efterkoncert
+                  </p>
+                  <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
+                </div>
+                <div class="socialButton">
+                  <button class="standardBtn">Læs mere</button>
                 </div>
               </div>
-              <div class="evalueringItemCheckbox">
-                <input type="checkbox" name="" id="" />
+              <div class="socialeventItem">
+                <div class="socialDate">
+                  <h3>April.</h3>
+                  <h2>20</h2>
+                </div>
+                <div class="socialInfo">
+                  <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
+                  <p style="color: #515F6D; font-size: 30px;">
+                    Spisning hos Pasfall m. Efterkoncert
+                  </p>
+                  <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
+                </div>
+                <div class="socialButton">
+                  <button class="standardBtn">Læs mere</button>
+                </div>
               </div>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </article>
+              <div class="socialeventItem">
+                <div class="socialDate">
+                  <h3>April.</h3>
+                  <h2>20</h2>
+                </div>
+                <div class="socialInfo">
+                  <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
+                  <p style="color: #515F6D; font-size: 30px;">
+                    Spisning hos Pasfall m. Efterkoncert
+                  </p>
+                  <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
+                </div>
+                <div class="socialButton">
+                  <button class="standardBtn">Læs mere</button>
+                </div>
+              </div>
+              <div class="socialeventItem">
+                <div class="socialDate">
+                  <h3>April.</h3>
+                  <h2>20</h2>
+                </div>
+                <div class="socialInfo">
+                  <p style="color: white; font-size: 25px;">Man - 19:30</p>
+                  <p style="color: white; font-size: 30px;">
+                    Spisning hos Pasfall m. Efterkoncert
+                  </p>
+                  <p style="color: white; font-size: 30px;">Seebladsgade 1</p>
+                </div>
+                <div class="socialButton">
+                  <button class="standardBtn">Læs mere</button>
+                </div>
+              </div>
+              <div class="socialeventItem">
+                <div class="socialDate">
+                  <h3>April.</h3>
+                  <h2>20</h2>
+                </div>
+                <div class="socialInfo">
+                  <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
+                  <p style="color: #515F6D; font-size: 30px;">
+                    Spisning hos Pasfall m. Efterkoncert
+                  </p>
+                  <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
+                </div>
+                <div class="socialButton">
+                  <button class="standardBtn">Læs mere</button>
+                </div>
+              </div>
+            </article>
+          </section>
         </section>
       </section>
     </main>
-    <script>
-      window.onload = function() {
-        let historyContent = document.getElementById("medarbejderHistory");
-        historyContent.style.opacity = "100";
-        historyContent.style.left = "50px";
-        let myData = document.getElementById("myData");
-        myData.style.opacity = "100";
-        myData.style.top = "0";
-        let employeeRoles = document.getElementById("employeeRoles");
-        employeeRoles.style.opacity = "100";
-        employeeRoles.style.top = "0";
-      };
-      var messageModal = document.getElementById("messageModal");
-      function openModal() {
-        messageModal.classList.toggle("open");
-        document.getElementById("newMessage").style.display = "none";
-      }
-    </script>
+    <script src="../../js/events.js"></script>
   </body>
 </html>

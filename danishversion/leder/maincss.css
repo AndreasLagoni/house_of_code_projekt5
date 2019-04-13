@@ -585,3 +585,77 @@ p {
   font-size: 18px;
   padding-right: 5px;
 }
+/* Input - checkbox styling on evaluering */
+.evalueringItemDate input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+/* Social events styling på en underside */
+.eventSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* SocialEvents */
+.socialeventWrapper {
+  width: 100%;
+  height: auto;
+}
+.socialEvent {
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  opacity: 1;
+}
+.socialEvent hr {
+  width: 90%;
+  margin: 0 auto;
+}
+.socialEvent h1 {
+  font-size: 75px;
+  color: white;
+}
+/* SocialEvent specific items */
+.socialeventItem {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  height: 126px;
+  border-bottom: 1px solid gray;
+}
+.socialDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+.socialDate h3 {
+  font-size: 20px;
+  color: white;
+}
+.socialDate h2 {
+  font-size: 45px;
+  color: white;
+}
+.socialInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+.socialButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
