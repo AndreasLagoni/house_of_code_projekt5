@@ -30,69 +30,47 @@ span {
   opacity: 0.5;
 }
 /* Main */
-main {
-  z-index: 100;
+.contentWrapper {
   width: 100%;
-  height: auto;
-}
-.frontWrapper {
-  width: 100%;
-  height: 100vh;
-}
-/* LOGO og titel */
-.imgAndTitel {
-  position: relative;
-  top: 10px;
-  text-align: center;
-  margin: 0 auto;
-}
-.imgAndTitel h1 {
-  position: relative;
-  top: -70px;
-  color: #515f6d;
-  font-weight: bold;
-  letter-spacing: 5px;
-  font-size: 30px;
-}
-.imgAndTitel img {
-  width: 600px;
-}
-/* section NAV */
-.navSection ul {
-  width: 80%;
-  height: 74px;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.navSection ul li {
-  width: 239px;
-  padding: 10px 25px;
-  box-sizing: border-box;
+  height: 100%;
   background-color: #515f6d;
+}
+/* MAIN NAV */
+.mainNav {
+  margin: 0 auto;
+  width: 80%;
+  height: 140px;
+}
+.mainNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.mainNav ul li {
   list-style: none;
-  text-align: center;
+  margin-top: 10px;
 }
-.navSection ul li a {
-  font-size: 25px;
+.mainNav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
   color: white;
-  text-decoration: white;
-  cursor: pointer;
 }
-.navSection ul li a:after,
-.navSection ul li a:before {
-  transition: all 0.5s;
+.mainNav ul #logo {
+  margin-top: 10px;
+  margin-left: 130px;
+  margin-right: 130px;
 }
-.navSection ul li a:hover {
-  color: #d36d75;
+.mainNav ul #kalender {
+  margin-left: 130px;
+}
+.mainNav ul #events {
+  margin-right: 130px;
 }
 /* stroke on nav buttons*/
-.navSection ul li a {
-  position: relative;
-}
-.navSection ul li a:after {
+.mainNav ul li a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -104,46 +82,25 @@ main {
   background: #d36d75;
   height: 3px;
 }
-.navSection ul li a:hover:after {
+.mainNav ul li a:hover:after {
   width: 100%;
 }
-/* different colors on hover */
+.mainNav ul li a:after,
+.mainNav ul li a:before {
+  transition: all 0.5s;
+}
+/* 
+    /* different colors on hover */
 #purple:after {
   background: #aa81ac;
 }
-#purple:hover {
-  color: #aa81ac;
-}
-#yellow:after {
-  background: #d8a55a;
-}
-#yellow:hover {
-  color: #d8a55a;
+#blue:after {
+  background: #6696ac;
 }
 #green:after {
   background: #a6bb75;
 }
-#green:hover {
-  color: #a6bb75;
-}
-/* Scrolldown */
-.scrollDown {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 220px;
-}
-.scrollDown p,
-a {
-  font-size: 30px;
-  text-decoration: none;
-  color: #515f6d;
-}
+
 /* Top nav with userprofile and messages */
 .topNav {
   position: absolute;
@@ -156,7 +113,7 @@ a {
   margin: 5px 10px;
 }
 .topNav a i {
-  color: #515f6d;
+  color: white;
   font-size: 40px;
   transition: 0.2s all;
 }
@@ -181,6 +138,7 @@ a {
 }
 /* Modal styling of messages */
 .messages {
+  z-index: 100;
   width: 480px;
   height: auto;
   position: absolute;
@@ -310,111 +268,163 @@ a {
 .allMessages a:hover:after {
   width: 100%;
 }
-/* ALL MAIN WRAPPER STYLE STOPPING */
-/* Skew breaker styling */
-.skewBreaker {
-  opacity: 1;
-  z-index: 100;
-  width: 100%;
-  height: 170px;
-  position: absolute;
-  background-color: white;
-  bottom: -130px;
-  background-image: url("../../billeder/frontpagemiddle.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* SocialEvents */
-.socialeventWrapper {
-  margin-top: 80px;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background-color: #515f6d;
-  background-image: url("../../billeder/priscilla-du-preez-623040-unsplash.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.socialEvent {
-  margin-top: 100px;
-  width: 90%;
+/* Main content on the page */
+.maincontent {
+  padding-top: 60px;
+  width: 85%;
   margin: 0 auto;
-  height: auto;
-  text-align: center;
-
-  background-color: white;
-  opacity: 1;
+  height: 100%;
 }
-.socialEvent hr {
-  width: 90%;
-  margin: 0 auto;
-}
-.socialEvent h1 {
-  padding-top: 70px;
-  font-size: 75px;
-  color: #515f6d;
-}
-/* Standard BTN */
-.standardBtn {
-  height: 50px;
-  border: 1px solid #707070;
-  background-color: #515f6d;
+/* Path links */
+.pathlinks {
+  margin: 25px 0px;
   color: white;
-  font-size: 20px;
-  padding: 12px 61px;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box; /* Firefox, other Gecko */
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: 0.5s all;
+  font-size: 14px;
 }
-.standardBtn:hover {
-  color: #515f6d;
-  background-color: white;
+.pathlinks a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
 }
-/* SocialEvent specific items */
-.socialeventItem {
+.pathlinks a:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+/* Medarbejder section styling - Styling for every individual employee */
+.medarbejderSection {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  width: 90%;
-  margin: 0 auto;
-  align-items: center;
-  height: 126px;
-  border-bottom: 1px solid gray;
+  flex-wrap: wrap;
 }
-.socialDate {
+.medarbejderInfo {
+  min-width: 380px;
+}
+.medarbejderInfo i {
+  margin-right: 15px;
+  font-size: 22px;
+  color: white;
+}
+.medarbejderInfo span {
+  font-size: 16px;
+  color: white;
+}
+.medarbejderInfo a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+.medarbejderInfo h2 {
+  color: white;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.myData {
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: 15%;
-  height: 100%;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: all 0.5s;
 }
-.socialDate h3 {
-  font-size: 20px;
-  color: #515f6d;
+#employeeRoles {
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: all 0.5s;
 }
-.socialDate h2 {
-  font-size: 45px;
-  color: #515f6d;
+.myData div {
+  padding: 14px 0;
 }
-.socialInfo {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-  width: 60%;
-  height: 100%;
-}
-.socialButton {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+/* Medarbejder historik - Lille version */
+.medarbejderHistory {
   width: 25%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: all 1s;
+}
+.medarbejderHistory h2 {
+  color: white;
+}
+.musHistoryItem {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.musHistoryItem:first-child {
+  margin-top: 0;
+}
+.musHistoryItem h2 {
+  color: #484848;
+  font-size: 20px;
+  font-weight: bold;
+}
+.musHistoryItem h3 {
+  font-size: 14px;
+  color: #a6bb75;
+}
+.musHistoryItem p {
+  font-size: 16px;
+  color: #484848;
+}
+.conversationName {
+  width: 60%;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.conversationInfo {
+  width: 40%;
+  text-align: center;
+}
+.linkConversation {
+  position: absolute;
+  right: 0;
+}
+.linkConversation a {
+  text-decoration: none;
+  color: #484848;
+  margin-right: 10px;
+}
+.linkConversation i {
+  font-size: 27px;
+}
+/* Medarbejder historik hvor han kan se hele historikken */
+.all {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 150px;
+  transition: all 1s;
+}
+/* Standard knap styling */
+.standardBtn {
+  margin-top: 10px;
+  align-self: center;
+  text-align: center;
+  width: 170px;
+  height: 40px;
+  background-color: white;
+  color: #515f6d;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 40px;
 }
