@@ -3,3 +3,7 @@ window.onload = function() {
   mainWrapper.style.visibility = "visible";
   mainWrapper.style.opacity = "100";
 };
+
+function buttonFunction() {
+  window.location.href = "DAevalueringsskemaMED.html";
+}
