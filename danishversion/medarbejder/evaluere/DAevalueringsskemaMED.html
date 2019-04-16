@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="da">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>House of Code - Historik</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="evaluere.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../../billeder/HoC_icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="contentWrapper" id="contentWrapper">
+      <nav class="mainNav">
+        <ul>
+          <li>
+            <a href="DAevaluerMED.html" id="green">Evaluere</a>
+          </li>
+          <li id="kalender"><a href="http://" id="purple">Book tid</a></li>
+
+          <a href="../DAfrontpageMED.html" id="logo">
+            <img src="../../../billeder/HoC_logo_white.svg" alt=""
+          /></a>
+
+          <li id="events">
+            <a href="../socialevents/DAeventsMED.html">Events</a>
+          </li>
+          <li>
+            <a href="../historik/DAminprofilMED.html" id="blue">Min profil</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="topNav">
+        <a href="javascript:openModal()" id="messageBtn">
+          <i class="material-icons">
+            chat
+          </i>
+        </a>
+        <a href="" id="accountBtn"
+          ><i class="material-icons">
+            account_circle
+          </i>
+        </a>
+        <div class="newMessage" id="newMessage">
+          <h2>1</h2>
+        </div>
+      </section>
+      <modal class="messages" id="messageModal">
+        <div class="messagesTriangle"></div>
+        <h2 class="messageTitle">Beskeder</h2>
+        <article class="messageItem new">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory event">Event</h3>
+            <h2 class="messageName">Marianne Larsen</h2>
+            <p class="messageTopic">
+              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">25. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+        <div class="allMessages">
+          <a href="#">Alle beskeder</a>
+        </div>
+      </modal>
+      <section class="maincontent">
+        <article class="pathlinks">
+          <a href="../DAfrontpageMED.html">Startside</a>
+          //
+          <a href="#">Evaluering</a>
+        </article>
+      </section>
+    </main>
+    <script src="../../js/evaluering.js" async defer></script>
+  </body>
+</html>

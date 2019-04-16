@@ -5,5 +5,10 @@ window.onload = function() {
 };
 
 function buttonFunction() {
-  window.location.href = "DAevalueringsskemaMED.html";
+  let mainWrapper = document.getElementById("mainWrapper");
+  mainWrapper.style.visibility = "hidden";
+  mainWrapper.style.opacity = "0";
+  setTimeout(function() {
+    window.location.href = "DAevalueringsskemaMED.html";
+  }, 500);
 }
