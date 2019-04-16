@@ -602,6 +602,8 @@ p {
 .socialeventWrapper {
   width: 100%;
   height: auto;
+  background-color: white;
+  border-radius: 5px;
 }
 .socialEvent {
   margin: 0 auto;
@@ -614,8 +616,15 @@ p {
   margin: 0 auto;
 }
 .socialEvent h1 {
-  font-size: 75px;
-  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  color: #515f6d;
+}
+.socialEvent h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #515f6d;
+  margin-bottom: 15px;
 }
 /* SocialEvent specific items */
 .socialeventItem {
@@ -637,11 +646,11 @@ p {
 }
 .socialDate h3 {
   font-size: 20px;
-  color: white;
+  color: #515f6d;
 }
 .socialDate h2 {
   font-size: 45px;
-  color: white;
+  color: #515f6d;
 }
 .socialInfo {
   display: flex;
