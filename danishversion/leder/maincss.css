@@ -532,6 +532,11 @@ p {
   cursor: pointer;
   text-decoration: none;
   line-height: 40px;
+  transition: all 0.5s;
+}
+.standardBtn:hover {
+  background-color: #515f6d;
+  color: white;
 }
 /* Evaluering Styling */
 .evalueringWrapper {

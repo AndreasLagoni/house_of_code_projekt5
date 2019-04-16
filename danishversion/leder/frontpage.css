@@ -30,8 +30,10 @@ span {
   opacity: 0.5;
 }
 /* Main */
-main {
+.mainWrapper {
   z-index: 100;
+  opacity: 100;
+  transition: all 1s;
   width: 100%;
   height: auto;
 }
