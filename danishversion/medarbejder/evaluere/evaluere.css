@@ -16,6 +16,9 @@ p,
 span {
   font-family: "Abel", sans-serif;
 }
+body {
+  background-color: #515f6d;
+}
 /* Main wrapper styling */
 .mainWrapper {
   background-color: #515f6d;
@@ -32,6 +35,9 @@ span {
   width: 60%;
   margin: 0 auto;
   text-align: center;
+  visibility: visible;
+  opacity: 100;
+  transition: all 0.5s;
 }
 .chooseEmployee h1 {
   font-size: 32px;
@@ -75,10 +81,9 @@ span {
 .contentWrapper {
   width: 100%;
   height: 100%;
-  background-color: #515f6d;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 1.5s;
 }
 /* MAIN NAV */
 .mainNav {
@@ -381,6 +386,9 @@ button:focus {
 .skemaWrapper .skemaInfo {
   margin-top: 25px;
   text-align: center;
+  visibility: visible;
+  opacity: 100;
+  transition: all 0.5s;
 }
 .skemaWrapper .skemaInfo h1 {
   font-size: 28px;
@@ -400,6 +408,9 @@ button:focus {
   background-color: #f6f1ee;
   width: 80%;
   border-radius: 5px;
+  visibility: visible;
+  opacity: 100;
+  transition: all 0.5s;
 }
 .skemaContent .samtaleContentItem:last-child {
   margin-bottom: 100px;
@@ -410,6 +421,7 @@ button:focus {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: 0.5s all;
 }
 .samtaleItemCheckbox {
   width: 10%;
@@ -443,4 +455,13 @@ button:focus {
   font-style: italic;
   color: #515f6d;
   font-weight: 400;
+}
+/* mål for evaluering - forslag */
+.evalueremål {
+  background-color: #f6f1ee;
+  width: 80%;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
 }

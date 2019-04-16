@@ -5,9 +5,9 @@ window.onload = function() {
 };
 
 function buttonFunction() {
-  let mainWrapper = document.getElementById("mainWrapper");
-  mainWrapper.style.visibility = "hidden";
-  mainWrapper.style.opacity = "0";
+  let mainContent = document.getElementById("mainContent");
+  mainContent.style.visibility = "hidden";
+  mainContent.style.opacity = "0";
   setTimeout(function() {
     window.location.href = "DAevalueringsskemaMED.html";
   }, 500);

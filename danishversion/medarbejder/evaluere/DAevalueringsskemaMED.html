@@ -126,13 +126,19 @@
         </article>
         <article class="skemaWrapper">
           <div class="skemaButtons">
-            <button class="btnLeft active" id="spørgsmålBtn">Spørgsmål</button>
+            <button
+              class="btnLeft active"
+              id="spørgsmålbtn"
+              onclick="spørgsmålBtn()"
+            >
+              Spørgsmål
+            </button>
             <button class="btnRight" id="målbtn" onclick="målbtnFunction()">
               Mål
             </button>
           </div>
           <hr />
-          <div class="skemaInfo">
+          <div class="skemaInfo" id="skemaInfo">
             <h1>
               Vi er passionerede appudviklere der brænder for at levere awesome
               løsninger.
@@ -143,7 +149,7 @@
               gerne et eksempel på hvad du gør.
             </p>
           </div>
-          <div class="skemaContent">
+          <article class="skemaContent" id="skemaContent">
             <div class="samtaleContentItem">
               <div class="samtaleItemCheckbox">
                 <input type="checkbox" name="" id="" />
@@ -152,7 +158,12 @@
                 <h2>
                   Jeg arbejder med mit eget fagområde uden for arbejdstiden.
                 </h2>
-                <input type="text" placeholder="" />
+                <input
+                  type="text"
+                  class="samtaleSpørgsmål"
+                  placeholder=""
+                  onfocus="focusInput()"
+                />
                 <h3>
                   Eksempel: Når jeg har fri arbejder jeg på mine egne projekter
                 </h3>
@@ -167,7 +178,12 @@
                   Jeg opsøger ny viden inden for mit eget og andres fagområder i
                   og uden for arbejdstiden.
                 </h2>
-                <input type="text" placeholder="" />
+                <input
+                  type="text"
+                  placeholder=""
+                  class="samtaleSpørgsmål"
+                  onfocus="focusInput()"
+                />
                 <h3>
                   Eksempel: Jeg læser fagbøger for at udvide min horisont
                 </h3>
@@ -182,7 +198,12 @@
                   Jeg deler min nye tilegnet viden med kolleger og dokumenterer
                   dette.
                 </h2>
-                <input type="text" placeholder="" />
+                <input
+                  type="text"
+                  placeholder=""
+                  class="samtaleSpørgsmål"
+                  onfocus="focusInput()"
+                />
                 <h3>
                   Eksempel: Best practice deles på Slack/Confluence
                 </h3>
@@ -197,7 +218,12 @@
                   Jeg holder mig opdateret omkring apps, design og
                   arbejdsmetoder.
                 </h2>
-                <input type="text" placeholder="" />
+                <input
+                  type="text"
+                  placeholder=""
+                  class="samtaleSpørgsmål"
+                  onfocus="focusInput()"
+                />
                 <h3>
                   Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn
                 </h3>
@@ -213,14 +239,19 @@
                   Code eller giver input til eksisterende opgaver der skaber
                   værdi for House of Code eller vores samarbejdspartnere.
                 </h2>
-                <input type="text" placeholder="" />
+                <input
+                  type="text"
+                  placeholder=""
+                  class="samtaleSpørgsmål"
+                  onfocus="focusInput()"
+                />
                 <h3>
                   Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om
                   andre har brug for hjælp
                 </h3>
               </div>
             </div>
-          </div>
+          </article>
         </article>
       </section>
     </main>
