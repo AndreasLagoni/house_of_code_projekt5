@@ -399,6 +399,10 @@ button:focus {
 .skemaContent {
   background-color: #f6f1ee;
   width: 80%;
+  border-radius: 5px;
+}
+.skemaContent .samtaleContentItem:last-child {
+  margin-bottom: 100px;
 }
 .samtaleContentItem {
   width: 100%;
@@ -419,11 +423,13 @@ button:focus {
 /* Content inde i et samtale spørgsmål */
 .samtaleItemContent {
   width: 90%;
+  margin: 25px 0;
 }
 .samtaleItemContent h2 {
   color: #515f6d;
   font-size: 18px;
   font-weight: bold;
+  width: 90%;
 }
 .samtaleItemContent input {
   width: 90%;

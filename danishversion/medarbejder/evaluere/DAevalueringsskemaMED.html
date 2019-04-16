@@ -126,8 +126,10 @@
         </article>
         <article class="skemaWrapper">
           <div class="skemaButtons">
-            <button class="btnLeft active">Spørgsmål</button>
-            <button class="btnRight">Mål</button>
+            <button class="btnLeft active" id="spørgsmålBtn">Spørgsmål</button>
+            <button class="btnRight" id="målbtn" onclick="målbtnFunction()">
+              Mål
+            </button>
           </div>
           <hr />
           <div class="skemaInfo">
@@ -148,16 +150,73 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
+                  Jeg arbejder med mit eget fagområde uden for arbejdstiden.
+                </h2>
+                <input type="text" placeholder="" />
+                <h3>
+                  Eksempel: Når jeg har fri arbejder jeg på mine egne projekter
+                </h3>
+              </div>
+            </div>
+            <div class="samtaleContentItem">
+              <div class="samtaleItemCheckbox">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="samtaleItemContent">
+                <h2>
                   Jeg opsøger ny viden inden for mit eget og andres fagområder i
                   og uden for arbejdstiden.
                 </h2>
-                <input
-                  type="text"
-                  placeholder="Jeg læser bøger og seer video for at lærer nye ting"
-                  disabled="true"
-                />
+                <input type="text" placeholder="" />
                 <h3>
                   Eksempel: Jeg læser fagbøger for at udvide min horisont
+                </h3>
+              </div>
+            </div>
+            <div class="samtaleContentItem">
+              <div class="samtaleItemCheckbox">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="samtaleItemContent">
+                <h2>
+                  Jeg deler min nye tilegnet viden med kolleger og dokumenterer
+                  dette.
+                </h2>
+                <input type="text" placeholder="" />
+                <h3>
+                  Eksempel: Best practice deles på Slack/Confluence
+                </h3>
+              </div>
+            </div>
+            <div class="samtaleContentItem">
+              <div class="samtaleItemCheckbox">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="samtaleItemContent">
+                <h2>
+                  Jeg holder mig opdateret omkring apps, design og
+                  arbejdsmetoder.
+                </h2>
+                <input type="text" placeholder="" />
+                <h3>
+                  Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn
+                </h3>
+              </div>
+            </div>
+            <div class="samtaleContentItem">
+              <div class="samtaleItemCheckbox">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="samtaleItemContent">
+                <h2>
+                  Jeg opsøger selv nye opgaver der skaber værdi for House of
+                  Code eller giver input til eksisterende opgaver der skaber
+                  værdi for House of Code eller vores samarbejdspartnere.
+                </h2>
+                <input type="text" placeholder="" />
+                <h3>
+                  Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om
+                  andre har brug for hjælp
                 </h3>
               </div>
             </div>

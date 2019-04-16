@@ -6,4 +6,8 @@ window.onload = function() {
 var messageModal = document.getElementById("messageModal");
 function openModal() {
   messageModal.classList.toggle("open");
+  document.getElementById("newMessage").style.display = "none";
 }
+
+var spørgsmålbtn = document.getElementById("spørgsmålbtn");
+var målbtn = document.getElementById("målbtn");
