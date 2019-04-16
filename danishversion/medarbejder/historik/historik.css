@@ -341,6 +341,47 @@ span {
 .myData div {
   padding: 14px 0;
 }
+/* Medarbejder main content. Her er info omkring de enkelte medarbejdere. */
+.medarbejderMainContent {
+  opacity: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -100px;
+  flex-wrap: wrap;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  transition: all 0.7s;
+}
+.medarbejderMainContent h1,
+h2,
+h3,
+p {
+  color: white;
+}
+.medarbejderMainContent h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.medarbejderMainContent h2 {
+  font-size: 26px;
+  padding: 10px 0;
+}
+.medarbejderMainContent p {
+  font-size: 22px;
+}
+.employeeGoals {
+  margin-top: 82px;
+}
+.employeeGoals h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.employeeGoals p {
+  font-size: 20px;
+}
 /* Medarbejder historik - Lille version */
 .medarbejderHistory {
   width: 25%;
@@ -413,7 +454,6 @@ span {
 /* Standard knap styling */
 .standardBtn {
   margin-top: 10px;
-  align-self: center;
   text-align: center;
   width: 170px;
   height: 40px;
