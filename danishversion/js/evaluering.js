@@ -36,7 +36,7 @@ function focusInput() {
   for (var i = 0; i < samtaleSpørgsmål.length; i++) {
     var samtaleItems = samtaleSpørgsmål[i].closest("article > div");
     if (samtaleSpørgsmål[i] === document.activeElement) {
-      samtaleItems.style = "background-color: white;";
+      samtaleItems.style = "background-color: #f6f1ee;";
     } else {
       samtaleItems.style = "background-color: gray;";
     }
