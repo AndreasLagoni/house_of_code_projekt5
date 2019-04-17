@@ -70,7 +70,7 @@ body {
 .blue {
   background-color: white;
   color: #515f6d;
-  border: 1px solid white;
+  border: 1px solid #515f6d;
 }
 .blue:hover {
   background-color: #515f6d;
@@ -411,6 +411,9 @@ button:focus {
   visibility: visible;
   opacity: 100;
   transition: all 0.5s;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 70px;
 }
 .skemaContent .samtaleContentItem:last-child {
   margin-bottom: 100px;
@@ -449,6 +452,8 @@ button:focus {
   margin: 5px 0px;
   height: 50px;
   padding-left: 15px;
+  background-color: white;
+  transition: all 0.5s;
 }
 .samtaleItemContent h3 {
   font-size: 12px;
@@ -456,12 +461,89 @@ button:focus {
   color: #515f6d;
   font-weight: 400;
 }
+/* Send button wrapper */
+.sendWrapper {
+  text-align: center;
+  margin-top: 40px;
+}
 /* mål for evaluering - forslag */
 .evalueremål {
+  margin-top: 20px;
   background-color: #f6f1ee;
   width: 80%;
   border-radius: 5px;
-  visibility: hidden;
-  opacity: 0;
   transition: all 0.5s;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+.samtaleInfoLeft {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  display: flex;
+  padding: 1em;
+}
+.samtaleInfoLeft p:first-child {
+  color: #484848;
+  font-size: 22px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.samtaleInfoLeft p:last-child {
+  color: black;
+  font-size: 22px;
+  padding-left: 10px;
+}
+.samtaleInfoRight {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  display: flex;
+  padding: 1em;
+}
+.samtaleInfoRight p:first-child {
+  color: #6696ac;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 25px;
+}
+.samtaleInfoRight p:last-child {
+  color: black;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.goalListWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.goalListWrapper h2 {
+  color: #484848;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 25px 0;
+}
+.goalListWrapper h3 {
+  width: 80%;
+  margin: 0 auto;
+  color: #484848;
+}
+.goalListWrapper input {
+  width: 70%;
+  position: relative;
+  left: 10%;
+  font-size: 16px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.goalsButtonWrapper {
+  position: relative;
+  left: 10%;
+  width: 200px;
+}
+.goalsButtonWrapper button {
+  margin-left: 0;
 }

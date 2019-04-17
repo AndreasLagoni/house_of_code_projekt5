@@ -13,21 +13,16 @@ var spørgsmålbtn = document.getElementById("spørgsmålbtn");
 var målbtn = document.getElementById("målbtn");
 
 function målbtnFunction() {
-  document.getElementById("skemaInfo").style.opacity = "0";
-  document.getElementById("skemaInfo").style.visibility = "hidden";
-  document.getElementById("skemaContent").style.opacity = "0";
-  document.getElementById("skemaContent").style.visibility = "hidden";
+  document.getElementById("skemaInfo").style.display = "none";
+  document.getElementById("skemaContent").style.display = "none";
+  document.getElementById("evalueremål").style.display = "flex";
   målbtn.classList.add("active");
   spørgsmålbtn.classList.remove("active");
-  setTimeout(function() {
-    document.getElementById("skemaContent").style.display = "none";
-  }, 500);
 }
 function spørgsmålBtn() {
-  document.getElementById("skemaInfo").style.opacity = "100";
-  document.getElementById("skemaInfo").style.visibility = "visible";
-  document.getElementById("skemaContent").style.opacity = "100";
-  document.getElementById("skemaContent").style.visibility = "visible";
+  document.getElementById("skemaInfo").style.display = "block";
+  document.getElementById("skemaContent").style.display = "block";
+  document.getElementById("evalueremål").style.display = "none";
   målbtn.classList.remove("active");
   spørgsmålbtn.classList.add("active");
 }
@@ -37,8 +32,17 @@ function focusInput() {
     var samtaleItems = samtaleSpørgsmål[i].closest("article > div");
     if (samtaleSpørgsmål[i] === document.activeElement) {
       samtaleItems.style = "background-color: #f6f1ee;";
+      samtaleSpørgsmål[i].style = "background-color: white;";
     } else {
-      samtaleItems.style = "background-color: gray;";
+      samtaleItems.style = "background-color: rgb(189, 189, 189);";
+      samtaleSpørgsmål[i].style = "background-color:rgb(189, 189, 189);";
     }
   }
+}
+function backfromGoals() {
+  document.getElementById("skemaInfo").style.display = "block";
+  document.getElementById("skemaContent").style.display = "block";
+  document.getElementById("evalueremål").style.display = "none";
+  målbtn.classList.remove("active");
+  spørgsmålbtn.classList.add("active");
 }

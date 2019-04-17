@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Historik</title>
+    <title>House of Code - Evaluering</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="evaluere.css" />
@@ -150,6 +150,17 @@
             </p>
           </div>
           <article class="skemaContent" id="skemaContent">
+            <div class="samtaleInfo">
+              <div class="samtaleInfoLeft">
+                <p>Samtale</p>
+                |
+                <p>Mig selv</p>
+              </div>
+              <div class="samtaleInfoRight">
+                <p>MUS</p>
+                <p>20-03-2018</p>
+              </div>
+            </div>
             <div class="samtaleContentItem">
               <div class="samtaleItemCheckbox">
                 <input type="checkbox" name="" id="" />
@@ -251,7 +262,47 @@
                 </h3>
               </div>
             </div>
+            <div class="sendWrapper">
+              <button class="standardBtn blue">Send</button>
+            </div>
           </article>
+
+          <!-- Her starter MÅL -->
+          <div class="evalueremål" id="evalueremål">
+            <div class="samtaleInfo">
+              <div class="samtaleInfoLeft">
+                <p>Samtale</p>
+                |
+                <p>Mig selv</p>
+              </div>
+              <div class="samtaleInfoRight">
+                <p>MUS</p>
+                <p>20-03-2018</p>
+              </div>
+            </div>
+            <div class="goalListWrapper">
+              <h2>
+                Her har du mulighed for at give forslag til opstillede mål, som
+                dig og din leder laver sammen til MU-samtalen. Din leder vil
+                kunne se de mål du skriver her. Når du er tilfreds med alle dine
+                forslag til mål, kan du gå tilbage til spørgsmålene og trykke
+                "Send"
+              </h2>
+              <h3>Mål 1:</h3>
+              <input type="text" />
+              <h3>Mål 2:</h3>
+              <input type="text" />
+              <h3>Mål 3:</h3>
+              <input type="text" />
+              <h3>Mål 4:</h3>
+              <input type="text" />
+              <div class="goalsButtonWrapper">
+                <button class="standardBtn" onclick="backfromGoals()">
+                  < Tilbage
+                </button>
+              </div>
+            </div>
+          </div>
         </article>
       </section>
     </main>
