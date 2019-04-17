@@ -16,6 +16,9 @@ p,
 span {
   font-family: "Abel", sans-serif;
 }
+body {
+  background-color: #515f6d;
+}
 /* Main */
 .contentWrapper {
   width: 100%;
@@ -87,7 +90,16 @@ span {
 #green:after {
   background: #a6bb75;
 }
-
+/* Main wrapper styling */
+.mainWrapper {
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+}
 /* Top nav with userprofile and messages */
 .topNav {
   position: absolute;
@@ -235,4 +247,23 @@ span {
   background-color: #515f6d;
   border: 1px solid white;
   color: white;
+}
+/* BEKRÆFTELSE AF EVALUERING */
+.confirmation {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.confirmation i {
+  font-size: 150px;
+  color: #a6bb75;
+}
+.confirmation h2 {
+  color: white;
+  font-size: 30px;
+  padding: 1em;
+}
+.confirmation p {
+  color: white;
+  font-size: 20px;
 }

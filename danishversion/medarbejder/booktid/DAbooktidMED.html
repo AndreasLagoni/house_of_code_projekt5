@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Social Events</title>
+    <title>House of Code - Book tid</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../booktid/booktid.css" />
@@ -58,7 +58,7 @@
             chat
           </i>
         </a>
-        <a href="" id="accountBtn"
+        <a href="javascript:openAccountModal()" id="accountBtn"
           ><i class="material-icons">
             account_circle
           </i>
@@ -67,6 +67,11 @@
           <h2>1</h2>
         </div>
       </section>
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="#">Ret profil</a>
+        <a href="../../../index.html">Log ud</a>
+      </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
         <h2 class="messageTitle">Beskeder</h2>
@@ -167,11 +172,14 @@
           </div>
           <h3>Resterende klip: 2</h3>
           <div class="bookBtn">
-            <button class="standardBtn blue">Book tid</button>
+            <button class="standardBtn blue" onclick="confirmBooking()">
+              Book tid
+            </button>
           </div>
         </article>
       </section>
     </main>
+    <script src="../../js/confirmbooking.js"></script>
     <script src="../../js/modal.js"></script>
   </body>
 </html>
