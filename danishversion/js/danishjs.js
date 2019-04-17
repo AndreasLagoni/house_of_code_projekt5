@@ -1,9 +1,3 @@
-var messageModal = document.getElementById("messageModal");
-function openModal() {
-  messageModal.classList.toggle("open");
-  document.getElementById("newMessage").style.display = "none";
-}
-
 var evaluereLink = document.getElementById("green");
 evaluereLink.onclick = function() {
   let mainWrapper = document.getElementById("mainWrapper");
