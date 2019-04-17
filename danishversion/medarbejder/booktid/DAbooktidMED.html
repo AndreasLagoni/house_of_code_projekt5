@@ -8,11 +8,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - #BeAwesome</title>
+    <title>House of Code - Social Events</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="frontpage.css" />
-    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="../../leder/maincss.css" />
+    <link rel="stylesheet" href="../modal.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -25,54 +25,54 @@
     />
     <link
       rel="shortcut icon"
-      href="../billeder/HoC_icon.png"
+      href="../../../billeder/HoC_icon.png"
       type="image/x-icon"
     />
   </head>
   <body>
-    <div class="bgimg" id="bgimg"></div>
-    <main class="mainWrapper" id="mainWrapper">
-      <section class="frontWrapper">
-        <article class="imgAndTitel">
-          <img src="../../billeder/HoC-logo.svg" alt="" id="logo" />
-          <h1>Come in and {#be awesome}</h1>
-        </article>
-        <article class="navSection stroke">
-          <ul>
-            <li>
-              <a href="evaluere/DAevaluerMED.html" id="green">Evaluere</a>
-            </li>
-            <li><a href="DAbooktidMED.html">Book tid</a></li>
-            <li>
-              <a href="socialevents/DAeventsMED.html" id="purple">Events</a>
-            </li>
-            <li>
-              <a href="historik/DAminprofilMED.html" id="yellow">Min profil</a>
-            </li>
-          </ul>
-        </article>
-        <article class="topNav">
-          <a href="javascript:openModal()" id="messageBtn">
-            <i class="material-icons">
-              chat
-            </i>
-          </a>
-          <a href="" id="accountBtn"
-            ><i class="material-icons">
-              account_circle
-            </i>
-          </a>
-          <div class="newMessage" id="newMessage">
-            <h2>1</h2>
-          </div>
-        </article>
+    <main class="contentWrapper">
+      <nav class="mainNav">
+        <ul>
+          <li>
+            <a href="../evaluere/DAevaluerMED.html" id="green">Evaluere</a>
+          </li>
+          <li id="kalender">
+            <a href="#" id="purple">Book tid</a>
+          </li>
+
+          <a href="../DAfrontpageMED.html" id="logo">
+            <img src="../../../billeder/HoC_logo_white.svg" alt=""
+          /></a>
+
+          <li id="events">
+            <a href="../socialevents/DAeventsMED.html">Events</a>
+          </li>
+          <li>
+            <a href="../historik/DAminprofilMED.html" id="blue">Min profil</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="topNav">
+        <a href="javascript:openModal()" id="messageBtn">
+          <i class="material-icons">
+            chat
+          </i>
+        </a>
+        <a href="" id="accountBtn"
+          ><i class="material-icons">
+            account_circle
+          </i>
+        </a>
+        <div class="newMessage" id="newMessage">
+          <h2>1</h2>
+        </div>
       </section>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
         <h2 class="messageTitle">Beskeder</h2>
         <article class="messageItem new">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory event">Event</h3>
@@ -87,7 +87,7 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
@@ -103,7 +103,7 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../../billeder/profilepic.png" alt="" />
+            <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
@@ -118,9 +118,14 @@
           </div>
         </article>
       </modal>
+      <section class="maincontent">
+        <article class="pathlinks">
+          <a href="../DAfrontpageMED.html">Startside</a>
+          //
+          <a href="#">Book tid</a>
+        </article>
+      </section>
     </main>
-
-    <script src="../js/danishjs.js" async defer></script>
     <script src="../../js/modal.js"></script>
   </body>
 </html>
