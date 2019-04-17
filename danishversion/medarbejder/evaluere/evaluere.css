@@ -70,10 +70,10 @@ body {
 .blue {
   background-color: white;
   color: #515f6d;
-  border: 1px solid #515f6d;
 }
 .blue:hover {
   background-color: #515f6d;
+  border: 1px solid white;
   color: white;
 }
 
@@ -546,4 +546,23 @@ button:focus {
 }
 .goalsButtonWrapper button {
   margin-left: 0;
+}
+/* BEKRÆFTELSE AF EVALUERING */
+.confirmation {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.confirmation i {
+  font-size: 150px;
+  color: #a6bb75;
+}
+.confirmation h2 {
+  color: white;
+  font-size: 30px;
+  padding: 1em;
+}
+.confirmation p {
+  color: white;
+  font-size: 20px;
 }

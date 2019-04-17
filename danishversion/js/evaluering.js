@@ -46,3 +46,6 @@ function backfromGoals() {
   målbtn.classList.remove("active");
   spørgsmålbtn.classList.add("active");
 }
+function bekræftelse() {
+  window.location.href = "DAconfirmationSendMED.html";
+}

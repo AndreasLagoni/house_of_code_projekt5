@@ -30,21 +30,19 @@
   </head>
   <body>
     <main class="mainWrapper" id="mainWrapper">
-      <section class="chooseEmployee" id="mainContent">
-        <h1>Hvem vil du evaluere</h1>
-        <div class="employeeButtons">
-          <button class="standardBtn blue" onclick="buttonFunction()">
-            Winnie
-          </button>
-          <button class="standardBtn blue" onclick="buttonFunction()">
-            Mig selv
-          </button>
-          <button class="standardBtn blue" onclick="buttonFunction()">
-            Karen Johansen
-          </button>
-        </div>
+      <section class="confirmation" id="mainContent">
+        <i class="far fa-check-circle"></i>
+        <h2>Henrik har modtaget din besvarelse</h2>
+        <p>
+          Husk at fortælle Henrik hvem du vil have til at vurdere dig, hvis du
+          ikke allerede har gjort det.
+        </p>
+        <button class="standardBtn blue" onclick="backtoFront()">
+          Tilbage til forsiden
+        </button>
       </section>
     </main>
-    <script src="../../js/evaluereredirect.js"></script>
+    <script src="../../js/evaluerconfirmation.js"></script>
+    <script src="../../js/modal.js"></script>
   </body>
 </html>
