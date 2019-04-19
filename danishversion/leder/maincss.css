@@ -546,6 +546,9 @@ p {
   text-align: center;
   padding-bottom: 20px;
 }
+.switchBtns hr {
+  border: 1px solid white;
+}
 .switchBtns button {
   background-color: #cbcbcb;
   color: #484848;
@@ -556,6 +559,11 @@ p {
   border: 0;
   cursor: pointer;
 }
+.switchBtns button:active,
+button:focus {
+  outline: 0;
+  border: 0;
+}
 .btnLeft {
   border-radius: 5px 0 0 0;
 }
@@ -564,4 +572,60 @@ p {
 }
 .switchBtns .current {
   background-color: white;
+}
+/* Afventede bookings */
+.afventedeBookings {
+  display: flex;
+  flex-direction: row;
+}
+.afventedeKalender {
+  width: 40%;
+}
+.afventedeList {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 38px;
+}
+.afventedeItem {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.afventedeItemInfo {
+  position: absolute;
+  left: 20px;
+}
+.afventedeItemInfo2 {
+  position: absolute;
+  right: 50px;
+}
+.afventedeItem h3 {
+  color: #484848;
+  font-size: 18px;
+  font-weight: bold;
+}
+.afventedeItem h2 {
+  color: #484848;
+  font-size: 20px;
+  font-weight: bold;
+}
+.afventedeLink {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  text-align: center;
+}
+.afventedeLink a {
+  text-decoration: none;
+  color: #484848;
+}
+.afventedeLink i {
+  font-size: 33px;
 }

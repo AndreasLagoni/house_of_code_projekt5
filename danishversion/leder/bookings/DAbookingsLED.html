@@ -108,12 +108,23 @@
           <a href="#">Bookings</a>
         </article>
         <article class="switchBtns">
-          <button class="btnLeft current">Afventede bookings</button
-          ><button class="btnRight">Bekræftede bookings</button>
+          <button
+            class="btnLeft current"
+            id="afventedeBtn"
+            onclick="afventedeBook()"
+          >
+            Afventede bookings</button
+          ><button
+            class="btnRight"
+            id="bekræftedeBtn"
+            onclick="bekræftedeBook()"
+          >
+            Bekræftede bookings
+          </button>
           <hr />
         </article>
-        <article>
-          <div>
+        <article class="afventedeBookings" id="afventedeBookings">
+          <div class="afventedeKalender">
             <iframe
               src="https://calendar.google.com/calendar/embed?src=andreastlagoni%40gmail.com&ctz=Europe%2FCopenhagen"
               style="border: 0"
@@ -123,10 +134,56 @@
               scrolling="no"
             ></iframe>
           </div>
-          <div></div>
+          <div class="afventedeList">
+            <div class="afventedeItem">
+              <div class="afventedeItemInfo">
+                <h2>Samtale</h2>
+                <h3>Winnie Andersen</h3>
+              </div>
+              <div class="afventedeItemInfo2">
+                <h3>Klippekort</h3>
+                <h3>20-03-2018</h3>
+              </div>
+              <div class="afventedeLink">
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="bekræftedeBooking" id="bekræftedeBooking">
+          <div class="afventedeKalender">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=andreastlagoni%40gmail.com&ctz=Europe%2FCopenhagen"
+              style="border: 0"
+              width="600"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+          <div class="afventedeList">
+            <div class="afventedeItem">
+              <div class="afventedeItemInfo">
+                <h2>Samtale</h2>
+                <h3>Jonas Svanegård</h3>
+              </div>
+              <div class="afventedeItemInfo2">
+                <h3>Klippekort</h3>
+                <h3>20-03-2018</h3>
+              </div>
+              <div class="afventedeLink">
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
       </section>
     </main>
     <script src="../../js/modal.js"></script>
+    <script src="../../js/booking.js"></script>
   </body>
 </html>
