@@ -2,9 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!-- [if gt IE 8]><! -->
 <html lang="da">
-  <!--<![endif]-->
+  <!-- <![endif] -->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,11 +33,11 @@
     <main class="contentWrapper" id="contentWrapper">
       <nav class="mainNav">
         <ul>
-          <li>
-            <a href="ENevaluerMED.html" id="green">Evaluate</a>
-          </li>
+          <li><a href="ENevaluerMED.html" id="green">Evaluate</a></li>
           <li id="kalender">
-            <a href="../booktid/ENbooktidMED.html" id="purple">Arrange Meeting</a>
+            <a href="../booktid/ENbooktidMED.html" id="purple"
+              >Arrange Meeting</a
+            >
           </li>
 
           <a href="../ENfrontpageMED.html" id="logo">
@@ -54,23 +54,16 @@
       </nav>
       <section class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
-          <i class="material-icons">
-            chat
-          </i>
+          <i class="material-icons"> chat </i>
         </a>
         <a href="javascript:openAccountModal()" id="accountBtn"
-          ><i class="material-icons">
-            account_circle
-          </i>
+          ><i class="material-icons"> account_circle </i>
         </a>
-        <div class="newMessage" id="newMessage">
-          <h2>1</h2>
-        </div>
+        <div class="newMessage" id="newMessage"><h2>1</h2></div>
       </section>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
-        <a href="#">Edit Profile</a>
-        <a href="../../../index.html">Log Out</a>
+        <a href="#">Edit Profile</a> <a href="../../../index.html">Log Out</a>
       </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
@@ -83,12 +76,11 @@
             <h3 class="messageCategory event">Event</h3>
             <h2 class="messageName">Marianne Larsen</h2>
             <p class="messageTopic">
-              The activity council presents the cinema tour everyone have been waiting for.
+              The activity council presents the cinema tour everyone have been
+              waiting for.
             </p>
           </div>
-          <div class="messageDate">
-            <h3 class="date">25. april 2019</h3>
-          </div>
+          <div class="messageDate"><h3 class="date">25. april 2019</h3></div>
         </article>
         <article class="messageItem">
           <div class="messagePic">
@@ -102,9 +94,7 @@
               05-05-2019 kl 09:30
             </p>
           </div>
-          <div class="messageDate">
-            <h3 class="date">20. april 2019</h3>
-          </div>
+          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
         </article>
         <article class="messageItem">
           <div class="messagePic">
@@ -118,15 +108,12 @@
               05-05-2019 kl 09:30
             </p>
           </div>
-          <div class="messageDate">
-            <h3 class="date">20. april 2019</h3>
-          </div>
+          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
         </article>
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageMED.html">Frontpgage</a>
-          //
+          <a href="../DAfrontpageMED.html">Frontpgage</a> //
           <a href="#">Evaluate</a>
         </article>
         <article class="skemaWrapper">
@@ -145,11 +132,13 @@
           <hr />
           <div class="skemaInfo" id="skemaInfo">
             <h1>
-              We are passionate app-developers, who are passionate about delivering awesome solutions.
+              We are passionate app-developers, who are passionate about
+              delivering awesome solutions.
             </h1>
             <p>
-              Put a ✓ next to each of the sentences below that you think you/your co-worker shows the behavior off, atleast two times per week.
-              Give an example of what you do.
+              Put a ✓ next to each of the sentences below that you think
+              you/your co-worker shows the behavior off, atleast two times per
+              week. Give an example of what you do.
             </p>
           </div>
           <article class="skemaContent" id="skemaContent">
@@ -170,7 +159,7 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                 I work with my own field of study outside of my working hours.
+                  I work with my own field of study outside of my working hours.
                 </h2>
                 <input
                   type="text"
@@ -189,7 +178,8 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  I try to obsorb new knowledge within my own and others subject areas in and outside of my working hours.
+                  I try to obsorb new knowledge within my own and others subject
+                  areas in and outside of my working hours.
                 </h2>
                 <input
                   type="text"
@@ -198,7 +188,8 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Example: I read books about my passion to expand my horizont in this subject.
+                  Example: I read books about my passion to expand my horizont
+                  in this subject.
                 </h3>
               </div>
             </div>
@@ -208,7 +199,26 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  I share my new aquired knowledge with my colleagues and document this.
+                  I share my new aquired knowledge with my colleagues and
+                  document this.
+                </h2>
+                <input
+                  type="text"
+                  placeholder=""
+                  class="samtaleSpørgsmål"
+                  onfocus="focusInput()"
+                />
+                <h3>Example: I share best practice on Slack/Confluence.</h3>
+              </div>
+            </div>
+            <div class="samtaleContentItem">
+              <div class="samtaleItemCheckbox">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="samtaleItemContent">
+                <h2>
+                  I keep myself updated about apps, design and new working
+                  methods.
                 </h2>
                 <input
                   type="text"
@@ -217,7 +227,8 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Example: I share best practice on Slack/Confluence.
+                  Example: i read books, articles and keeps me updated on
+                  LinkedIn.
                 </h3>
               </div>
             </div>
@@ -227,7 +238,9 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  I keep myself updated about apps, design and new working methods.
+                  I look for new tast that create value for House Of Code, or
+                  provide input to existing tasks that create value for House Of
+                  Code or our buisness partners.
                 </h2>
                 <input
                   type="text"
@@ -236,27 +249,8 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Example: i read books, articles and keeps me updated on LinkedIn.
-                </h3>
-              </div>
-            </div>
-            <div class="samtaleContentItem">
-              <div class="samtaleItemCheckbox">
-                <input type="checkbox" name="" id="" />
-              </div>
-              <div class="samtaleItemContent">
-                <h2>
-                  I look for new tast that create value for House Of Code, or provide input to
-                  existing tasks that create value for House Of Code or our buisness partners.
-                </h2>
-                <input
-                  type="text"
-                  placeholder=""
-                  class="samtaleSpørgsmål"
-                  onfocus="focusInput()"
-                />
-                <h3>
-                  Example: When im finish with my own projects, i ask if anyone else could use my help.
+                  Example: When im finish with my own projects, i ask if anyone
+                  else could use my help.
                 </h3>
               </div>
             </div>
@@ -282,9 +276,12 @@
             </div>
             <div class="goalListWrapper">
               <h2>
-                Here you have the opportunity to make suggestions for your goals for the next year,
-                which you and your HF-manager are merging throughout your "MU-samtale". Your HF-Manager will be able to see the goals you write.
-                When you are satisfied with all your answeres and suggestions, you can go back to "questions", and press "send".
+                Here you have the opportunity to make suggestions for your goals
+                for the next year, which you and your HF-manager are merging
+                throughout your "MU-samtale". Your HF-Manager will be able to
+                see the goals you write. When you are satisfied with all your
+                answeres and suggestions, you can go back to "questions", and
+                press "send".
               </h2>
               <h3>Goal 1:</h3>
               <input type="text" />

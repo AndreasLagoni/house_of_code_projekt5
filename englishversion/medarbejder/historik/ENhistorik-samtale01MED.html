@@ -2,13 +2,13 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!-- [if gt IE 8]><! -->
 <html lang="da">
-  <!--<![endif]-->
+  <!-- <![endif] -->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Historik</title>
+    <title>House of Code - History</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="historik.css" />
@@ -34,10 +34,12 @@
       <nav class="mainNav">
         <ul>
           <li>
-            <a href="../evaluere/DAevaluerMED.html" id="green">Evaluere</a>
+            <a href="../evaluere/DAevaluerMED.html" id="green">Evaluate</a>
           </li>
           <li id="kalender">
-            <a href="../booktid/DAbooktidMED.html" id="purple">Book tid</a>
+            <a href="../booktid/DAbooktidMED.html" id="purple"
+              >Arrange Meeting</a
+            >
           </li>
 
           <a href="../DAfrontpageMED.html" id="logo">
@@ -47,34 +49,25 @@
           <li id="events">
             <a href="../socialevents/DAeventsMED.html">Events</a>
           </li>
-          <li>
-            <a href="DAminprofilMED.html" id="blue">Min profil</a>
-          </li>
+          <li><a href="DAminprofilMED.html" id="blue">My Profile</a></li>
         </ul>
       </nav>
       <section class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
-          <i class="material-icons">
-            chat
-          </i>
+          <i class="material-icons"> chat </i>
         </a>
         <a href="javascript:openAccountModal()" id="accountBtn"
-          ><i class="material-icons">
-            account_circle
-          </i>
+          ><i class="material-icons"> account_circle </i>
         </a>
-        <div class="newMessage" id="newMessage">
-          <h2>1</h2>
-        </div>
+        <div class="newMessage" id="newMessage"><h2>1</h2></div>
       </section>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
-        <a href="#">Ret profil</a>
-        <a href="../../../index.html">Log ud</a>
+        <a href="#">Edit Profile</a> <a href="../../../index.html">Log Out</a>
       </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
-        <h2 class="messageTitle">Beskeder</h2>
+        <h2 class="messageTitle">Messages</h2>
         <article class="messageItem new">
           <div class="messagePic">
             <img src="../../../billeder/profilepic.png" alt="" />
@@ -83,12 +76,11 @@
             <h3 class="messageCategory event">Event</h3>
             <h2 class="messageName">Marianne Larsen</h2>
             <p class="messageTopic">
-              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+              The activity council presents the cinema tour everyone have been
+              waiting for.
             </p>
           </div>
-          <div class="messageDate">
-            <h3 class="date">25. april 2019</h3>
-          </div>
+          <div class="messageDate"><h3 class="date">25. april 2019</h3></div>
         </article>
         <article class="messageItem">
           <div class="messagePic">
@@ -98,13 +90,11 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              Henrik Grove accepted your request for a meeting with him <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
-          <div class="messageDate">
-            <h3 class="date">20. april 2019</h3>
-          </div>
+          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
         </article>
         <article class="messageItem">
           <div class="messagePic">
@@ -114,24 +104,19 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              Henrik Grove accepted your request for a meeting with him <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
-          <div class="messageDate">
-            <h3 class="date">20. april 2019</h3>
-          </div>
+          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
         </article>
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageMED.html">Startside</a>
-          //
-          <a href="DAminprofilMED.html">Min profil</a>
-          //
-          <a href="DAhistorikMED.html">Historik</a>
-          //
-          <a href="#">Samtale</a>
+          <a href="../ENfrontpageMED.html">Frontpage</a> //
+          <a href="ENminprofilMED.html">My Profile</a> //
+          <a href="ENhistorikMED.html">History</a> //
+          <a href="#">Conversation</a>
         </article>
         <section class="medarbejderSection">
           <aside class="medarbejderInfo">
@@ -140,7 +125,7 @@
               alt=""
             />
             <div class="myData" id="myData">
-              <h2>Mine data</h2>
+              <h2>My data</h2>
               <div><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></div>
               <div><i class="fas fa-phone"></i><span>+45112112</span></div>
               <div>
@@ -151,19 +136,19 @@
               </div>
             </div>
             <div id="employeeRoles">
-              <h2>Tildelte rolle(r)</h2>
+              <h2>Assigned role(s)</h2>
               <i class="fas fa-user-friends"></i><span>Event Adminstrator</span>
             </div>
           </aside>
           <article class="medarbejderSamtale" id="medarbejderSamtale">
             <div class="samtaleInfo">
               <div class="samtaleInfoLeft">
-                <p>Samtale</p>
+                <p>Conversation</p>
                 |
                 <p>Henrik Grove</p>
               </div>
               <div class="samtaleInfoRight">
-                <p>Klippekort</p>
+                <p>Vouchers</p>
                 <p>20-03-2018</p>
               </div>
             </div>
@@ -180,16 +165,16 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg arbejder med mit eget fagområde uden for arbejdstiden.
+                    I work with my own field of study outside of my working
+                    hours.
                   </h2>
                   <input
                     type="text"
-                    placeholder="I min fritid arbejder jeg med at kode hjemmesider for sjov."
+                    placeholder="In my sparetime i code websites for fun."
                     disabled="true"
                   />
                   <h3>
-                    Eksempel: Når jeg har fri arbejder jeg på mine egne
-                    projekter
+                    Example: When im off, i work on my own private projects.
                   </h3>
                 </div>
               </div>
@@ -205,16 +190,17 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg opsøger ny viden inden for mit eget og andres fagområder
-                    i og uden for arbejdstiden.
+                    I try to obsorb new knowledge within my own and others
+                    subject areas in and outside of my working hours.
                   </h2>
                   <input
                     type="text"
-                    placeholder="Jeg læser bøger og seer video for at lærer nye ting"
+                    placeholder="i read book and watch videos to aquirre new knowledge."
                     disabled="true"
                   />
                   <h3>
-                    Eksempel: Jeg læser fagbøger for at udvide min horisont
+                    Example: I read books about my passion to expand my horizont
+                    in this subject.
                   </h3>
                 </div>
               </div>
@@ -224,12 +210,13 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg deler min nye tilegnet viden med kolleger og
-                    dokumenterer dette.
+                    I share my new aquired knowledge with my colleagues and
+                    document this.
                   </h2>
                   <input type="text" placeholder="" disabled="true" />
                   <h3>
-                    Eksempel: Best practice deles på Slack/Confluence
+                    I share my new aquired knowledge with my colleagues and
+                    document this.
                   </h3>
                 </div>
               </div>
@@ -245,8 +232,8 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg holder mig opdateret omkring apps, design og
-                    arbejdsmetoder.
+                    I keep myself updated about apps, design and new working
+                    methods.
                   </h2>
                   <input
                     type="text"
@@ -254,7 +241,8 @@
                     disabled="true"
                   />
                   <h3>
-                    Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn
+                    Example: i read books, articles and keeps me updated on
+                    LinkedIn.
                   </h3>
                 </div>
               </div>
@@ -264,14 +252,14 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg opsøger selv nye opgaver der skaber værdi for House of
-                    Code eller giver input til eksisterende opgaver der skaber
-                    værdi for House of Code eller vores samarbejdspartnere.
+                    I look for new tast that create value for House Of Code, or
+                    provide input to existing tasks that create value for House
+                    Of Code or our buisness partners.
                   </h2>
                   <input type="text" placeholder="" disabled="true" />
                   <h3>
-                    Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om
-                    andre har brug for hjælp
+                    Example: When im finish with my own projects, i ask if
+                    anyone else could use my help.
                   </h3>
                 </div>
               </div>
