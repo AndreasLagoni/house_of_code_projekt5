@@ -1,0 +1,436 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+a,
+p,
+input,
+button,
+h3 {
+  font-family: "Roboto Mono", monospace;
+}
+p,
+span {
+  font-family: "Abel", sans-serif;
+}
+body {
+  background-color: #515f6d;
+}
+/* Main wrapper styling */
+.mainWrapper {
+  background-color: #515f6d;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+}
+/* Vælg en medarbejder på frontpage af evaluering */
+.chooseEmployee {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  visibility: visible;
+  opacity: 100;
+  transition: all 0.5s;
+}
+.chooseEmployee h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 38px;
+}
+/* Standard BTN */
+.standardBtn {
+  height: 50px;
+  min-width: 280px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background-color: #515f6d;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px 61px;
+  margin: 1em;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.standardBtn:hover {
+  color: #515f6d;
+  background-color: white;
+}
+.blue {
+  background-color: white;
+  color: #515f6d;
+}
+.blue:hover {
+  background-color: #515f6d;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Main */
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1.5s;
+}
+/* MAIN NAV */
+.mainNav {
+  margin: 0 auto;
+  width: 80%;
+  height: 140px;
+}
+.mainNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.mainNav ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+.mainNav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.mainNav ul #logo {
+  margin-top: 10px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.mainNav ul #kalender {
+  margin-left: 130px;
+}
+.mainNav ul #events {
+  margin-right: 130px;
+}
+/* stroke on nav buttons*/
+.mainNav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #d36d75;
+  height: 3px;
+}
+.mainNav ul li a:hover:after {
+  width: 100%;
+}
+.mainNav ul li a:after,
+.mainNav ul li a:before {
+  transition: all 0.5s;
+}
+/* 
+      /* different colors on hover */
+#purple:after {
+  background: #aa81ac;
+}
+#blue:after {
+  background: #6696ac;
+}
+#green:after {
+  background: #a6bb75;
+}
+
+/* Top nav with userprofile and messages */
+.topNav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.topNav a {
+  margin: 5px 10px;
+}
+.topNav a i {
+  color: white;
+  font-size: 40px;
+  transition: 0.2s all;
+}
+.topNav a i:hover {
+  color: #6696ac;
+}
+.topNav .newMessage {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #d36d75;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topNav .newMessage h2 {
+  font-size: 16px;
+}
+/* Main content on the page */
+.maincontent {
+  padding-top: 60px;
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+}
+/* Path links */
+.pathlinks {
+  margin: 25px 0px;
+  color: white;
+  font-size: 14px;
+}
+.pathlinks a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.pathlinks a:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+/* Skema styling - Evaluering */
+.skemaWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skemaButtons {
+  display: flex;
+  text-align: center;
+}
+.skemaButtons button {
+  background-color: #cbcbcb;
+  color: #484848;
+  font-size: 22px;
+  font-weight: bold;
+  width: 155px;
+  height: 48px;
+  border: 0;
+  cursor: pointer;
+}
+.skemaButtons .btnLeft {
+  border-radius: 5px 0 0 0;
+}
+.skemaButtons .btnRight {
+  border-radius: 0 5px 0 0;
+}
+.skemaButtons .active {
+  background-color: white;
+}
+.skemaButtons button:active,
+button:focus {
+  outline: 0;
+}
+.skemaWrapper hr {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border: 0;
+}
+.skemaWrapper .skemaInfo {
+  margin-top: 25px;
+  text-align: center;
+  visibility: visible;
+  opacity: 100;
+  transition: all 0.5s;
+}
+.skemaWrapper .skemaInfo h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+.skemaWrapper .skemaInfo p {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+}
+/* Styling af de enkelte samtale spørgsmål og checkbox */
+.skemaContent {
+  background-color: #f6f1ee;
+  width: 80%;
+  border-radius: 5px;
+  visibility: visible;
+  opacity: 100;
+  transition: all 0.5s;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+.skemaContent .samtaleContentItem:last-child {
+  margin-bottom: 100px;
+}
+.samtaleContentItem {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.5s all;
+}
+.samtaleItemCheckbox {
+  width: 10%;
+  text-align: center;
+}
+.samtaleItemCheckbox input {
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
+/* Content inde i et samtale spørgsmål */
+.samtaleItemContent {
+  width: 90%;
+  margin: 25px 0;
+}
+.samtaleItemContent h2 {
+  color: #515f6d;
+  font-size: 18px;
+  font-weight: bold;
+  width: 90%;
+}
+.samtaleItemContent input {
+  width: 90%;
+  font-size: 16px;
+  margin: 5px 0px;
+  height: 50px;
+  padding-left: 15px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.samtaleItemContent h3 {
+  font-size: 12px;
+  font-style: italic;
+  color: #515f6d;
+  font-weight: 400;
+}
+/* Send button wrapper */
+.sendWrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+/* mål for evaluering - forslag */
+.evalueremål {
+  margin-top: 20px;
+  background-color: #f6f1ee;
+  width: 80%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+.samtaleInfoLeft {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  display: flex;
+  padding: 1em;
+}
+.samtaleInfoLeft p:first-child {
+  color: #484848;
+  font-size: 22px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.samtaleInfoLeft p:last-child {
+  color: black;
+  font-size: 22px;
+  padding-left: 10px;
+}
+.samtaleInfoRight {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  display: flex;
+  padding: 1em;
+}
+.samtaleInfoRight p:first-child {
+  color: #6696ac;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 25px;
+}
+.samtaleInfoRight p:last-child {
+  color: black;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.goalListWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.goalListWrapper h2 {
+  color: #484848;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 25px 0;
+}
+.goalListWrapper h3 {
+  width: 80%;
+  margin: 0 auto;
+  color: #484848;
+}
+.goalListWrapper input {
+  width: 70%;
+  position: relative;
+  left: 10%;
+  font-size: 16px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.goalsButtonWrapper {
+  position: relative;
+  left: 10%;
+  width: 200px;
+}
+.goalsButtonWrapper button {
+  margin-left: 0;
+}
+/* BEKRÆFTELSE AF EVALUERING */
+.confirmation {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.confirmation i {
+  font-size: 150px;
+  color: #a6bb75;
+}
+.confirmation h2 {
+  color: white;
+  font-size: 30px;
+  padding: 1em;
+}
+.confirmation p {
+  color: white;
+  font-size: 20px;
+}

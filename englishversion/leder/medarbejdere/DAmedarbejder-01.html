@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="da">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>House of Code - Jonas Svanegaard</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../maincss.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../../billeder/HoC_icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="contentWrapper">
+      <nav class="mainNav">
+        <ul>
+          <li>
+            <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
+          </li>
+          <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
+
+          <a href="../DAfrontpageLED.html" id="logo">
+            <img src="../../../billeder/HoC_logo_white.svg" alt=""
+          /></a>
+
+          <li id="events"><a href="../socialevents/events.html">Events</a></li>
+          <li>
+            <a href="../evaluering/DAevalueringLED.html" id="blue"
+              >Åben evaluering</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="topNav">
+        <a href="javascript:openModal()" id="messageBtn">
+          <i class="material-icons">
+            chat
+          </i>
+        </a>
+        <a href="" id="accountBtn"
+          ><i class="material-icons">
+            account_circle
+          </i>
+        </a>
+        <div class="newMessage" id="newMessage">
+          <h2>1</h2>
+        </div>
+      </section>
+      <modal class="messages" id="messageModal">
+        <div class="messagesTriangle"></div>
+        <h2 class="messageTitle">Beskeder</h2>
+        <article class="messageItem new">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory event">Event</h3>
+            <h2 class="messageName">Marianne Larsen</h2>
+            <p class="messageTopic">
+              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">25. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+        <div class="allMessages">
+          <a href="#">Alle beskeder</a>
+        </div>
+      </modal>
+      <section class="maincontent">
+        <article class="pathlinks">
+          <a href="../DAfrontpageLED.html">Startside</a>
+          //
+          <a href="../DAmedarbejdereLED.html"> Medarbejdere</a>
+          //
+          <a href="#">Jonas Svanegård</a>
+        </article>
+        <section class="medarbejderSection">
+          <aside class="medarbejderInfo">
+            <img
+              src="../../../billeder/medarbejder/medarbejder01x2.png"
+              alt=""
+            />
+            <div class="myData" id="myData">
+              <h2>Mine data</h2>
+              <div><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></div>
+              <div><i class="fas fa-phone"></i><span>+45112112</span></div>
+              <div>
+                <i class="fas fa-envelope"></i
+                ><a href="#">jonas@houseofcode.io</a>
+              </div>
+            </div>
+            <div id="employeeRoles">
+              <h2>Tildelte rolle(r)</h2>
+              <i class="fas fa-check-square"></i><span>Event Adminstrator</span>
+            </div>
+          </aside>
+          <article class="medarbejderMainContent" id="medarbejderMainContent">
+            <h1>Jonas Svanegaard</h1>
+            <br />
+            <h2>Seniorudvikler</h2>
+            <br />
+            <p>
+              Jeg er Andriod-udvikler. Kort fortalt betyder det, at jeg udvkler
+              frontend til android-apps. Det er mig du skal takke for, at
+              android- versionen fungere ligeså godt som iOS-versionen
+            </p>
+            <br />
+            <p>Fun Fact:</p>
+            <p>"Jeg stinker til fun facts"</p>
+            <br />
+
+            <div class="employeeGoals">
+              <h1>Mine mål for 2019</h1>
+              <p>
+                Her vil du se de mål dig og din medarbejder har lavet sidste
+                gang i havde MUS.
+              </p>
+              <h3>Mål 1</h3>
+              <p>Kursus om digital markedsføring d. 06/06 - 2019.</p>
+              <h3>Mål 2</h3>
+              <p>Være mere positiv overfor konstruktiv kritik</p>
+              <h3>Mål 3</h3>
+              <p>Deltag i flere sociale arrangementer</p>
+            </div>
+          </article>
+          <article class="medarbejderHistory" id="medarbejderHistory">
+            <h2>Historik</h2>
+            <div class="musHistoryItem">
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
+              </div>
+              <div class="conversationInfo">
+                <h3>Klippekort</h3>
+                <p>20-03-2017</p>
+              </div>
+              <div class="linkConversation">
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="musHistoryItem">
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
+              </div>
+              <div class="conversationInfo">
+                <h3>Klippekort</h3>
+                <p>20-03-2017</p>
+              </div>
+              <div class="linkConversation">
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="musHistoryItem">
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
+              </div>
+              <div class="conversationInfo">
+                <h3>Klippekort</h3>
+                <p>20-03-2017</p>
+              </div>
+              <div class="linkConversation">
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="musHistoryItem">
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
+              </div>
+              <div class="conversationInfo">
+                <h3>Klippekort</h3>
+                <p>20-03-2017</p>
+              </div>
+              <div class="linkConversation">
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <a href="DAmedarbejder-01-historik.html" class="standardBtn white"
+              >Historik</a
+            >
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="../../js/medarbejderload.js" async defer></script>
+  </body>
+</html>

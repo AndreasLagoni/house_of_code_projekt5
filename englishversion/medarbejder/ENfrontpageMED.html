@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en">
+<html lang="da">
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
@@ -12,6 +12,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="frontpage.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -24,31 +25,31 @@
     />
     <link
       rel="shortcut icon"
-      href="../billeder/HoC_icon.png"
+      href="../../billeder/HoC_icon.png"
       type="image/x-icon"
     />
   </head>
   <body>
-    <div class="bgimg"></div>
-    <main class="mainWrapper">
+    <div class="bgimg" id="bgimg"></div>
+    <main class="mainWrapper" id="mainWrapper">
       <section class="frontWrapper">
         <article class="imgAndTitel">
-          <img src="../billeder/HoC-logo.svg" alt="" id="logo" />
-          <h1>"Come in be awesome "</h1>
+          <img src="../../billeder/HoC-logo.svg" alt="" id="logo" />
+          <h1>Come in and {#be awesome}</h1>
         </article>
         <article class="navSection stroke">
           <ul>
-            <li><a href="http://" id="green">Historik</a></li>
-            <li><a href="http://">Book tid</a></li>
-            <li><a href="http://" id="purple">Events</a></li>
-            <li><a href="http://" id="yellow">Evaluere</a></li>
+            <li>
+              <a href="evaluere/ENevaluerMED.html" id="green">Evaluate</a>
+            </li>
+            <li><a href="booktid/ENbooktidMED.html">Book tid</a></li>
+            <li>
+              <a href="socialevents/ENeventsMED.html" id="purple">Events</a>
+            </li>
+            <li>
+              <a href="historik/ENminprofilMED.html" id="yellow">My profile</a>
+            </li>
           </ul>
-        </article>
-        <article class="scrollDown">
-          <a href="#socialEvents">
-            <p>events</p>
-            <i class="fas fa-angle-down"></i>
-          </a>
         </article>
         <article class="topNav">
           <a href="javascript:openModal()" id="messageBtn">
@@ -56,7 +57,7 @@
               chat
             </i>
           </a>
-          <a href="" id="accountBtn"
+          <a href="javascript:openAccountModal()" id="accountBtn"
             ><i class="material-icons">
               account_circle
             </i>
@@ -66,105 +67,23 @@
           </div>
         </article>
       </section>
-      <section class="skewBreaker"></section>
-      <section class="socialeventWrapper">
-        <article class="socialEvent" id="socialEvents">
-          <h1>Social Events:</h1>
-          <hr />
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-        </article>
-      </section>
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="#">Edit Profile</a>
+        <a href="../../indexEN.html">Log out</a>
+      </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
-        <h2 class="messageTitle">Beskeder</h2>
+        <h2 class="messageTitle">Messages</h2>
         <article class="messageItem new">
           <div class="messagePic">
-            <img src="../billeder/profilepic.png" alt="" />
+            <img src="../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory event">Event</h3>
             <h2 class="messageName">Marianne Larsen</h2>
             <p class="messageTopic">
-              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+              The activity council presents the cinema tour everyone have been waiting for.
             </p>
           </div>
           <div class="messageDate">
@@ -173,14 +92,14 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../billeder/profilepic.png" alt="" />
+            <img src="../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
-              05-05-2019 kl 09:30
+              Henrik Grove accepted your request for a meeting with him <br />d.
+              05-05-2019 kl 09:30.
             </p>
           </div>
           <div class="messageDate">
@@ -189,13 +108,13 @@
         </article>
         <article class="messageItem">
           <div class="messagePic">
-            <img src="../billeder/profilepic.png" alt="" />
+            <img src="../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              Henrik Grove accepted your request for a meeting with him <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
@@ -203,12 +122,10 @@
             <h3 class="date">20. april 2019</h3>
           </div>
         </article>
-        <div class="allMessages">
-          <a href="#">Alle beskeder</a>
-        </div>
       </modal>
     </main>
 
-    <script src="js/englishjs.js" async defer></script>
+    <script src="../js/danishjs.js" async defer></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
