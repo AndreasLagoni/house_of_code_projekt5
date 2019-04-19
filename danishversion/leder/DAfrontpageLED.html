@@ -12,6 +12,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="frontpage.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -45,16 +46,10 @@
             <li><a href="socialevents/events.html" id="purple">Events</a></li>
             <li>
               <a href="evaluering/DAevalueringLED.html" id="yellow"
-                >Åben evaluering</a
+                >Evalueringer</a
               >
             </li>
           </ul>
-        </article>
-        <article class="scrollDown">
-          <a href="#socialEvents">
-            <p>events</p>
-            <i class="fas fa-angle-down"></i>
-          </a>
         </article>
         <article class="topNav">
           <a href="javascript:openModal()" id="messageBtn">
@@ -62,7 +57,7 @@
               chat
             </i>
           </a>
-          <a href="" id="accountBtn"
+          <a href="javascript:openAccountModal()" id="accountBtn"
             ><i class="material-icons">
               account_circle
             </i>
@@ -72,93 +67,12 @@
           </div>
         </article>
       </section>
-      <section class="skewBreaker"></section>
-      <section class="socialeventWrapper">
-        <article class="socialEvent" id="socialEvents">
-          <h1>Social Events:</h1>
-          <hr />
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-          <div class="socialeventItem">
-            <div class="socialDate">
-              <h3>April.</h3>
-              <h2>20</h2>
-            </div>
-            <div class="socialInfo">
-              <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
-              <p style="color: #515F6D; font-size: 30px;">
-                Spisning hos Pasfall m. Efterkoncert
-              </p>
-              <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-            </div>
-            <div class="socialButton">
-              <button class="standardBtn">Læs mere</button>
-            </div>
-          </div>
-        </article>
-      </section>
+
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="#">Ret profil</a>
+        <a href="../../index.html">Log ud</a>
+      </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
         <h2 class="messageTitle">Beskeder</h2>
@@ -214,7 +128,7 @@
         </div>
       </modal>
     </main>
-
+    <script src="../js/modal.js"></script>
     <script src="../js/danishjs.js" async defer></script>
   </body>
 </html>
