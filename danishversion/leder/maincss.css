@@ -541,3 +541,27 @@ p {
   width: 25%;
   height: 100%;
 }
+/* BOOKINGS FOR LEDEREN */
+.switchBtns {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.switchBtns button {
+  background-color: #cbcbcb;
+  color: #484848;
+  font-size: 22px;
+  font-weight: bold;
+  width: 300px;
+  height: 48px;
+  border: 0;
+  cursor: pointer;
+}
+.btnLeft {
+  border-radius: 5px 0 0 0;
+}
+.btnRight {
+  border-radius: 0 5px 0 0;
+}
+.switchBtns .current {
+  background-color: white;
+}

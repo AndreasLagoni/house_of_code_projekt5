@@ -12,6 +12,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../maincss.css" />
+    <link rel="stylesheet" href="../modal.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -35,7 +36,7 @@
           <li>
             <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
           </li>
-          <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
+          <li id="kalender"><a href="#" id="purple">Bookings</a></li>
 
           <a href="../DAfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
@@ -51,7 +52,7 @@
             chat
           </i>
         </a>
-        <a href="" id="accountBtn"
+        <a href="javascript:openAccountModal()" id="accountBtn"
           ><i class="material-icons">
             account_circle
           </i>
@@ -60,6 +61,11 @@
           <h2>1</h2>
         </div>
       </section>
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="#">Ret profil</a>
+        <a href="../../../index.html">Log ud</a>
+      </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
         <h2 class="messageTitle">Beskeder</h2>
@@ -69,9 +75,9 @@
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory event">Event</h3>
-            <h2 class="messageName">Marianne Larsen</h2>
+            <h2 class="messageName">Jens Overgaard</h2>
             <p class="messageTopic">
-              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+              Hej Henrik jeg har svaret på min evaluering til næste MU-samtale.
             </p>
           </div>
           <div class="messageDate">
@@ -86,70 +92,39 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
-              05-05-2019 kl 09:30
+              Jens Overgaard har anmodet om et møde. Du kan se <br />
+              hvilket dato under "Bookings"
             </p>
           </div>
           <div class="messageDate">
             <h3 class="date">20. april 2019</h3>
           </div>
         </article>
-        <article class="messageItem">
-          <div class="messagePic">
-            <img src="../../../billeder/profilepic.png" alt="" />
-          </div>
-          <div class="messageInfo">
-            <h3 class="messageCategory work">Work</h3>
-            <h2 class="messageName">House of Code</h2>
-            <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
-              05-05-2019 kl 09:30
-            </p>
-          </div>
-          <div class="messageDate">
-            <h3 class="date">20. april 2019</h3>
-          </div>
-        </article>
-        <div class="allMessages">
-          <a href="#">Alle beskeder</a>
-        </div>
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
           <a href="../DAfrontpageLED.html">Startside</a>
           //
-          <a href="../DAmedarbejdereLED.html">Evaluering</a>
+          <a href="#">Bookings</a>
         </article>
-        <section class="evalueringWrapper">
-          <article class="evalueringList">
-            <div class="evalueringItem">
-              <div class="evalueringItemName">
-                <h3>Evaluering</h3>
-                <h2>Winnie Andersen</h2>
-              </div>
-              <div class="evalueringItemDate">
-                <div>
-                  <h3>Idag</h3>
-                  <input type="checkbox" name="" id="" />
-                </div>
-                <div>
-                  <h3>Specifik dato</h3>
-                  <input type="checkbox" name="check" id="" />
-                  <input type="date" name="" id="" class="dateInput" />
-                  <input type="datetime" name="" id="" class="dateTimeinput" />
-                </div>
-              </div>
-              <div class="evalueringItemCheckbox">
-                <input type="checkbox" name="" id="" />
-              </div>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </article>
-        </section>
+        <article class="switchBtns">
+          <button class="btnLeft current">Afventede bookings</button
+          ><button class="btnRight">Bekræftede bookings</button>
+          <hr />
+        </article>
+        <article>
+          <div>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=andreastlagoni%40gmail.com&ctz=Europe%2FCopenhagen"
+              style="border: 0"
+              width="600"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+          <div></div>
+        </article>
       </section>
     </main>
     <script src="../../js/modal.js"></script>
