@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Evaluering</title>
+    <title>House of Code - Evaluate</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="evaluere.css" />
@@ -34,21 +34,21 @@
       <nav class="mainNav">
         <ul>
           <li>
-            <a href="DAevaluerMED.html" id="green">Evaluere</a>
+            <a href="ENevaluerMED.html" id="green">Evaluate</a>
           </li>
           <li id="kalender">
-            <a href="../booktid/DAbooktidMED.html" id="purple">Book tid</a>
+            <a href="../booktid/ENbooktidMED.html" id="purple">Arrange Meeting</a>
           </li>
 
-          <a href="../DAfrontpageMED.html" id="logo">
+          <a href="../ENfrontpageMED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
           <li id="events">
-            <a href="../socialevents/DAeventsMED.html">Events</a>
+            <a href="../socialevents/ENeventsMED.html">Events</a>
           </li>
           <li>
-            <a href="../historik/DAminprofilMED.html" id="blue">Min profil</a>
+            <a href="../historik/ENminprofilMED.html" id="blue">My profile</a>
           </li>
         </ul>
       </nav>
@@ -69,12 +69,12 @@
       </section>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
-        <a href="#">Ret profil</a>
-        <a href="../../../index.html">Log ud</a>
+        <a href="#">Edit Profile</a>
+        <a href="../../../index.html">Log Out</a>
       </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
-        <h2 class="messageTitle">Beskeder</h2>
+        <h2 class="messageTitle">Messages</h2>
         <article class="messageItem new">
           <div class="messagePic">
             <img src="../../../billeder/profilepic.png" alt="" />
@@ -83,7 +83,7 @@
             <h3 class="messageCategory event">Event</h3>
             <h2 class="messageName">Marianne Larsen</h2>
             <p class="messageTopic">
-              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+              The activity council presents the cinema tour everyone have been waiting for.
             </p>
           </div>
           <div class="messageDate">
@@ -98,7 +98,7 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              Henrik Grove accepted your request for a meeting with him <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
@@ -114,7 +114,7 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              Henrik Grove accepted your request for a meeting with him <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
@@ -125,9 +125,9 @@
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageMED.html">Startside</a>
+          <a href="../DAfrontpageMED.html">Frontpgage</a>
           //
-          <a href="#">Evaluering</a>
+          <a href="#">Evaluate</a>
         </article>
         <article class="skemaWrapper">
           <div class="skemaButtons">
@@ -136,30 +136,28 @@
               id="spørgsmålbtn"
               onclick="spørgsmålBtn()"
             >
-              Spørgsmål
+              Questions
             </button>
             <button class="btnRight" id="målbtn" onclick="målbtnFunction()">
-              Mål
+              Goals
             </button>
           </div>
           <hr />
           <div class="skemaInfo" id="skemaInfo">
             <h1>
-              Vi er passionerede appudviklere der brænder for at levere awesome
-              løsninger.
+              We are passionate app-developers, who are passionate about delivering awesome solutions.
             </h1>
             <p>
-              Sæt et ✓ ud for hvert af de nedenstående sætninger, hvis du mener
-              at du/medarbejderen udviser den adfærd mindst 2 gange pr. uge. Giv
-              gerne et eksempel på hvad du gør.
+              Put a ✓ next to each of the sentences below that you think you/your co-worker shows the behavior off, atleast two times per week.
+              Give an example of what you do.
             </p>
           </div>
           <article class="skemaContent" id="skemaContent">
             <div class="samtaleInfo">
               <div class="samtaleInfoLeft">
-                <p>Samtale</p>
+                <p>Conversation</p>
                 |
-                <p>Mig selv</p>
+                <p>Me</p>
               </div>
               <div class="samtaleInfoRight">
                 <p>MUS</p>
@@ -172,7 +170,7 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  Jeg arbejder med mit eget fagområde uden for arbejdstiden.
+                 I work with my own field of study outside of my working hours.
                 </h2>
                 <input
                   type="text"
@@ -181,7 +179,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Eksempel: Når jeg har fri arbejder jeg på mine egne projekter
+                  Example: When im off, i work on my own private projects.
                 </h3>
               </div>
             </div>
@@ -191,8 +189,7 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  Jeg opsøger ny viden inden for mit eget og andres fagområder i
-                  og uden for arbejdstiden.
+                  I try to obsorb new knowledge within my own and others subject areas in and outside of my working hours.
                 </h2>
                 <input
                   type="text"
@@ -201,7 +198,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Eksempel: Jeg læser fagbøger for at udvide min horisont
+                  Example: I read books about my passion to expand my horizont in this subject.
                 </h3>
               </div>
             </div>
@@ -211,8 +208,7 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  Jeg deler min nye tilegnet viden med kolleger og dokumenterer
-                  dette.
+                  I share my new aquired knowledge with my colleagues and document this.
                 </h2>
                 <input
                   type="text"
@@ -221,7 +217,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Eksempel: Best practice deles på Slack/Confluence
+                  Example: I share best practice on Slack/Confluence.
                 </h3>
               </div>
             </div>
@@ -231,8 +227,7 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  Jeg holder mig opdateret omkring apps, design og
-                  arbejdsmetoder.
+                  I keep myself updated about apps, design and new working methods.
                 </h2>
                 <input
                   type="text"
@@ -241,7 +236,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn
+                  Example: i read books, articles and keeps me updated on LinkedIn.
                 </h3>
               </div>
             </div>
@@ -251,9 +246,8 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  Jeg opsøger selv nye opgaver der skaber værdi for House of
-                  Code eller giver input til eksisterende opgaver der skaber
-                  værdi for House of Code eller vores samarbejdspartnere.
+                  I look for new tast that create value for House Of Code, or provide input to
+                  existing tasks that create value for House Of Code or our buisness partners.
                 </h2>
                 <input
                   type="text"
@@ -262,8 +256,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om
-                  andre har brug for hjælp
+                  Example: When im finish with my own projects, i ask if anyone else could use my help. 
                 </h3>
               </div>
             </div>
