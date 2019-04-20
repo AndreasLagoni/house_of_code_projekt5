@@ -40,3 +40,9 @@ function samtaleWinnie() {
   bekræftedeBooking.style.display = "none";
   samtaleSectionWinnie.style.display = "flex";
 }
+function confirmBooking() {
+  window.location.href = "DAbookingconfirmLED.html";
+}
+function backToBooking() {
+  window.location.href = "DAbookingsLED.html";
+}
