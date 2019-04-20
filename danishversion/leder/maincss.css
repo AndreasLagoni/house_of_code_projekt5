@@ -419,10 +419,12 @@ p {
 /* Evaluering Styling */
 .evalueringWrapper {
   width: 100%;
-  height: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
 }
 .evalueringList {
-  width: 70%;
+  width: 60%;
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -437,25 +439,25 @@ p {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .evalueringItemName {
-  padding: 0px 10px;
-  width: 40%;
-  min-width: 300px;
+  padding: 0px 30px;
   align-self: center;
 }
 .evalueringItemName h3 {
   color: #484848;
-  font-size: 24px;
+  font-size: 20px;
 }
 .evalueringItemName h2 {
   color: #515f6d;
-  font-size: 35px;
+  font-size: 22px;
   font-weight: bold;
 }
 .evalueringItemDate {
-  width: 50%;
+  width: 60%;
   align-self: center;
+  position: relative;
 }
 .evalueringItemDate div {
   display: flex;
@@ -463,10 +465,26 @@ p {
   padding: 5px 5px;
   align-items: center;
 }
+.evalueringItemDate div input[type="checkbox"] {
+  position: absolute;
+  left: 160px;
+}
+.evalueringItemDate div input {
+  height: 24px;
+}
 .evalueringItemDate h3 {
   color: #515f6d;
   font-size: 18px;
-  padding-right: 5px;
+  padding-right: 70px;
+}
+.evalueringItemCheckbox {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+.evalueringItemCheckbox input {
+  width: 50px;
+  height: 50px;
 }
 /* Input - checkbox styling on evaluering */
 .evalueringItemDate input[type="checkbox"] {

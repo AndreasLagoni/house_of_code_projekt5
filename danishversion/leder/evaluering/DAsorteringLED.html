@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Åben evaluering</title>
+    <title>House of Code - Jonas Svanegaard</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../maincss.css" />
@@ -36,17 +36,23 @@
           <li>
             <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
           </li>
-          <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
+          <li id="kalender">
+            <a href="../bookings/DAbookingsLED.html" id="purple">Bookings</a>
+          </li>
 
           <a href="../DAfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
           <li id="events"><a href="../socialevents/events.html">Events</a></li>
-          <li><a href="http://" id="blue">Åben evaluering</a></li>
+          <li>
+            <a href="../evaluering/DAevalueringModalLED.html" id="blue"
+              >Evalueringer</a
+            >
+          </li>
         </ul>
       </nav>
-      <section class="topNav">
+      <article class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
           <i class="material-icons">
             chat
@@ -60,7 +66,7 @@
         <div class="newMessage" id="newMessage">
           <h2>1</h2>
         </div>
-      </section>
+      </article>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
         <a href="#">Ret profil</a>
@@ -105,51 +111,11 @@
         <article class="pathlinks">
           <a href="../DAfrontpageLED.html">Startside</a>
           //
-          <a href="#">Evaluering</a>
+          <a href="../DAmedarbejdereLED.html">Sortering</a>
         </article>
-        <section class="evalueringWrapper">
-          <article class="evalueringKalender">
-            <iframe
-              src="https://calendar.google.com/calendar/embed?src=andreastlagoni%40gmail.com&ctz=Europe%2FCopenhagen"
-              style="border: 0"
-              width="500"
-              height="500"
-              frameborder="0"
-              scrolling="no"
-            ></iframe>
-          </article>
-          <article class="evalueringList">
-            <div class="evalueringItem">
-              <div class="evalueringItemName">
-                <h3>Evaluering</h3>
-                <h2>Winnie Andersen</h2>
-              </div>
-              <div class="evalueringItemDate">
-                <div>
-                  <h3>Idag</h3>
-                  <input type="checkbox" name="" id="" />
-                </div>
-                <div>
-                  <h3>Specifik dato</h3>
-                  <input type="checkbox" name="check" id="" />
-                  <input type="date" name="" id="" class="dateInput" />
-                  <input
-                    type="datetime"
-                    name=""
-                    id=""
-                    class="dateTimeinput"
-                    placeholder="Kl."
-                  />
-                </div>
-              </div>
-              <div class="evalueringItemCheckbox">
-                <input type="checkbox" name="" id="" />
-              </div>
-            </div>
-          </article>
-        </section>
       </section>
     </main>
+    <script src="../../js/medarbejderload.js" async defer></script>
     <script src="../../js/modal.js"></script>
   </body>
 </html>

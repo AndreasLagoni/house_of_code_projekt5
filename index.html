@@ -68,17 +68,15 @@
         let modal = document.getElementById("redirectAnsat");
         modal.classList.add("redirect");
         setTimeout(function() {
-          window.location.replace(
-            "danishversion/medarbejder/DAfrontpageMED.html"
-          );
+          window.location.href =
+            "danishversion/medarbejder/DAfrontpageMED.html";
         }, 3000);
       }
       function redirectLeder() {
         let modal = document.getElementById("redirectLeder");
         modal.classList.add("redirect");
         setTimeout(function() {
-          window.location.replace("#");
-          window.location.reload();
+          window.location.href = "/danishversion/leder/DAfrontpageLED.html";
         }, 3000);
       }
     </script>
