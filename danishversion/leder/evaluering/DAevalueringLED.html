@@ -119,6 +119,10 @@
             ></iframe>
           </article>
           <article class="evalueringList">
+            <div class="evalueringsearch">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Søg" />
+            </div>
             <div class="evalueringItem">
               <div class="evalueringItemName">
                 <h3>Evaluering</h3>
@@ -146,10 +150,41 @@
                 <input type="checkbox" name="" id="" />
               </div>
             </div>
+            <div class="evalueringItem">
+              <div class="evalueringItemName">
+                <h3>Evaluering</h3>
+                <h2>Jonas Svanegård</h2>
+              </div>
+              <div class="evalueringItemDate">
+                <div>
+                  <h3>Idag</h3>
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div>
+                  <h3>Specifik dato</h3>
+                  <input type="checkbox" name="check" id="" />
+                  <input type="date" name="" id="" class="dateInput" />
+                  <input
+                    type="datetime"
+                    name=""
+                    id=""
+                    class="dateTimeinput"
+                    placeholder="Kl."
+                  />
+                </div>
+              </div>
+              <div class="evalueringItemCheckbox">
+                <input type="checkbox" name="" id="" />
+              </div>
+            </div>
+            <button class="standardBtn blue" onclick="evalueringConfirm()">
+              Send
+            </button>
           </article>
         </section>
       </section>
     </main>
     <script src="../../js/modal.js"></script>
+    <script src="../../js/LEDevaluering.js"></script>
   </body>
 </html>

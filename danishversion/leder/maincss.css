@@ -431,6 +431,32 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
 }
+.evalueringList button {
+  width: 280px;
+  margin: 0;
+  align-self: flex-end;
+}
+/* Evaluering search */
+.evalueringsearch {
+  display: fleX;
+  margin-bottom: 15px;
+  position: relative;
+}
+.evalueringsearch input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 22px;
+  padding-left: 45px;
+}
+.evalueringsearch i {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 22px;
+  color: #484848;
+}
 /* Evaluering Items */
 .evalueringItem {
   width: 100%;
@@ -440,6 +466,7 @@ p {
   display: flex;
   flex-direction: row;
   position: relative;
+  margin-bottom: 15px;
 }
 .evalueringItemName {
   padding: 0px 30px;
@@ -475,6 +502,9 @@ p {
   background-color: #515f6d;
   border: 0;
   margin: 0 10px;
+}
+.evalueringItemDate div input::placeholder {
+  color: white;
 }
 .evalueringItemDate h3 {
   color: #515f6d;
