@@ -48,12 +48,13 @@ function addGoal() {
   let goalWrapper = document.getElementById("goalWrapper");
   let newDiv = document.createElement("div");
   newDiv.innerHTML = `<div class="goalItemWrapper" id="goalItem">
-  <div class="goalItemBtns">
+  
     <a href="javascript:addGoal()">
       <i class="far fa-plus-square"></i
     ></a>
-    <a href="http://"><i class="far fa-minus-square"></i></a>
-  </div>
+    <a 
+    onclick=""><i class="far fa-minus-square"></i></a>
+ 
   <h3>Mål:</h3>
   <input type="text" />
 </div>`;

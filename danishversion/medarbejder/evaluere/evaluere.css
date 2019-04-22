@@ -418,12 +418,15 @@ button:focus {
 .goalItemWrapper {
   position: relative;
 }
-.goalItemBtns {
+.goalItemWrapper a {
   position: absolute;
   left: 25px;
-  top: 50px;
+  top: 40px;
 }
-.goalItemBtns i {
+.goalItemWrapper a:last-of-type {
+  left: 65px;
+}
+.goalItemWrapper i {
   font-size: 30px;
   margin: 0 5px;
   cursor: pointer;
