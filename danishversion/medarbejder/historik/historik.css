@@ -442,3 +442,42 @@ textarea {
   background-color: white;
   color: #484848;
 }
+/* scalering */
+/* scalering af NAV */
+@media screen and (max-width: 1470px) {
+  .mainNav {
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+  }
+  .mainNav ul #logo {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .mainNav ul #logo img {
+    width: 150px;
+  }
+  .mainNav ul #kalender {
+    margin-left: 55px;
+  }
+  .mainNav ul #events {
+    margin-right: 55px;
+  }
+}
+/* scalering til medarbejder */
+@media screen and (max-width: 1470px) {
+  .maincontent {
+    width: 95%;
+  }
+  .medarbejderSection {
+    height: auto;
+  }
+  .medarbejderMainContent {
+    width: 65%;
+    padding-right: 0;
+  }
+  .medarbejderHistory {
+    width: 40%;
+    margin-top: 20px;
+  }
+}

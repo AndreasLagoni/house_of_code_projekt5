@@ -1037,3 +1037,52 @@ button:focus {
 .sortBtns .current {
   background-color: white;
 }
+/* scalering */
+/* scalering af NAV */
+@media screen and (max-width: 1470px) {
+  .mainNav {
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+  }
+  .mainNav ul #logo {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .mainNav ul #logo img {
+    width: 150px;
+  }
+  .mainNav ul #kalender {
+    margin-left: 55px;
+  }
+  .mainNav ul #events {
+    margin-right: 55px;
+  }
+}
+/* scalering til events */
+@media screen and (max-width: 1300px) {
+  .maincontent {
+    width: 95%;
+  }
+  .socialeventItem {
+    width: 100%;
+  }
+  .standardBtn {
+    margin: 0;
+    min-width: 150px;
+  }
+  .singleeventSection {
+    flex-direction: column;
+  }
+  .eventaside {
+    width: 100%;
+  }
+  .eventaside img {
+    width: 700px;
+  }
+  .maineventInfo {
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 0;
+  }
+}
