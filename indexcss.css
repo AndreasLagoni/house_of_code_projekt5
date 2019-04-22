@@ -131,3 +131,77 @@ button {
   width: 100vw;
   height: 100vh;
 }
+
+/* animation */
+.redirectWrapper svg {
+  width: 500px;
+}
+
+/* Rectangles */
+  #_x31_orange, #_x32_green, #_x33_orange, #_x34_purple, #_x35_pink {
+    -webkit-animation-name: slideOutRight;
+    -webkit-animation-duration: 1.7s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+#_x36_blue, #_x32_white, #_x35_white, #_x34_green {
+  -webkit-animation-name: slideOutRight;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#_x34_dark, #_x35_yellow {
+  -webkit-animation-name: slideOutRight;
+  -webkit-animation-duration: 2.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#_x32_dark-left, #_x33_blue {
+  -webkit-animation-name: slideOutRight;
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* Text */
+#hoc {
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 1.7s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* House */
+#house {
+  -webkit-animation-name: slideOutRight;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(200%, 0, 0);
+    transform: translate3d(200%, 0, 0);
+  }
+}
