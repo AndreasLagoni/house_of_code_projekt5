@@ -1152,3 +1152,31 @@ button:focus {
     box-sizing: border-box;
   }
 }
+/* Booking scaleret */
+@media screen and (max-width: 1770px) {
+  .afventedeList {
+    width: 40%;
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .afventedeBookings {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bekræftedeBooking {
+    flex-direction: column;
+    text-align: center;
+  }
+  .afventedeKalender {
+    width: 100%;
+  }
+  .afventedeList {
+    margin-top: 15px;
+    width: 95%;
+    margin-left: 0;
+  }
+  .samtaleSection {
+    width: 95%;
+  }
+}
