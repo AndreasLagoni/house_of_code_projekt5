@@ -494,7 +494,18 @@ textarea {
     flex-direction: column;
     height: auto;
   }
+  .medarbejderSamtale {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    width: 90%;
+  }
   .medarbejderSamtaleSection .medarbejderInfo {
     display: flex;
+  }
+  .medarbejderSamtaleSection .medarbejderInfo .myData {
+    margin-top: 0;
+    margin-left: 30px;
+    display: inline-block;
   }
 }
