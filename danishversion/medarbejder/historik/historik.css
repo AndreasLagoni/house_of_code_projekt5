@@ -167,6 +167,13 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.medarbejderSamtaleSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .medarbejderInfo {
   min-width: 380px;
 }
@@ -212,7 +219,7 @@ span {
 /* Medarbejder main content. Her er info omkring de enkelte medarbejdere. */
 .medarbejderMainContent {
   opacity: 0;
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -441,4 +448,64 @@ p {
 textarea {
   background-color: white;
   color: #484848;
+}
+/* scalering */
+/* scalering af NAV */
+@media screen and (max-width: 1470px) {
+  .mainNav {
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+  }
+  .mainNav ul #logo {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .mainNav ul #logo img {
+    width: 150px;
+  }
+  .mainNav ul #kalender {
+    margin-left: 55px;
+  }
+  .mainNav ul #events {
+    margin-right: 55px;
+  }
+}
+/* scalering til medarbejder */
+@media screen and (max-width: 1470px) {
+  .maincontent {
+    width: 95%;
+  }
+  .medarbejderSection {
+    height: auto;
+  }
+  .medarbejderMainContent {
+    width: 65%;
+    padding-right: 0;
+  }
+  .medarbejderHistory {
+    width: 40%;
+    margin-top: 20px;
+  }
+  .all {
+    width: 55%;
+  }
+  .medarbejderSamtaleSection {
+    flex-direction: column;
+    height: auto;
+  }
+  .medarbejderSamtale {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    width: 90%;
+  }
+  .medarbejderSamtaleSection .medarbejderInfo {
+    display: flex;
+  }
+  .medarbejderSamtaleSection .medarbejderInfo .myData {
+    margin-top: 0;
+    margin-left: 30px;
+    display: inline-block;
+  }
 }

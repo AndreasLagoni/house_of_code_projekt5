@@ -797,6 +797,50 @@ textarea {
   width: 25%;
   height: 100%;
 }
+/* Social events - enkelte events */
+.singleeventSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.eventaside {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.eventaside h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.eventaside p {
+  color: white;
+  font-size: 22px;
+}
+.maineventInfo {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.maineventInfo h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.event-h3-dato-sted {
+  color: #acd451;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.event-p-maincontent {
+  color: white;
+  font-size: 22px;
+}
 /* BOOKINGS FOR LEDEREN */
 .switchBtns {
   text-align: center;
@@ -992,4 +1036,53 @@ button:focus {
 }
 .sortBtns .current {
   background-color: white;
+}
+/* scalering */
+/* scalering af NAV */
+@media screen and (max-width: 1470px) {
+  .mainNav {
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+  }
+  .mainNav ul #logo {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .mainNav ul #logo img {
+    width: 150px;
+  }
+  .mainNav ul #kalender {
+    margin-left: 55px;
+  }
+  .mainNav ul #events {
+    margin-right: 55px;
+  }
+}
+/* scalering til events */
+@media screen and (max-width: 1300px) {
+  .maincontent {
+    width: 95%;
+  }
+  .socialeventItem {
+    width: 100%;
+  }
+  .standardBtn {
+    margin: 0;
+    min-width: 150px;
+  }
+  .singleeventSection {
+    flex-direction: column;
+  }
+  .eventaside {
+    width: 100%;
+  }
+  .eventaside img {
+    width: 700px;
+  }
+  .maineventInfo {
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 0;
+  }
 }

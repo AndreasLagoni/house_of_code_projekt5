@@ -291,3 +291,17 @@ a {
   width: 25%;
   height: 100%;
 }
+/* Scalering */
+@media screen and (max-width: 1300px) {
+  .navSection ul {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 995px) {
+  .navSection ul {
+    flex-direction: column;
+  }
+  .navSection ul li {
+    margin: 10px 0;
+  }
+}

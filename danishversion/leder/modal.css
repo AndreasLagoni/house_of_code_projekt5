@@ -156,11 +156,8 @@
   text-decoration: none;
   color: #515f6d;
 }
-.accountModal a:first-child {
-  border-radius: 10px 10px 0 0;
-}
-.accountModal a:last-child {
-  border-radius: 0 0 10px 10px;
+.accountModal a {
+  border-radius: 10px;
 }
 .accountModal a:hover {
   background-color: lightgray;
