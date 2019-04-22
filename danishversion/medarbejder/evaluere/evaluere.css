@@ -415,6 +415,23 @@ button:focus {
 .goalsButtonWrapper button {
   margin-left: 0;
 }
+.goalItemWrapper {
+  position: relative;
+}
+.goalItemBtns {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+.goalItemBtns i {
+  font-size: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: black;
+}
+.goalItemBtns a {
+  text-decoration: none;
+}
 /* BEKRÆFTELSE AF EVALUERING */
 .confirmation {
   width: 50%;

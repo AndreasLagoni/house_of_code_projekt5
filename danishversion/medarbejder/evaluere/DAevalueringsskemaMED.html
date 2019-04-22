@@ -287,7 +287,7 @@
                 <p>20-03-2018</p>
               </div>
             </div>
-            <div class="goalListWrapper">
+            <div class="goalListWrapper" id="goalWrapper">
               <h2>
                 Her har du mulighed for at give forslag til opstillede mål, som
                 dig og din leder laver sammen til MU-samtalen. Din leder vil
@@ -295,19 +295,21 @@
                 forslag til mål, kan du gå tilbage til spørgsmålene og trykke
                 "Send"
               </h2>
-              <h3>Mål 1:</h3>
-              <input type="text" />
-              <h3>Mål 2:</h3>
-              <input type="text" />
-              <h3>Mål 3:</h3>
-              <input type="text" />
-              <h3>Mål 4:</h3>
-              <input type="text" />
-              <div class="goalsButtonWrapper">
-                <button class="standardBtn" onclick="backfromGoals()">
-                  < Tilbage
-                </button>
+              <div class="goalItemWrapper" id="goalItem">
+                <div class="goalItemBtns">
+                  <a href="javascript:addGoal()">
+                    <i class="far fa-plus-square"></i
+                  ></a>
+                  <a href="http://"><i class="far fa-minus-square"></i></a>
+                </div>
+                <h3>Mål:</h3>
+                <input type="text" />
               </div>
+            </div>
+            <div class="goalsButtonWrapper">
+              <button class="standardBtn" onclick="backfromGoals()">
+                < Tilbage
+              </button>
             </div>
           </div>
         </article>
