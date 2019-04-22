@@ -53,7 +53,7 @@ function addGoal() {
       <i class="far fa-plus-square"></i
     ></a>
     <a 
-    onclick=""><i class="far fa-minus-square"></i></a>
+    onclick="this.parentElement.style.display = 'none'"><i class="far fa-minus-square"></i></a>
  
   <h3>Mål:</h3>
   <input type="text" />
