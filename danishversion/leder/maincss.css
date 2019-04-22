@@ -797,6 +797,28 @@ textarea {
   width: 25%;
   height: 100%;
 }
+/* Social events - enkelte events */
+.singleeventSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.eventaside {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.eventaside h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.eventaside p {
+  color: white;
+  font-size: 22px;
+}
 /* BOOKINGS FOR LEDEREN */
 .switchBtns {
   text-align: center;
