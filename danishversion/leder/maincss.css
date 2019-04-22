@@ -1086,3 +1086,48 @@ button:focus {
     padding-left: 0;
   }
 }
+/* scalering til medarbejder */
+@media screen and (max-width: 1470px) {
+  .maincontent {
+    width: 95%;
+  }
+  .medarbejderSection {
+    height: auto;
+  }
+  .medarbejderMainContent {
+    width: 85%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .medarbejderHistory {
+    width: 60%;
+    margin-top: 20px;
+  }
+  .all {
+    width: 70%;
+  }
+  .employeeGoals {
+    margin: 0;
+  }
+  .medarbejderInfo {
+    margin-bottom: 20px;
+  }
+  .medarbejderSamtaleSection {
+    flex-direction: column;
+    height: auto;
+  }
+  .medarbejderSamtale {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    width: 90%;
+  }
+  .medarbejderSamtaleSection .medarbejderInfo {
+    display: flex;
+  }
+  .medarbejderSamtaleSection .medarbejderInfo .myData {
+    margin-top: 0;
+    margin-left: 30px;
+    display: inline-block;
+  }
+}
