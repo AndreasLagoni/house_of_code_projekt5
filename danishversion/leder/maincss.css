@@ -1131,3 +1131,24 @@ button:focus {
     display: inline-block;
   }
 }
+/* Sortering scaleret */
+@media screen and (max-width: 1270px) {
+  .sorteringNavn {
+    width: 20%;
+    min-width: 0;
+  }
+  .sorteringMedarbejder {
+    min-width: 100px;
+  }
+  /* åben evaluering scaleret */
+  .evalueringWrapper {
+    flex-direction: column;
+  }
+  .evalueringList {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .evalueringItem {
+    box-sizing: border-box;
+  }
+}

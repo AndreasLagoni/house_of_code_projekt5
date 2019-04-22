@@ -440,3 +440,33 @@ textarea {
   background-color: white;
   color: #484848;
 }
+/* scalering til evaluering LEDER */
+@media screen and (max-width: 1470px) {
+  .maincontent {
+    width: 95%;
+  }
+  .medarbejderSamtale {
+    width: 95%;
+  }
+}
+/* scalering af NAV */
+@media screen and (max-width: 1470px) {
+  .mainNav {
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+  }
+  .mainNav ul #logo {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .mainNav ul #logo img {
+    width: 150px;
+  }
+  .mainNav ul #kalender {
+    margin-left: 55px;
+  }
+  .mainNav ul #events {
+    margin-right: 55px;
+  }
+}
