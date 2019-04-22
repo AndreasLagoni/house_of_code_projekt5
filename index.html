@@ -51,33 +51,12 @@
         /></a>
       </div>
     </main>
-    <modal class="redirectWrapper" id="redirectAnsat">
-      <div class="imgAndTitel">
-        <img src="billeder/HoC-logo.svg" alt="" />
-        <h1>Come in {#BeAwesome}</h1>
-      </div>
-    </modal>
-    <modal class="redirectWrapper" id="redirectLeder">
-      <div class="imgAndTitel">
-        <img src="billeder/HoC-logo.svg" alt="" />
-        <h1>Come in {#BeAwesome}</h1>
-      </div>
-    </modal>
     <script>
       function redirectAnsat() {
-        let modal = document.getElementById("redirectAnsat");
-        modal.classList.add("redirect");
-        setTimeout(function() {
-          window.location.href =
-            "danishversion/medarbejder/DAfrontpageMED.html";
-        }, 3000);
+        window.location.href = "indexModalAnsat.html";
       }
       function redirectLeder() {
-        let modal = document.getElementById("redirectLeder");
-        modal.classList.add("redirect");
-        setTimeout(function() {
-          window.location.href = "danishversion/leder/DAfrontpageLED.html";
-        }, 3000);
+        window.location.href = "indexModalLeder.html";
       }
     </script>
   </body>

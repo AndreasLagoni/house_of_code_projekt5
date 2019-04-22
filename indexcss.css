@@ -125,21 +125,9 @@ button {
   height: 21px;
 }
 /* Redirect page styling  */
+
 .redirectWrapper {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  visibility: hidden;
-  background-color: rgb(255, 255, 255);
-  flex-direction: column;
-  align-items: center;
-}
-.redirect {
-  transition: all 0.5s ease;
-  visibility: visible;
-  opacity: 100;
-  font-weight: bold;
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 100vh;
 }
