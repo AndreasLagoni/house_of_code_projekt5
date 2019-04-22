@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="da">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>House of Code - Event</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../leder/maincss.css" />
+    <link rel="stylesheet" href="../modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../../billeder/HoC_icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="contentWrapper">
+      <nav class="mainNav">
+        <ul>
+          <li>
+            <a href="../evaluere/DAevaluerMED.html" id="green">Evaluere</a>
+          </li>
+          <li id="kalender">
+            <a href="../booktid/DAbooktidMED.html" id="purple">Book tid</a>
+          </li>
+
+          <a href="../DAfrontpageMED.html" id="logo">
+            <img src="../../../billeder/HoC_logo_white.svg" alt=""
+          /></a>
+
+          <li id="events"><a href="DAeventsMED.html">Events</a></li>
+          <li>
+            <a href="../historik/DAminprofilMED.html" id="blue">Min profil</a>
+          </li>
+        </ul>
+      </nav>
+      <article class="topNav">
+        <a href="javascript:openModal()" id="messageBtn">
+          <i class="material-icons">
+            chat
+          </i>
+        </a>
+        <a href="javascript:openAccountModal()" id="accountBtn"
+          ><i class="material-icons">
+            account_circle
+          </i>
+        </a>
+        <div class="newMessage" id="newMessage">
+          <h2>1</h2>
+        </div>
+      </article>
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="../../../index.html">Log ud</a>
+      </modal>
+      <modal class="messages" id="messageModal">
+        <div class="messagesTriangle"></div>
+        <h2 class="messageTitle">Beskeder</h2>
+        <article class="messageItem new">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory event">Event</h3>
+            <h2 class="messageName">Jens Overgaard</h2>
+            <p class="messageTopic">
+              Hej Henrik jeg har svaret på min evaluering til næste MU-samtale.
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">25. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Jens Overgaard har anmodet om et møde. Du kan se <br />
+              hvilket dato under "Bookings"
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+      </modal>
+      <section class="maincontent">
+        <article class="pathlinks">
+          <a href="../DAfrontpageMED.html">Startside</a>
+          //
+          <a href="DAeventsMED.html">Events</a>
+          //
+          <a href="#">Biograftur</a>
+        </article>
+        <section class="singleeventSection">
+          <aside class="eventaside">
+            <img src="../../../billeder/eventsingle.png" alt="" />
+            <h3>Huskeliste:</h3>
+            <p>1. Godt humør :-)</p>
+            <p>2. Godt humør :-)</p>
+            <p>3. Godt humør :-)</p>
+          </aside>
+          <article class="maineventInfo">
+            <h1>Biograftur i Nordisk Film Biografer</h1>
+            <h3 class="event-h3-dato-sted">
+              Man d. 29 April - 19:30 <br />
+              Ønstre stationsvej 27, 5000 Odense
+            </h3>
+            <p class="event-p-maincontent">
+              Hej alle sammen. Mandag den 29 April kl 19:30 har aktivitetsrådet
+              arrangeret en biograf tur. Vi skal se den nye film, Captain
+              Marvel.
+            </p>
+            <br />
+            <p class="event-p-maincontent">
+              Kvindelige superhelte er det nye sort. I 2017 fik DC’s Wonder
+              Woman sin egen film og hun er snart klar med efterfølgeren Wonder
+              Woman 1984, der har premiere i sommeren 2020. Inden da kommer en
+              måske mindre kendt, men bestemt lige så hårdtslående kvinde med
+              sin egen film. Det er ingen ringere end Avengers første medlem;
+              Captain Marvel, vis civile navn er Carol Danvers. Captain Marvel
+              fortæller nemlig historien om, hvordan dette hele startede og
+              hvordan Nick Fury (Samuel L. Jackson) fik idéen til at forme The
+              Avengers.
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="../../js/modal.js"></script>
+  </body>
+</html>
