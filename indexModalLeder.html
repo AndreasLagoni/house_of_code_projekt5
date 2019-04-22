@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="da">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Digital MUS - House of Code</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="indexcss.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="mainWrapper">
+      <div class="imgAndTitel">
+        <img src="billeder/HoC-logo.svg" alt="" />
+        <h1>"Come in be awesome"</h1>
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="Brugernavn..." />
+        <input type="password" placeholder="Adgangskode..." />
+      </div>
+      <div class="checkBox">
+        <input type="checkbox" />
+        <p>Husk mig</p>
+      </div>
+      <div class="forgotPassword">
+        <a href="#">Glemt adgangskode?</a>
+      </div>
+      <div class="loginButtons">
+        <button class="standardBtn" onclick="redirectAnsat()">Ansat</button>
+        <button class="standardBtn" onclick="redirectLeder()">Leder</button>
+      </div>
+      <div class="countrySelection">
+        <a href="#"
+          ><img src="billeder/denmark.png" class="countryImg" alt=""
+        /></a>
+        <a href="indexEN.html"
+          ><img src="billeder/english.png" class="countryImg" alt=""
+        /></a>
+      </div>
+    </main>
+    <modal class="redirectWrapper" id="redirectAnsat">
+      <div class="imgAndTitel">
+        <img src="billeder/HoC-logo.svg" alt="" />
+        <h1>Come in {#BeAwesome}</h1>
+      </div>
+    </modal>
+    <modal class="redirectWrapper" id="redirectLeder">
+      <div class="imgAndTitel">
+        <img src="billeder/HoC-logo.svg" alt="" />
+        <h1>Come in {#BeAwesome}</h1>
+      </div>
+    </modal>
+    <script>
+      function redirectAnsat() {
+        let modal = document.getElementById("redirectAnsat");
+        modal.classList.add("redirect");
+        setTimeout(function() {
+          window.location.href =
+            "danishversion/medarbejder/DAfrontpageMED.html";
+        }, 3000);
+      }
+      function redirectLeder() {
+        let modal = document.getElementById("redirectLeder");
+        modal.classList.add("redirect");
+        setTimeout(function() {
+          window.location.href = "danishversion/leder/DAfrontpageLED.html";
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
