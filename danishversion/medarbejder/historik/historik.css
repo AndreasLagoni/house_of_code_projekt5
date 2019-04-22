@@ -167,6 +167,13 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.medarbejderSamtaleSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .medarbejderInfo {
   min-width: 380px;
 }
@@ -479,5 +486,15 @@ textarea {
   .medarbejderHistory {
     width: 40%;
     margin-top: 20px;
+  }
+  .all {
+    width: 55%;
+  }
+  .medarbejderSamtaleSection {
+    flex-direction: column;
+    height: auto;
+  }
+  .medarbejderSamtaleSection .medarbejderInfo {
+    display: flex;
   }
 }
