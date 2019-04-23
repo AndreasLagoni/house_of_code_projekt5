@@ -130,11 +130,13 @@ button {
   background-color: #f8f8f8;
   width: 100vw;
   height: 100vh;
+  text-align: center;
+  padding-top: 50px;
 }
 
 /* animation */
 .redirectWrapper svg {
-  width: 500px;
+  width: 50%;
 }
 
 /* Rectangles */
@@ -144,7 +146,8 @@ button {
 #_x34_purple,
 #_x35_pink {
   -webkit-animation-name: slideOutRight;
-  -webkit-animation-duration: 1.7s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 }
@@ -154,7 +157,8 @@ button {
 #_x35_white,
 #_x34_green {
   -webkit-animation-name: slideOutRight;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 2.1s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 }
@@ -162,7 +166,8 @@ button {
 #_x34_dark,
 #_x35_yellow {
   -webkit-animation-name: slideOutRight;
-  -webkit-animation-duration: 2.1s;
+  -webkit-animation-duration: 2.2s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 }
@@ -171,6 +176,7 @@ button {
 #_x33_blue {
   -webkit-animation-name: slideOutRight;
   -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 }
@@ -178,7 +184,7 @@ button {
 /* Text */
 #hoc {
   -webkit-animation-name: fadeOut;
-  -webkit-animation-duration: 1.7s;
+  -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -196,8 +202,8 @@ button {
 /* House */
 #house {
   -webkit-animation-name: slideOutRight;
-  -webkit-animation-duration: 2.5s;
-  -webkit-animation-delay: s;
+  -webkit-animation-duration: 2.4s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 }
@@ -206,11 +212,13 @@ button {
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 
   to {
     visibility: hidden;
-    -webkit-transform: translate3d(200%, 0, 0);
-    transform: translate3d(200%, 0, 0);
+    -webkit-transform: translate3d(40%, 0, 0);
+    transform: translate3d(40%, 0, 0);
+    opacity: 0;
   }
 }
