@@ -707,8 +707,8 @@ textarea {
 }
 .evalueringItemCheckbox {
   position: absolute;
-  right: 25px;
-  top: 25px;
+  right: 15px;
+  top: 30px;
 }
 .evalueringItemCheckbox input {
   width: 50px;
