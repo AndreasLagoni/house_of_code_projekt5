@@ -1,5 +1,5 @@
 function evalueringConfirm() {
-  window.location.href = "DAevalueringConfirmLED.html";
+  window.location.href = "ENevalueringConfirmLED.html";
 }
 function backToEvaluer() {
   window.history.back();

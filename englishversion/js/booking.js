@@ -41,8 +41,8 @@ function samtaleWinnie() {
   samtaleSectionWinnie.style.display = "flex";
 }
 function confirmBooking() {
-  window.location.href = "DAbookingconfirmLED.html";
+  window.location.href = "ENbookingconfirmLED.html";
 }
 function backToBooking() {
-  window.location.href = "DAbookingsLED.html";
+  window.location.href = "ENbookingsLED.html";
 }
