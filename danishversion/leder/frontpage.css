@@ -118,11 +118,11 @@ span {
 #purple:hover {
   color: #aa81ac;
 }
-#yellow:after {
-  background: #d8a55a;
+#blue:hover {
+  color: #6696ac;
 }
-#yellow:hover {
-  color: #d8a55a;
+#blue:after {
+  background: #6696ac;
 }
 #green:after {
   background: #a6bb75;
