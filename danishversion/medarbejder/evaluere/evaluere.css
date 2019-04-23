@@ -79,15 +79,16 @@ body {
 /* Vælg en medarbejder som skal evaluere dig selv */
 .chooseEvaluerMED {
   width: 100%;
-  height: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .inputSearchWrapper {
   position: relative;
-  width: 60%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .inputSearchWrapper input {
   width: 100%;
@@ -95,6 +96,7 @@ body {
   border: 0;
   border-radius: 5px;
   padding-left: 40px;
+  box-sizing: border-box;
 }
 .chooseEvaluerMED .fa-search {
   position: absolute;
@@ -104,6 +106,38 @@ body {
 .chooseMedarbejderWrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.medarbejderListItem {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 15px 0;
+}
+.medarbejderListItem .medarbejderListItemName {
+  width: 80%;
+  text-align: left;
+  padding-left: 20px;
+}
+.medarbejderListItem .medarbejderListItemCheckbox {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+.medarbejderListItem .medarbejderListItemCheckbox input {
+  width: 40px;
+  height: 40px;
+}
+.duharvalgtSpan {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 /* Main */
 .contentWrapper {
