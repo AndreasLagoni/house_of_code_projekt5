@@ -8,10 +8,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Bekræftigelse</title>
+    <title>House of Code - Evaluation</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../maincss.css" />
+    <link rel="stylesheet" href="../../medarbejder/evaluere/evaluere.css" />
+    <link rel="stylesheet" href="../modal.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
       rel="stylesheet"
@@ -34,18 +35,30 @@
   </head>
   <body>
     <main class="mainWrapper" id="mainWrapper">
-      <section class="confirmation" id="mainContent">
-        <i class="far fa-check-circle"></i>
-        <h2>Du har bekræftet 1 evaluering.</h2>
-        <p>
-          De valgte medarbejdere vil modtage besked på du har åbnet deres
-          evaluering.
-        </p>
-        <button class="standardBtn blue" onclick="backToEvaluer()">
-          Tilbage
-        </button>
+      <section class="chooseEmployee" id="mainContent">
+        <div class="employeeButtons">
+          <button class="standardBtn blue" onclick="åbenEvaluering()">
+            Open evaluation
+          </button>
+          <button class="standardBtn blue" onclick="sortering()">
+            Sorting
+          </button>
+        </div>
       </section>
     </main>
-    <script src="../../js/LEDevaluering.js"></script>
+    <script>
+      window.onload = function() {
+        let mainWrapper = document.getElementById("mainWrapper");
+        mainWrapper.style.visibility = "visible";
+        mainWrapper.style.opacity = "100";
+      };
+      function åbenEvaluering() {
+        window.location.href = "DAevalueringLED.html";
+      }
+      function sortering() {
+        window.location.href = "DAsorteringLED.html";
+      }
+    </script>
+    <script src="../../js/modal.js"></script>
   </body>
 </html>

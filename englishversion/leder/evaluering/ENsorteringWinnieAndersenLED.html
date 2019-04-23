@@ -8,11 +8,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Historik</title>
+    <title>House of Code - Sorting</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="historik.css" />
+    <link rel="stylesheet" href="../maincss.css" />
     <link rel="stylesheet" href="../modal.css" />
+    <link rel="stylesheet" href="evalueringLED.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
       rel="stylesheet"
@@ -38,27 +39,25 @@
       <nav class="mainNav">
         <ul>
           <li>
-            <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
+            <a href="../ENmedarbejdereLED.html" id="green">Employees</a>
           </li>
           <li id="kalender">
-            <a href="../bookings/DAbookingsLED.html" id="purple">Bookings</a>
+            <a href="../bookings/ENbookingsLED.html" id="purple">Meetings</a>
           </li>
 
-          <a href="../DAfrontpageLED.html" id="logo">
+          <a href="../ENfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
-          <li id="events">
-            <a href="../socialevents/DAeventsLED.html">Events</a>
-          </li>
+          <li id="events"><a href="../socialevents/events.html">Events</a></li>
           <li>
-            <a href="../evaluering/DAevalueringModalLED.html" id="blue"
-              >Evalueringer</a
+            <a href="../evaluering/ENevalueringModalLED.html" id="blue"
+              >Evaluations</a
             >
           </li>
         </ul>
       </nav>
-      <section class="topNav">
+      <article class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
           <i class="material-icons">
             chat
@@ -72,14 +71,14 @@
         <div class="newMessage" id="newMessage">
           <h2>1</h2>
         </div>
-      </section>
+      </article>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
-        <a href="../../../index.html">Log ud</a>
+        <a href="../../../index.html">Log out</a>
       </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
-        <h2 class="messageTitle">Beskeder</h2>
+        <h2 class="messageTitle">Messages</h2>
         <article class="messageItem new">
           <div class="messagePic">
             <img src="../../../billeder/profilepic.png" alt="" />
@@ -88,7 +87,7 @@
             <h3 class="messageCategory event">Event</h3>
             <h2 class="messageName">Jens Overgaard</h2>
             <p class="messageTopic">
-              Hej Henrik jeg har svaret på min evaluering til næste MU-samtale.
+              Hello Henrik. I have answered my evaluation for the next MU-Samtale.
             </p>
           </div>
           <div class="messageDate">
@@ -103,8 +102,8 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Jens Overgaard har anmodet om et møde. Du kan se <br />
-              hvilket dato under "Bookings"
+              Jens Overgaard has requested a meeting. you can see <br />
+              time and date under "Bookings".
             </p>
           </div>
           <div class="messageDate">
@@ -114,45 +113,33 @@
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageLED.html">Startside</a>
+          <a href="../ENfrontpageLED.html">Frontpage</a>
           //
-          <a href="../DAmedarbejdereLED.html">Medarbejdere</a>
+          <a href="ENsorteringLED.html">Sorting</a>
           //
-          <a href="DAmedarbejder-01LED.html">Jonas Svanegård</a>
-          //
-          <a href="DAmedarbejder-01-historik.html">Historik</a>
+          <a href="#">Winnie Andersen</a>
         </article>
-        <section class="medarbejderSection">
-          <aside class="medarbejderInfo">
-            <img
-              src="../../../billeder/medarbejder/medarbejder01x2.png"
-              alt=""
-            />
-            <div class="myData" id="myData">
-              <h2>Mine data</h2>
-              <div><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></div>
-              <div><i class="fas fa-phone"></i><span>+45112112</span></div>
-              <div>
-                <i class="fas fa-envelope"></i
-                ><a href="mailto:jonas@houseofcode.io" target="_blank"
-                  >jonas@houseofcode.io</a
-                >
-              </div>
-            </div>
-            <div id="employeeRoles">
-              <h2>Tildelte rolle(r)</h2>
-              <i class="fas fa-user-friends"></i><span>Event Adminstrator</span>
-            </div>
-          </aside>
+        <article>
+          <div class="sortBtns">
+            <button class="btnLeft current" onclick="winnieSort()">
+              Winnie
+            </button>
+            <button class="btnMiddle" onclick="simonSort()">
+              Simon
+            </button>
+            <button class="btnRight" onclick="jonasSort()">
+              Jonas
+            </button>
+            <hr />
+          </div>
           <article class="medarbejderSamtale" id="medarbejderSamtale">
             <div class="samtaleInfo">
               <div class="samtaleInfoLeft">
-                <p>Samtale</p>
-                |
+                <p>Conversation</p>
                 <p>Henrik Grove</p>
               </div>
               <div class="samtaleInfoRight">
-                <p>Klippekort</p>
+                <p>MUS</p>
                 <p>20-03-2018</p>
               </div>
             </div>
@@ -169,7 +156,7 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg arbejder med mit eget fagområde uden for arbejdstiden.
+                    I work with my own field of study outside my working hours.
                   </h2>
                   <input
                     type="text"
@@ -177,8 +164,7 @@
                     disabled="true"
                   />
                   <h3>
-                    Eksempel: Når jeg har fri arbejder jeg på mine egne
-                    projekter
+                    Example: When i am off, i work on my own projects.
                   </h3>
                 </div>
               </div>
@@ -194,8 +180,7 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg opsøger ny viden inden for mit eget og andres fagområder
-                    i og uden for arbejdstiden.
+                    I seek new knowledge within my ownmm and others' subject areas in and outside working hours.
                   </h2>
                   <input
                     type="text"
@@ -203,7 +188,7 @@
                     disabled="true"
                   />
                   <h3>
-                    Eksempel: Jeg læser fagbøger for at udvide min horisont
+                    Example: I read books to expand my horizons.
                   </h3>
                 </div>
               </div>
@@ -213,12 +198,11 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg deler min nye tilegnet viden med kolleger og
-                    dokumenterer dette.
+                    I share my new aquired knowledge with colleagues and document this.
                   </h2>
                   <input type="text" placeholder="" disabled="true" />
                   <h3>
-                    Eksempel: Best practice deles på Slack/Confluence
+                    Example: Best practice shares on Slack/Confluence.
                   </h3>
                 </div>
               </div>
@@ -234,8 +218,7 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg holder mig opdateret omkring apps, design og
-                    arbejdsmetoder.
+                    I keep myself updated about app, design and working methods.
                   </h2>
                   <input
                     type="text"
@@ -243,7 +226,7 @@
                     disabled="true"
                   />
                   <h3>
-                    Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn
+                    Example: i read books, articles and stays updated on LinkedIn.
                   </h3>
                 </div>
               </div>
@@ -253,35 +236,31 @@
                 </div>
                 <div class="samtaleItemContent">
                   <h2>
-                    Jeg opsøger selv nye opgaver der skaber værdi for House of
-                    Code eller giver input til eksisterende opgaver der skaber
-                    værdi for House of Code eller vores samarbejdspartnere.
+                    I look for new tasks that create value for House of Code or provide input to existing tasks that create value for House of code or our buisness partners.
                   </h2>
                   <input type="text" placeholder="" disabled="true" />
                   <h3>
-                    Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om
-                    andre har brug for hjælp
+                    Example: When i finish my own assignments, I ask if others need help.
                   </h3>
                 </div>
               </div>
             </div>
+            <span id="spanCheckbox"></span>
           </article>
-        </section>
+        </article>
       </section>
     </main>
+    <script src="../../js/modal.js"></script>
     <script>
       window.onload = function() {
-        let samtale = document.getElementById("medarbejderSamtale");
-        samtale.style.opacity = "100";
-        samtale.style.left = "50px";
-        let myData = document.getElementById("myData");
-        myData.style.opacity = "100";
-        myData.style.top = "0";
-        let employeeRoles = document.getElementById("employeeRoles");
-        employeeRoles.style.opacity = "100";
-        employeeRoles.style.top = "0";
+        let checkboxCount = document.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        ).length;
+        let checkboxTotal = document.querySelectorAll('input[type="checkbox"]')
+          .length;
+        let spanCheckbox = document.getElementById("spanCheckbox");
+        spanCheckbox.innerHTML = checkboxCount + "/" + checkboxTotal;
       };
     </script>
-    <script src="../../js/modal.js"></script>
   </body>
 </html>
