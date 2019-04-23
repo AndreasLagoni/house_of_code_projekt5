@@ -720,6 +720,9 @@ textarea {
   width: 25px;
   cursor: pointer;
 }
+.dateTimeinput {
+  width: 70px;
+}
 /* Social events styling på en underside */
 .eventSection {
   width: 100%;
