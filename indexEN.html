@@ -11,12 +11,17 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="billeder/HoC_icon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <main class="mainWrapper">
       <div class="imgAndTitel">
         <img src="billeder/HoC-logo.svg" alt="" />
-        <h1>"Come in be awesome"</h1>
+        <h1>Come in and {#be awesome}</h1>
       </div>
       <div class="inputs">
         <input type="text" placeholder="Username..." />
@@ -60,21 +65,13 @@
         <h2>Welcome back Henrik</h2>
       </div>
     </modal>
+
     <script>
       function redirectAnsat() {
-        let modal = document.getElementById("redirectAnsat");
-        modal.classList.add("redirect");
-        setTimeout(function() {
-          window.location.replace("englishversion/frontpageEN.html");
-        }, 3000);
+        window.location.href = "indexModalAnsatEN.html";
       }
       function redirectLeder() {
-        let modal = document.getElementById("redirectLeder");
-        modal.classList.add("redirect");
-        setTimeout(function() {
-          window.location.replace("#");
-          window.location.reload();
-        }, 3000);
+        window.location.href = "indexModalLederEN.html";
       }
     </script>
   </body>
