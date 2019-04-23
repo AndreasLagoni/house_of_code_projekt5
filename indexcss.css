@@ -138,28 +138,37 @@ button {
 }
 
 /* Rectangles */
-  #_x31_orange, #_x32_green, #_x33_orange, #_x34_purple, #_x35_pink {
-    -webkit-animation-name: slideOutRight;
-    -webkit-animation-duration: 1.7s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-  }
+#_x31_orange,
+#_x32_green,
+#_x33_orange,
+#_x34_purple,
+#_x35_pink {
+  -webkit-animation-name: slideOutRight;
+  -webkit-animation-duration: 1.7s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
 
-#_x36_blue, #_x32_white, #_x35_white, #_x34_green {
+#_x36_blue,
+#_x32_white,
+#_x35_white,
+#_x34_green {
   -webkit-animation-name: slideOutRight;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 }
 
-#_x34_dark, #_x35_yellow {
+#_x34_dark,
+#_x35_yellow {
   -webkit-animation-name: slideOutRight;
   -webkit-animation-duration: 2.1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 }
 
-#_x32_dark-left, #_x33_blue {
+#_x32_dark-left,
+#_x33_blue {
   -webkit-animation-name: slideOutRight;
   -webkit-animation-duration: 2.3s;
   -webkit-animation-iteration-count: 1;
