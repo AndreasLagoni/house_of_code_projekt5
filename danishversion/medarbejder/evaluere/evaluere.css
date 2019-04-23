@@ -493,4 +493,7 @@ button:focus {
   .goalItemWrapper a:last-of-type {
     left: 0px;
   }
+  .skemaWrapper .skemaInfo p {
+    width: 90%;
+  }
 }
