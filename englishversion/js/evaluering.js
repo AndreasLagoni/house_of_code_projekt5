@@ -41,7 +41,7 @@ function backfromGoals() {
   spørgsmålbtn.classList.add("active");
 }
 function bekræftelse() {
-  window.location.href = "DAconfirmationSendMED.html";
+  window.location.href = "ENconfirmationSendMED.html";
 }
 
 function addGoal() {

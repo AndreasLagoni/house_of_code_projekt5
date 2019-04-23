@@ -4,5 +4,5 @@ window.onload = function() {
   mainWrapper.style.opacity = "100";
 };
 function backtoFront() {
-  window.location.href = "../DAfrontpageMED.html";
+  window.location.href = "../ENfrontpageMED.html";
 }

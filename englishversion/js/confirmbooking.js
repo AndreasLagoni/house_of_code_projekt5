@@ -1,3 +1,3 @@
 function confirmBooking() {
-  window.location.href = "DAconfirmbookingMED.html";
+  window.location.href = "ENconfirmbookingMED.html";
 }

@@ -9,6 +9,6 @@ function buttonFunction() {
   mainContent.style.visibility = "hidden";
   mainContent.style.opacity = "0";
   setTimeout(function() {
-    window.location.href = "DAevalueringsskemaMED.html";
+    window.location.href = "ENevalueringsskemaMED.html";
   }, 500);
 }
