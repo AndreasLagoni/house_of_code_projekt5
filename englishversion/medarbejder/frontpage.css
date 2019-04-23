@@ -63,7 +63,7 @@ span {
 }
 /* section NAV */
 .navSection ul {
-  width: 80%;
+  width: 95%;
   height: 74px;
   display: flex;
   margin: 0 auto;
@@ -72,7 +72,7 @@ span {
   align-items: center;
 }
 .navSection ul li {
-  width: 239px;
+  width: 330px;
   padding: 10px 25px;
   box-sizing: border-box;
   background-color: #515f6d;
@@ -292,12 +292,7 @@ a {
   height: 100%;
 }
 /* Scalering */
-@media screen and (max-width: 1300px) {
-  .navSection ul {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1420px) {
   .navSection ul {
     flex-direction: column;
   }
