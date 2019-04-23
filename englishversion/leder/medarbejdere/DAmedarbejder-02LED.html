@@ -2,17 +2,21 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!-- [if gt IE 8]><! -->
+<!--[if gt IE 8]><!-->
 <html lang="da">
-  <!-- <![endif] -->
+  <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - My Profile</title>
+    <title>House of Code - Winnie Andersen</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="historik.css" />
+    <link rel="stylesheet" href="../maincss.css" />
     <link rel="stylesheet" href="../modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -34,51 +38,60 @@
       <nav class="mainNav">
         <ul>
           <li>
-            <a href="../evaluere/ENevaluerMED.html" id="green">Evaluate</a>
+            <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
           </li>
           <li id="kalender">
-            <a href="../booktid/ENbooktidMED.html" id="purple">Arrange Meeting</a>
+            <a href="../bookings/DAbookingsLED.html" id="purple">Bookings</a>
           </li>
 
-          <a href="../ENfrontpageMED.html" id="logo">
+          <a href="../DAfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
-          <li id="events">
-            <a href="../socialevents/ENeventsMED.html">Events</a>
+          <li id="events"><a href="../socialevents/events.html">Events</a></li>
+          <li>
+            <a href="../evaluering/DAevalueringModalLED.html" id="blue"
+              >Evalueringer</a
+            >
           </li>
-          <li><a href="#" id="blue">MY Profile</a></li>
         </ul>
       </nav>
-      <section class="topNav">
+      <article class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
-          <i class="material-icons"> chat </i>
+          <i class="material-icons">
+            chat
+          </i>
         </a>
         <a href="javascript:openAccountModal()" id="accountBtn"
-          ><i class="material-icons"> account_circle </i>
+          ><i class="material-icons">
+            account_circle
+          </i>
         </a>
-        <div class="newMessage" id="newMessage"><h2>1</h2></div>
-      </section>
+        <div class="newMessage" id="newMessage">
+          <h2>1</h2>
+        </div>
+      </article>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
-        <a href="#">Edit Profile</a> <a href="../../../index.html">Log out</a>
+        <a href="../../../index.html">Log ud</a>
       </modal>
-
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
-        <h2 class="messageTitle">Messages</h2>
+        <h2 class="messageTitle">Beskeder</h2>
         <article class="messageItem new">
           <div class="messagePic">
             <img src="../../../billeder/profilepic.png" alt="" />
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory event">Event</h3>
-            <h2 class="messageName">Marianne Larsen</h2>
+            <h2 class="messageName">Jens Overgaard</h2>
             <p class="messageTopic">
-              The activity council presents the cinema tour everyone have been waiting for.
+              Hej Henrik jeg har svaret på min evaluering til næste MU-samtale.
             </p>
           </div>
-          <div class="messageDate"><h3 class="date">25. april 2019</h3></div>
+          <div class="messageDate">
+            <h3 class="date">25. april 2019</h3>
+          </div>
         </article>
         <article class="messageItem">
           <div class="messagePic">
@@ -88,40 +101,31 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove accepted your request for a meeting with him <br />d.
-              05-05-2019 kl 09:30
+              Jens Overgaard har anmodet om et møde. Du kan se <br />
+              hvilket dato under "Bookings"
             </p>
           </div>
-          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
-        </article>
-        <article class="messageItem">
-          <div class="messagePic">
-            <img src="../../../billeder/profilepic.png" alt="" />
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
           </div>
-          <div class="messageInfo">
-            <h3 class="messageCategory work">Work</h3>
-            <h2 class="messageName">House of Code</h2>
-            <p class="messageTopic">
-                Henrik Grove accepted your request for a meeting with him <br />d.
-              05-05-2019 kl 09:30
-            </p>
-          </div>
-          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
         </article>
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageMED.html">Frontpage</a> //
-          <a href="#">My Profile</a>
+          <a href="../DAfrontpageLED.html">Startside</a>
+          //
+          <a href="../DAmedarbejdereLED.html"> Medarbejdere</a>
+          //
+          <a href="#">Winnie Andersen</a>
         </article>
         <section class="medarbejderSection">
           <aside class="medarbejderInfo">
             <img
-              src="../../../billeder/medarbejder/medarbejder01x2.png"
+              src="../../../billeder/medarbejder/medarbejder02x2.png"
               alt=""
             />
             <div class="myData" id="myData">
-              <h2>My data</h2>
+              <h2>Mine data</h2>
               <div><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></div>
               <div><i class="fas fa-phone"></i><span>+45112112</span></div>
               <div>
@@ -130,82 +134,99 @@
               </div>
             </div>
             <div id="employeeRoles">
-              <h2>Assigned role(s)</h2>
-              <i class="fas fa-user-friends"></i><span>Event Adminstrator</span>
+              <h2>Tildelte rolle(r)</h2>
+              <i class="fas fa-check-square"></i><span>Event Adminstrator</span>
             </div>
           </aside>
           <article class="medarbejderMainContent" id="medarbejderMainContent">
-            <h1>Jonas Svanegaard</h1>
+            <h1>Winnie Andersen</h1>
             <br />
-            <h2>Seniordeveloper</h2>
+            <h2>Tester og udvikler-trainee</h2>
             <br />
             <p>
-              I am one of the Android-developers. In short terms, this means that i develop frontend to androing apps. It's me you have to thank for that the android version works just as well as the iOS version.
-
+              Jeg er ansat som trainee med fokus på test og udvikling. Det
+              betyder, at jeg lærer at udvikle til både iOS og Android. Jeg
+              sørger desuden for at teste vores løsninger ned til mindste
+              detalje, inden de kommer ud.
             </p>
             <br />
             <p>Fun Fact:</p>
-            <p>"I suck at fun facts."</p>
+            <p>“Jeg har rejst til Malta 26 gange.”</p>
             <br />
 
             <div class="employeeGoals">
-              <h1>My Goals for 2019</h1>
+              <h1>Mine mål for 2019</h1>
               <p>
-                Here, you will be able to see your goals for the year be, you and your HR-manager chose at your last MUS.
+                Her vil du se de mål dig og din medarbejder har lavet sidste
+                gang i havde MUS.
               </p>
-              <h3>Goal 1.</h3>
-              <p>Course about digital marketing d. 06/06 - 2019.</p>
-              <h3>Goal 2.</h3>
-              <p>Be more positive towards positive criticism.</p>
-              <h3>Goal 3.</h3>
-              <p>Participate in more social events.</p>
+              <h3>Mål 1</h3>
+              <p>Kursus om digital markedsføring d. 06/06 - 2019.</p>
+              <h3>Mål 2</h3>
+              <p>Være mere positiv overfor konstruktiv kritik</p>
+              <h3>Mål 3</h3>
+              <p>Rejs til Malta én gang mere</p>
             </div>
           </article>
           <article class="medarbejderHistory" id="medarbejderHistory">
-            <h2>History</h2>
+            <h2>Historik</h2>
             <div class="musHistoryItem">
-              <div class="conversationName"><h2>Henrik Grove</h2></div>
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
+              </div>
               <div class="conversationInfo">
-                <h3>Vouchers</h3>
-                <p>20-03-2018</p>
+                <h3>Klippekort</h3>
+                <p>20-03-2017</p>
               </div>
               <div class="linkConversation">
-                <a href="ENhistorik-samtale01MED.html">
+                <a href="">
                   <i class="fas fa-angle-right"></i>
                 </a>
               </div>
             </div>
             <div class="musHistoryItem">
-              <div class="conversationName"><h2>Henrik Grove</h2></div>
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
+              </div>
               <div class="conversationInfo">
-                <h3>Vouchers</h3>
+                <h3>Klippekort</h3>
                 <p>20-03-2017</p>
               </div>
               <div class="linkConversation">
-                <a href=""> <i class="fas fa-angle-right"></i> </a>
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
             </div>
             <div class="musHistoryItem">
-              <div class="conversationName"><h2>Henrik Grove</h2></div>
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
+              </div>
               <div class="conversationInfo">
-                <h3>Vouchers</h3>
+                <h3>Klippekort</h3>
                 <p>20-03-2017</p>
               </div>
               <div class="linkConversation">
-                <a href=""> <i class="fas fa-angle-right"></i> </a>
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
             </div>
             <div class="musHistoryItem">
-              <div class="conversationName"><h2>Henrik Grove</h2></div>
+              <div class="conversationName">
+                <h2 id="conName">Henrik Grove</h2>
+              </div>
               <div class="conversationInfo">
-                <h3>Vouchers</h3>
+                <h3>Klippekort</h3>
                 <p>20-03-2017</p>
               </div>
               <div class="linkConversation">
-                <a href=""> <i class="fas fa-angle-right"></i> </a>
+                <a href="">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
             </div>
-            <a href="DAhistorikMED.html" class="standardBtn white">See all</a>
+            <button class="standardBtn blue">Historik</button>
           </article>
         </section>
       </section>

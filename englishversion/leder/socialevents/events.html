@@ -8,10 +8,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Jonas Svanegaard</title>
+    <title>House of Code - Event</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../maincss.css" />
+    <link rel="stylesheet" href="../modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -35,27 +40,29 @@
           <li>
             <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
           </li>
-          <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
+          <li id="kalender">
+            <a href="../bookings/DAbookingsLED.html" id="purple">Bookings</a>
+          </li>
 
           <a href="../DAfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
-          <li id="events"><a href="http://">Events</a></li>
+          <li id="events"><a href="#">Events</a></li>
           <li>
-            <a href="../evaluering/DAevalueringLED.html" id="blue"
-              >Åben evaluering</a
+            <a href="../evaluering/DAevalueringModalLED.html" id="blue"
+              >Evalueringer</a
             >
           </li>
         </ul>
       </nav>
-      <section class="topNav">
+      <article class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
           <i class="material-icons">
             chat
           </i>
         </a>
-        <a href="" id="accountBtn"
+        <a href="javascript:openAccountModal()" id="accountBtn"
           ><i class="material-icons">
             account_circle
           </i>
@@ -63,7 +70,11 @@
         <div class="newMessage" id="newMessage">
           <h2>1</h2>
         </div>
-      </section>
+      </article>
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="../../../index.html">Log ud</a>
+      </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
         <h2 class="messageTitle">Beskeder</h2>
@@ -73,9 +84,9 @@
           </div>
           <div class="messageInfo">
             <h3 class="messageCategory event">Event</h3>
-            <h2 class="messageName">Marianne Larsen</h2>
+            <h2 class="messageName">Jens Overgaard</h2>
             <p class="messageTopic">
-              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+              Hej Henrik jeg har svaret på min evaluering til næste MU-samtale.
             </p>
           </div>
           <div class="messageDate">
@@ -90,39 +101,20 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
-              05-05-2019 kl 09:30
+              Jens Overgaard har anmodet om et møde. Du kan se <br />
+              hvilket dato under "Bookings"
             </p>
           </div>
           <div class="messageDate">
             <h3 class="date">20. april 2019</h3>
           </div>
         </article>
-        <article class="messageItem">
-          <div class="messagePic">
-            <img src="../../../billeder/profilepic.png" alt="" />
-          </div>
-          <div class="messageInfo">
-            <h3 class="messageCategory work">Work</h3>
-            <h2 class="messageName">House of Code</h2>
-            <p class="messageTopic">
-              Henrik Grove har godkendt din anmodning til et møde <br />d.
-              05-05-2019 kl 09:30
-            </p>
-          </div>
-          <div class="messageDate">
-            <h3 class="date">20. april 2019</h3>
-          </div>
-        </article>
-        <div class="allMessages">
-          <a href="#">Alle beskeder</a>
-        </div>
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
           <a href="../DAfrontpageLED.html">Startside</a>
           //
-          <a href="../DAmedarbejdereLED.html">Events</a>
+          <a href="#">Events</a>
         </article>
         <section class="eventSection">
           <section class="socialeventWrapper">
@@ -137,12 +129,19 @@
                 <div class="socialInfo">
                   <p style="color: #517496; font-size: 25px;">Man - 19:30</p>
                   <p style="color: #515F6D; font-size: 30px;">
-                    Spisning hos Pasfall m. Efterkoncert
+                    Biograftur i Nordisk Film Biografer
                   </p>
-                  <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
+                  <p style="color: #8E8E8E; font-size: 30px;">
+                    Ønstre stationsvej 27
+                  </p>
                 </div>
                 <div class="socialButton">
-                  <button class="standardBtn">Læs mere</button>
+                  <button
+                    class="standardBtn"
+                    onclick="window.location.href = 'events-01.html'"
+                  >
+                    Læs mere
+                  </button>
                 </div>
               </div>
               <div class="socialeventItem">
@@ -172,22 +171,6 @@
                     Spisning hos Pasfall m. Efterkoncert
                   </p>
                   <p style="color: #8E8E8E; font-size: 30px;">Seebladsgade 1</p>
-                </div>
-                <div class="socialButton">
-                  <button class="standardBtn">Læs mere</button>
-                </div>
-              </div>
-              <div class="socialeventItem">
-                <div class="socialDate">
-                  <h3>April.</h3>
-                  <h2>20</h2>
-                </div>
-                <div class="socialInfo">
-                  <p style="color: white; font-size: 25px;">Man - 19:30</p>
-                  <p style="color: white; font-size: 30px;">
-                    Spisning hos Pasfall m. Efterkoncert
-                  </p>
-                  <p style="color: white; font-size: 30px;">Seebladsgade 1</p>
                 </div>
                 <div class="socialButton">
                   <button class="standardBtn">Læs mere</button>
@@ -215,5 +198,6 @@
       </section>
     </main>
     <script src="../../js/events.js"></script>
+    <script src="../../js/modal.js"></script>
   </body>
 </html>

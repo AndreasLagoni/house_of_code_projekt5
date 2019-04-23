@@ -76,7 +76,69 @@ body {
   border: 1px solid white;
   color: white;
 }
-
+/* Vælg en medarbejder som skal evaluere dig selv */
+.chooseEvaluerMED {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.inputSearchWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.inputSearchWrapper input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.chooseEvaluerMED .fa-search {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+}
+.chooseMedarbejderWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.medarbejderListItem {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 15px 0;
+}
+.medarbejderListItem .medarbejderListItemName {
+  width: 80%;
+  text-align: left;
+  padding-left: 20px;
+}
+.medarbejderListItem .medarbejderListItemCheckbox {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+.medarbejderListItem .medarbejderListItemCheckbox input {
+  width: 40px;
+  height: 40px;
+}
+.duharvalgtSpan {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 /* Main */
 .contentWrapper {
   width: 100%;
@@ -415,6 +477,26 @@ button:focus {
 .goalsButtonWrapper button {
   margin-left: 0;
 }
+.goalItemWrapper {
+  position: relative;
+}
+.goalItemWrapper a {
+  position: absolute;
+  left: 25px;
+  top: 40px;
+}
+.goalItemWrapper a:last-of-type {
+  left: 65px;
+}
+.goalItemWrapper i {
+  font-size: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: black;
+}
+.goalItemBtns a {
+  text-decoration: none;
+}
 /* BEKRÆFTELSE AF EVALUERING */
 .confirmation {
   width: 50%;
@@ -433,4 +515,47 @@ button:focus {
 .confirmation p {
   color: white;
   font-size: 20px;
+}
+/* scalering */
+/* scalering af NAV */
+@media screen and (max-width: 1470px) {
+  .mainNav {
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+  }
+  .mainNav ul #logo {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .mainNav ul #logo img {
+    width: 150px;
+  }
+  .mainNav ul #kalender {
+    margin-left: 55px;
+  }
+  .mainNav ul #events {
+    margin-right: 55px;
+  }
+}
+/* scalering til skema  */
+@media screen and (max-width: 1470px) {
+  .maincontent {
+    width: 95%;
+  }
+  .skemaContent {
+    width: 100%;
+  }
+  .evalueremål {
+    width: 100%;
+  }
+  .goalItemWrapper a {
+    left: 30px;
+  }
+  .goalItemWrapper a:last-of-type {
+    left: 0px;
+  }
+  .skemaWrapper .skemaInfo p {
+    width: 90%;
+  }
 }

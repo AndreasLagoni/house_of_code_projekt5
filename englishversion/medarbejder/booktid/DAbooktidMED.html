@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="da">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>House of Code - Book tid</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../booktid/booktid.css" />
+    <link rel="stylesheet" href="../modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../../billeder/HoC_icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="contentWrapper">
+      <nav class="mainNav">
+        <ul>
+          <li>
+            <a href="../evaluere/DAevaluerMED.html" id="green">Evaluere</a>
+          </li>
+          <li id="kalender">
+            <a href="#" id="purple">Book tid</a>
+          </li>
+
+          <a href="../DAfrontpageMED.html" id="logo">
+            <img src="../../../billeder/HoC_logo_white.svg" alt=""
+          /></a>
+
+          <li id="events">
+            <a href="../socialevents/DAeventsMED.html">Events</a>
+          </li>
+          <li>
+            <a href="../historik/DAminprofilMED.html" id="blue">Min profil</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="topNav">
+        <a href="javascript:openModal()" id="messageBtn">
+          <i class="material-icons">
+            chat
+          </i>
+        </a>
+        <a href="javascript:openAccountModal()" id="accountBtn"
+          ><i class="material-icons">
+            account_circle
+          </i>
+        </a>
+        <div class="newMessage" id="newMessage">
+          <h2>1</h2>
+        </div>
+      </section>
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="../../../index.html">Log ud</a>
+      </modal>
+      <modal class="messages" id="messageModal">
+        <div class="messagesTriangle"></div>
+        <h2 class="messageTitle">Beskeder</h2>
+        <article class="messageItem new">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory event">Event</h3>
+            <h2 class="messageName">Marianne Larsen</h2>
+            <p class="messageTopic">
+              Aktivitetsrådet præsenterer biografturen i alle har ventet på
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">25. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+        <article class="messageItem">
+          <div class="messagePic">
+            <img src="../../../billeder/profilepic.png" alt="" />
+          </div>
+          <div class="messageInfo">
+            <h3 class="messageCategory work">Work</h3>
+            <h2 class="messageName">House of Code</h2>
+            <p class="messageTopic">
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
+              05-05-2019 kl 09:30
+            </p>
+          </div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
+        </article>
+      </modal>
+      <section class="maincontent">
+        <article class="pathlinks">
+          <a href="../DAfrontpageMED.html">Startside</a>
+          //
+          <a href="#">Book tid</a>
+        </article>
+        <aside class="kalender">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=andreastlagoni%40gmail.com&ctz=Europe%2FCopenhagen"
+            style="border: 0"
+            width="600"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </aside>
+        <article class="bookingContent">
+          <h2>Beskrivelse:</h2>
+          <textarea id="" cols="40" rows="5"></textarea>
+          <h2>Mål 1</h2>
+          <div class="goalCheck">
+            <input
+              type="text"
+              disabled="true"
+              placeholder="Jeg skal blive bedre til at deltage i de sociale arrangementer"
+            />
+            <input type="checkbox" name="" id="" />
+          </div>
+
+          <h2>Mål 2</h2>
+          <div class="goalCheck">
+            <input
+              type="text"
+              disabled="true"
+              placeholder="Jeg ønsker at komme på kursus, for at lære.."
+            />
+            <input type="checkbox" name="" id="" />
+          </div>
+          <h2>Mål 3</h2>
+          <div class="goalCheck">
+            <input
+              type="text"
+              disabled="true"
+              placeholder="Jeg ønsker at komme på kursus, for at lære.."
+            />
+            <input type="checkbox" name="" id="" />
+          </div>
+          <h3>Resterende klip: 2</h3>
+          <div class="bookBtn">
+            <button class="standardBtn blue" onclick="confirmBooking()">
+              Book tid
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="../../js/confirmbooking.js"></script>
+    <script src="../../js/modal.js"></script>
+  </body>
+</html>

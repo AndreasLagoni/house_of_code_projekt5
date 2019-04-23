@@ -8,11 +8,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Arrange meeting.</title>
+    <title>House of Code - Event</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../booktid/booktid.css" />
+    <link rel="stylesheet" href="../../leder/maincss.css" />
     <link rel="stylesheet" href="../modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -34,25 +38,23 @@
       <nav class="mainNav">
         <ul>
           <li>
-            <a href="../evaluere/ENevaluerMED.html" id="green">Evaluate</a>
+            <a href="../evaluere/DAevaluerMED.html" id="green">Evaluere</a>
           </li>
           <li id="kalender">
-            <a href="#" id="purple">Arrange Meeting</a>
+            <a href="../booktid/DAbooktidMED.html" id="purple">Book tid</a>
           </li>
 
-          <a href="../ENfrontpageMED.html" id="logo">
+          <a href="../DAfrontpageMED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
-          <li id="events">
-            <a href="../socialevents/ENeventsMED.html">Events</a>
-          </li>
+          <li id="events"><a href="DAeventsMED.html">Events</a></li>
           <li>
-            <a href="../historik/ENminprofilMED.html" id="blue">My Profile</a>
+            <a href="../historik/DAminprofilMED.html" id="blue">Min profil</a>
           </li>
         </ul>
       </nav>
-      <section class="topNav">
+      <article class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
           <i class="material-icons">
             chat
@@ -66,15 +68,14 @@
         <div class="newMessage" id="newMessage">
           <h2>1</h2>
         </div>
-      </section>
+      </article>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
-        <a href="#">Edit Profile</a>
-        <a href="../../../index.html">Log Out</a>
+        <a href="../../../index.html">Log ud</a>
       </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
-        <h2 class="messageTitle">Messages</h2>
+        <h2 class="messageTitle">Beskeder</h2>
         <article class="messageItem new">
           <div class="messagePic">
             <img src="../../../billeder/profilepic.png" alt="" />
@@ -83,7 +84,7 @@
             <h3 class="messageCategory event">Event</h3>
             <h2 class="messageName">Marianne Larsen</h2>
             <p class="messageTopic">
-              The activity council presents the cinema tour everyone have been waiting for.
+              Aktivitetsrådet præsenterer biografturen i alle har ventet på
             </p>
           </div>
           <div class="messageDate">
@@ -98,7 +99,7 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove accepted your request for a meeting with him <br />d.
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
@@ -114,7 +115,7 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove accepted your request for a meeting with him <br />d.
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
@@ -125,61 +126,47 @@
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageMED.html">Frontpage</a>
+          <a href="../DAfrontpageMED.html">Startside</a>
           //
-          <a href="#">Arrange Time</a>
+          <a href="DAeventsMED.html">Events</a>
+          //
+          <a href="#">Biograftur</a>
         </article>
-        <aside class="kalender">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=andreastlagoni%40gmail.com&ctz=Europe%2FCopenhagen"
-            style="border: 0"
-            width="600"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
-        </aside>
-        <article class="bookingContent">
-          <h2>Description:</h2>
-          <textarea id="" cols="40" rows="5"></textarea>
-          <h2>Goal 1</h2>
-          <div class="goalCheck">
-            <input
-              type="text"
-              disabled="true"
-              placeholder="I need to become better at participating in our social events"
-            />
-            <input type="checkbox" name="" id="" />
-          </div>
-
-          <h2>Goal 2</h2>
-          <div class="goalCheck">
-            <input
-              type="text"
-              disabled="true"
-              placeholder="I want to get on course, to learn.."
-            />
-            <input type="checkbox" name="" id="" />
-          </div>
-          <h2>Goal 3</h2>
-          <div class="goalCheck">
-            <input
-              type="text"
-              disabled="true"
-              placeholder="I want to get on course, to learn.."
-            />
-            <input type="checkbox" name="" id="" />
-          </div>
-          <h3>Vouchers left: 2</h3>
-          <div class="bookBtn">
-            <button class="standardBtn blue" onclick="confirmBooking()">
-              Arrange meeting.
-            </button>
-          </div>
-        </article>
+        <section class="singleeventSection">
+          <aside class="eventaside">
+            <img src="../../../billeder/eventsingle.png" alt="" />
+            <h3>Huskeliste:</h3>
+            <p>1. Godt humør :-)</p>
+            <p>2. Godt humør :-)</p>
+            <p>3. Godt humør :-)</p>
+          </aside>
+          <article class="maineventInfo">
+            <h1>Biograftur i Nordisk Film Biografer</h1>
+            <h3 class="event-h3-dato-sted">
+              Man d. 29 April - 19:30 <br />
+              Ønstre stationsvej 27, 5000 Odense
+            </h3>
+            <p class="event-p-maincontent">
+              Hej alle sammen. Mandag den 29 April kl 19:30 har aktivitetsrådet
+              arrangeret en biograf tur. Vi skal se den nye film, Captain
+              Marvel.
+            </p>
+            <br />
+            <p class="event-p-maincontent">
+              Kvindelige superhelte er det nye sort. I 2017 fik DC’s Wonder
+              Woman sin egen film og hun er snart klar med efterfølgeren Wonder
+              Woman 1984, der har premiere i sommeren 2020. Inden da kommer en
+              måske mindre kendt, men bestemt lige så hårdtslående kvinde med
+              sin egen film. Det er ingen ringere end Avengers første medlem;
+              Captain Marvel, vis civile navn er Carol Danvers. Captain Marvel
+              fortæller nemlig historien om, hvordan dette hele startede og
+              hvordan Nick Fury (Samuel L. Jackson) fik idéen til at forme The
+              Avengers.
+            </p>
+          </article>
+        </section>
       </section>
     </main>
-    <script src="../../js/confirmbooking.js"></script>
     <script src="../../js/modal.js"></script>
   </body>
 </html>

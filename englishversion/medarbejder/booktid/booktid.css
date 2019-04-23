@@ -267,3 +267,44 @@ body {
   color: white;
   font-size: 20px;
 }
+/* scalering */
+/* scalering af NAV */
+@media screen and (max-width: 1470px) {
+  .mainNav {
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+  }
+  .mainNav ul #logo {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .mainNav ul #logo img {
+    width: 150px;
+  }
+  .mainNav ul #kalender {
+    margin-left: 55px;
+  }
+  .mainNav ul #events {
+    margin-right: 55px;
+  }
+}
+/* scalering til medarbejder */
+@media screen and (max-width: 1870px) {
+  .maincontent {
+    width: 95%;
+    flex-direction: column;
+  }
+  .kalender {
+    width: 100%;
+  }
+  .bookingContent {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bookingContent {
+    width: 100%;
+  }
+}

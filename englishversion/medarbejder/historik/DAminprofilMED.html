@@ -8,10 +8,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Winnie Andersen</title>
+    <title>House of Code - Min profil</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../maincss.css" />
+    <link rel="stylesheet" href="historik.css" />
+    <link rel="stylesheet" href="../modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -33,19 +38,21 @@
       <nav class="mainNav">
         <ul>
           <li>
-            <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
+            <a href="../evaluere/DAevaluerMED.html" id="green">Evaluere</a>
           </li>
-          <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
+          <li id="kalender">
+            <a href="../booktid/DAbooktidMED.html" id="purple">Book tid</a>
+          </li>
 
-          <a href="../DAfrontpageLED.html" id="logo">
+          <a href="../DAfrontpageMED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
-          <li id="events"><a href="../socialevents/events.html">Events</a></li>
+          <li id="events">
+            <a href="../socialevents/DAeventsMED.html">Events</a>
+          </li>
           <li>
-            <a href="../evaluering/DAevalueringLED.html" id="blue"
-              >Åben evaluering</a
-            >
+            <a href="#" id="blue">Min profil</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +62,7 @@
             chat
           </i>
         </a>
-        <a href="" id="accountBtn"
+        <a href="javascript:openAccountModal()" id="accountBtn"
           ><i class="material-icons">
             account_circle
           </i>
@@ -64,6 +71,10 @@
           <h2>1</h2>
         </div>
       </section>
+      <modal class="accountModal" id="accountModal">
+        <div class="accountTriangle"></div>
+        <a href="../../../index.html">Log ud</a>
+      </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
         <h2 class="messageTitle">Beskeder</h2>
@@ -114,22 +125,17 @@
             <h3 class="date">20. april 2019</h3>
           </div>
         </article>
-        <div class="allMessages">
-          <a href="#">Alle beskeder</a>
-        </div>
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageLED.html">Startside</a>
+          <a href="../DAfrontpageMED.html">Startside</a>
           //
-          <a href="../DAmedarbejdereLED.html"> Medarbejdere</a>
-          //
-          <a href="#">Winnie Andersen</a>
+          <a href="#">Min profil</a>
         </article>
         <section class="medarbejderSection">
           <aside class="medarbejderInfo">
             <img
-              src="../../../billeder/medarbejder/medarbejder02x2.png"
+              src="../../../billeder/medarbejder/medarbejder01x2.png"
               alt=""
             />
             <div class="myData" id="myData">
@@ -143,23 +149,22 @@
             </div>
             <div id="employeeRoles">
               <h2>Tildelte rolle(r)</h2>
-              <i class="fas fa-check-square"></i><span>Event Adminstrator</span>
+              <i class="fas fa-user-friends"></i><span>Event Adminstrator</span>
             </div>
           </aside>
           <article class="medarbejderMainContent" id="medarbejderMainContent">
-            <h1>Winnie Andersen</h1>
+            <h1>Jonas Svanegaard</h1>
             <br />
-            <h2>Tester og udvikler-trainee</h2>
+            <h2>Seniorudvikler</h2>
             <br />
             <p>
-              Jeg er ansat som trainee med fokus på test og udvikling. Det
-              betyder, at jeg lærer at udvikle til både iOS og Android. Jeg
-              sørger desuden for at teste vores løsninger ned til mindste
-              detalje, inden de kommer ud.
+              Jeg er Andriod-udvikler. Kort fortalt betyder det, at jeg udvkler
+              frontend til android-apps. Det er mig du skal takke for, at
+              android- versionen fungere ligeså godt som iOS-versionen
             </p>
             <br />
             <p>Fun Fact:</p>
-            <p>“Jeg har rejst til Malta 26 gange.”</p>
+            <p>"Jeg stinker til fun facts"</p>
             <br />
 
             <div class="employeeGoals">
@@ -173,7 +178,7 @@
               <h3>Mål 2</h3>
               <p>Være mere positiv overfor konstruktiv kritik</p>
               <h3>Mål 3</h3>
-              <p>Rejs til Malta én gang mere</p>
+              <p>Deltag i flere sociale arrangementer</p>
             </div>
           </article>
           <article class="medarbejderHistory" id="medarbejderHistory">
@@ -184,10 +189,10 @@
               </div>
               <div class="conversationInfo">
                 <h3>Klippekort</h3>
-                <p>20-03-2017</p>
+                <p>20-03-2018</p>
               </div>
               <div class="linkConversation">
-                <a href="">
+                <a href="DAhistorik-samtale01MED.html">
                   <i class="fas fa-angle-right"></i>
                 </a>
               </div>
@@ -222,7 +227,7 @@
             </div>
             <div class="musHistoryItem">
               <div class="conversationName">
-                <h2 id="conName">Henrik Grove</h2>
+                <h2>Henrik Grove</h2>
               </div>
               <div class="conversationInfo">
                 <h3>Klippekort</h3>
@@ -234,11 +239,12 @@
                 </a>
               </div>
             </div>
-            <button class="standardBtn white">Historik</button>
+            <a href="DAhistorikMED.html" class="standardBtn white">Se alle</a>
           </article>
         </section>
       </section>
     </main>
     <script src="../../js/medarbejderload.js" async defer></script>
+    <script src="../../js/modal.js"></script>
   </body>
 </html>

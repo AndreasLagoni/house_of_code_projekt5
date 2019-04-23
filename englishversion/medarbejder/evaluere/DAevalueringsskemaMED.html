@@ -2,17 +2,21 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!-- [if gt IE 8]><! -->
+<!--[if gt IE 8]><!-->
 <html lang="da">
-  <!-- <![endif] -->
+  <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Evaluate</title>
+    <title>House of Code - Evaluering</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="evaluere.css" />
     <link rel="stylesheet" href="../modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -33,41 +37,47 @@
     <main class="contentWrapper" id="contentWrapper">
       <nav class="mainNav">
         <ul>
-          <li><a href="ENevaluerMED.html" id="green">Evaluate</a></li>
+          <li>
+            <a href="DAevaluerMED.html" id="green">Evaluere</a>
+          </li>
           <li id="kalender">
-            <a href="../booktid/ENbooktidMED.html" id="purple"
-              >Arrange Meeting</a
-            >
+            <a href="../booktid/DAbooktidMED.html" id="purple">Book tid</a>
           </li>
 
-          <a href="../ENfrontpageMED.html" id="logo">
+          <a href="../DAfrontpageMED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
           /></a>
 
           <li id="events">
-            <a href="../socialevents/ENeventsMED.html">Events</a>
+            <a href="../socialevents/DAeventsMED.html">Events</a>
           </li>
           <li>
-            <a href="../historik/ENminprofilMED.html" id="blue">My profile</a>
+            <a href="../historik/DAminprofilMED.html" id="blue">Min profil</a>
           </li>
         </ul>
       </nav>
       <section class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
-          <i class="material-icons"> chat </i>
+          <i class="material-icons">
+            chat
+          </i>
         </a>
         <a href="javascript:openAccountModal()" id="accountBtn"
-          ><i class="material-icons"> account_circle </i>
+          ><i class="material-icons">
+            account_circle
+          </i>
         </a>
-        <div class="newMessage" id="newMessage"><h2>1</h2></div>
+        <div class="newMessage" id="newMessage">
+          <h2>1</h2>
+        </div>
       </section>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
-        <a href="#">Edit Profile</a> <a href="../../../index.html">Log Out</a>
+        <a href="../../../index.html">Log ud</a>
       </modal>
       <modal class="messages" id="messageModal">
         <div class="messagesTriangle"></div>
-        <h2 class="messageTitle">Messages</h2>
+        <h2 class="messageTitle">Beskeder</h2>
         <article class="messageItem new">
           <div class="messagePic">
             <img src="../../../billeder/profilepic.png" alt="" />
@@ -76,11 +86,12 @@
             <h3 class="messageCategory event">Event</h3>
             <h2 class="messageName">Marianne Larsen</h2>
             <p class="messageTopic">
-              The activity council presents the cinema tour everyone have been
-              waiting for.
+              Aktivitetsrådet præsenterer biografturen i alle har ventet på
             </p>
           </div>
-          <div class="messageDate"><h3 class="date">25. april 2019</h3></div>
+          <div class="messageDate">
+            <h3 class="date">25. april 2019</h3>
+          </div>
         </article>
         <article class="messageItem">
           <div class="messagePic">
@@ -90,11 +101,13 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove accepted your request for a meeting with him <br />d.
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
-          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
         </article>
         <article class="messageItem">
           <div class="messagePic">
@@ -104,17 +117,20 @@
             <h3 class="messageCategory work">Work</h3>
             <h2 class="messageName">House of Code</h2>
             <p class="messageTopic">
-              Henrik Grove accepted your request for a meeting with him <br />d.
+              Henrik Grove har godkendt din anmodning til et møde <br />d.
               05-05-2019 kl 09:30
             </p>
           </div>
-          <div class="messageDate"><h3 class="date">20. april 2019</h3></div>
+          <div class="messageDate">
+            <h3 class="date">20. april 2019</h3>
+          </div>
         </article>
       </modal>
       <section class="maincontent">
         <article class="pathlinks">
-          <a href="../DAfrontpageMED.html">Frontpgage</a> //
-          <a href="#">Evaluate</a>
+          <a href="../DAfrontpageMED.html">Startside</a>
+          //
+          <a href="#">Evaluering</a>
         </article>
         <article class="skemaWrapper">
           <div class="skemaButtons">
@@ -123,30 +139,30 @@
               id="spørgsmålbtn"
               onclick="spørgsmålBtn()"
             >
-              Questions
+              Spørgsmål
             </button>
             <button class="btnRight" id="målbtn" onclick="målbtnFunction()">
-              Goals
+              Mål
             </button>
           </div>
           <hr />
           <div class="skemaInfo" id="skemaInfo">
             <h1>
-              We are passionate app-developers, who are passionate about
-              delivering awesome solutions.
+              Vi er passionerede appudviklere der brænder for at levere awesome
+              løsninger.
             </h1>
             <p>
-              Put a ✓ next to each of the sentences below that you think
-              you/your co-worker shows the behavior off, atleast two times per
-              week. Give an example of what you do.
+              Sæt et ✓ ud for hvert af de nedenstående sætninger, hvis du mener
+              at du/medarbejderen udviser den adfærd mindst 2 gange pr. uge. Giv
+              gerne et eksempel på hvad du gør.
             </p>
           </div>
           <article class="skemaContent" id="skemaContent">
             <div class="samtaleInfo">
               <div class="samtaleInfoLeft">
-                <p>Conversation</p>
+                <p>Samtale</p>
                 |
-                <p>Me</p>
+                <p>Mig selv</p>
               </div>
               <div class="samtaleInfoRight">
                 <p>MUS</p>
@@ -159,7 +175,7 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  I work with my own field of study outside of my working hours.
+                  Jeg arbejder med mit eget fagområde uden for arbejdstiden.
                 </h2>
                 <input
                   type="text"
@@ -168,7 +184,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Example: When im off, i work on my own private projects.
+                  Eksempel: Når jeg har fri arbejder jeg på mine egne projekter
                 </h3>
               </div>
             </div>
@@ -178,8 +194,8 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  I try to obsorb new knowledge within my own and others subject
-                  areas in and outside of my working hours.
+                  Jeg opsøger ny viden inden for mit eget og andres fagområder i
+                  og uden for arbejdstiden.
                 </h2>
                 <input
                   type="text"
@@ -188,8 +204,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Example: I read books about my passion to expand my horizont
-                  in this subject.
+                  Eksempel: Jeg læser fagbøger for at udvide min horisont
                 </h3>
               </div>
             </div>
@@ -199,26 +214,8 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  I share my new aquired knowledge with my colleagues and
-                  document this.
-                </h2>
-                <input
-                  type="text"
-                  placeholder=""
-                  class="samtaleSpørgsmål"
-                  onfocus="focusInput()"
-                />
-                <h3>Example: I share best practice on Slack/Confluence.</h3>
-              </div>
-            </div>
-            <div class="samtaleContentItem">
-              <div class="samtaleItemCheckbox">
-                <input type="checkbox" name="" id="" />
-              </div>
-              <div class="samtaleItemContent">
-                <h2>
-                  I keep myself updated about apps, design and new working
-                  methods.
+                  Jeg deler min nye tilegnet viden med kolleger og dokumenterer
+                  dette.
                 </h2>
                 <input
                   type="text"
@@ -227,8 +224,7 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Example: i read books, articles and keeps me updated on
-                  LinkedIn.
+                  Eksempel: Best practice deles på Slack/Confluence
                 </h3>
               </div>
             </div>
@@ -238,9 +234,8 @@
               </div>
               <div class="samtaleItemContent">
                 <h2>
-                  I look for new tast that create value for House Of Code, or
-                  provide input to existing tasks that create value for House Of
-                  Code or our buisness partners.
+                  Jeg holder mig opdateret omkring apps, design og
+                  arbejdsmetoder.
                 </h2>
                 <input
                   type="text"
@@ -249,8 +244,29 @@
                   onfocus="focusInput()"
                 />
                 <h3>
-                  Example: When im finish with my own projects, i ask if anyone
-                  else could use my help.
+                  Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn
+                </h3>
+              </div>
+            </div>
+            <div class="samtaleContentItem">
+              <div class="samtaleItemCheckbox">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="samtaleItemContent">
+                <h2>
+                  Jeg opsøger selv nye opgaver der skaber værdi for House of
+                  Code eller giver input til eksisterende opgaver der skaber
+                  værdi for House of Code eller vores samarbejdspartnere.
+                </h2>
+                <input
+                  type="text"
+                  placeholder=""
+                  class="samtaleSpørgsmål"
+                  onfocus="focusInput()"
+                />
+                <h3>
+                  Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om
+                  andre har brug for hjælp
                 </h3>
               </div>
             </div>
@@ -265,37 +281,36 @@
           <div class="evalueremål" id="evalueremål">
             <div class="samtaleInfo">
               <div class="samtaleInfoLeft">
-                <p>Conversation</p>
+                <p>Samtale</p>
                 |
-                <p>Me</p>
+                <p>Mig selv</p>
               </div>
               <div class="samtaleInfoRight">
                 <p>MUS</p>
                 <p>20-03-2018</p>
               </div>
             </div>
-            <div class="goalListWrapper">
+            <div class="goalListWrapper" id="goalWrapper">
               <h2>
-                Here you have the opportunity to make suggestions for your goals
-                for the next year, which you and your HF-manager are merging
-                throughout your "MU-samtale". Your HF-Manager will be able to
-                see the goals you write. When you are satisfied with all your
-                answeres and suggestions, you can go back to "questions", and
-                press "send".
+                Her har du mulighed for at give forslag til opstillede mål, som
+                dig og din leder laver sammen til MU-samtalen. Din leder vil
+                kunne se de mål du skriver her. Når du er tilfreds med alle dine
+                forslag til mål, kan du gå tilbage til spørgsmålene og trykke
+                "Send"
               </h2>
-              <h3>Goal 1:</h3>
-              <input type="text" />
-              <h3>Goal 2:</h3>
-              <input type="text" />
-              <h3>Goal 3:</h3>
-              <input type="text" />
-              <h3>Goal 4:</h3>
-              <input type="text" />
-              <div class="goalsButtonWrapper">
-                <button class="standardBtn" onclick="backfromGoals()">
-                  < Back
-                </button>
+              <div class="goalItemWrapper" id="goalItem">
+                <a href="javascript:addGoal()">
+                  <i class="far fa-plus-square"></i
+                ></a>
+
+                <h3>Mål:</h3>
+                <input type="text" />
               </div>
+            </div>
+            <div class="goalsButtonWrapper">
+              <button class="standardBtn" onclick="backfromGoals()">
+                < Tilbage
+              </button>
             </div>
           </div>
         </article>

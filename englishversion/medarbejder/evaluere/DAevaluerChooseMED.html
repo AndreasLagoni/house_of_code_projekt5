@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="da">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>House of Code - Evaluere</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="evaluere.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../../billeder/HoC_icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="mainWrapper" id="mainWrapper">
+      <section class="chooseEmployee" id="mainContent">
+        <h1>
+          Hej! Inden du kan evaluere dig selv, synes vi du skal evalueres af
+          dine medarbejdere. Du kan herunder vælge 2 medarbejdere som du skal
+          sende dette skema videre til. Efter du har gjort det kan du trykke
+          "Videre".
+        </h1>
+        <div class="chooseEvaluerMED">
+          <div class="inputSearchWrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Søg efter medarbejdere..." />
+          </div>
+          <div class="chooseMedarbejderWrapper">
+            <div class="medarbejderListItem">
+              <div class="medarbejderListItemName">
+                <h2>Winnie Andersen</h2>
+              </div>
+              <div class="medarbejderListItemCheckbox">
+                <input type="checkbox" onclick="checkboxClick()" />
+              </div>
+            </div>
+            <div class="medarbejderListItem">
+              <div class="medarbejderListItemName">
+                <h2>Anders Jacobsen</h2>
+              </div>
+              <div class="medarbejderListItemCheckbox">
+                <input type="checkbox" onclick="checkboxClick()" />
+              </div>
+            </div>
+            <div class="medarbejderListItem">
+              <div class="medarbejderListItemName">
+                <h2>Lars Nielsen</h2>
+              </div>
+              <div class="medarbejderListItemCheckbox">
+                <input type="checkbox" onclick="checkboxClick()" />
+              </div>
+            </div>
+            <div class="medarbejderListItem">
+              <div class="medarbejderListItemName">
+                <h2>Lone Herbst Nørgaard</h2>
+              </div>
+              <div class="medarbejderListItemCheckbox">
+                <input type="checkbox" onclick="checkboxClick()" />
+              </div>
+            </div>
+          </div>
+          <button
+            class="standardBtn blue"
+            onclick="window.location.href = 'DAevalueringsskemaMED.html'"
+          >
+            Videre
+          </button>
+          <span class="duharvalgtSpan"
+            >Du har valgt: <span id="checkboxCount">0</span>/2</span
+          >
+        </div>
+      </section>
+    </main>
+    <script src="../../js/evaluereredirect.js"></script>
+    <script src="../../js/vurdermedarbejder.js"></script>
+    <script src="../../js/modal.js"></script>
+  </body>
+</html>

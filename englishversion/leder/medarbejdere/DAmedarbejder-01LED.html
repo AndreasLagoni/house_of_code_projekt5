@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>House of Code - Åben evaluering</title>
+    <title>House of Code - Jonas Svanegaard</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../maincss.css" />
@@ -40,7 +40,9 @@
           <li>
             <a href="../DAmedarbejdereLED.html" id="green">Medarbejdere</a>
           </li>
-          <li id="kalender"><a href="http://" id="purple">Bookings</a></li>
+          <li id="kalender">
+            <a href="../bookings/DAbookingsLED.html" id="purple">Bookings</a>
+          </li>
 
           <a href="../DAfrontpageLED.html" id="logo">
             <img src="../../../billeder/HoC_logo_white.svg" alt=""
@@ -48,11 +50,13 @@
 
           <li id="events"><a href="../socialevents/events.html">Events</a></li>
           <li>
-            <a href="DAevalueringModalLED.html" id="blue">Evalueringer</a>
+            <a href="../evaluering/DAevalueringModalLED.html" id="blue"
+              >Evalueringer</a
+            >
           </li>
         </ul>
       </nav>
-      <section class="topNav">
+      <article class="topNav">
         <a href="javascript:openModal()" id="messageBtn">
           <i class="material-icons">
             chat
@@ -66,7 +70,7 @@
         <div class="newMessage" id="newMessage">
           <h2>1</h2>
         </div>
-      </section>
+      </article>
       <modal class="accountModal" id="accountModal">
         <div class="accountTriangle"></div>
         <a href="../../../index.html">Log ud</a>
@@ -110,86 +114,97 @@
         <article class="pathlinks">
           <a href="../DAfrontpageLED.html">Startside</a>
           //
-          <a href="#">Evaluering</a>
+          <a href="../DAmedarbejdereLED.html"> Medarbejdere</a>
+          //
+          <a href="#">Jonas Svanegård</a>
         </article>
-        <section class="evalueringWrapper">
-          <article class="evalueringKalender">
-            <iframe
-              src="https://calendar.google.com/calendar/embed?src=andreastlagoni%40gmail.com&ctz=Europe%2FCopenhagen"
-              style="border: 0"
-              width="500"
-              height="500"
-              frameborder="0"
-              scrolling="no"
-            ></iframe>
+        <section class="medarbejderSection">
+          <aside class="medarbejderInfo">
+            <img
+              src="../../../billeder/medarbejder/medarbejder01x2.png"
+              alt=""
+            />
+            <div class="myData" id="myData">
+              <h2>Mine data</h2>
+              <div><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></div>
+              <div><i class="fas fa-phone"></i><span>+45112112</span></div>
+              <div>
+                <i class="fas fa-envelope"></i
+                ><a href="#">jonas@houseofcode.io</a>
+              </div>
+            </div>
+            <div id="employeeRoles">
+              <h2>Tildelte rolle(r)</h2>
+              <i class="fas fa-check-square"></i><span>Event Adminstrator</span>
+            </div>
+          </aside>
+          <article class="medarbejderMainContent" id="medarbejderMainContent">
+            <h1>Jonas Svanegaard</h1>
+            <br />
+            <h2>Seniorudvikler</h2>
+            <br />
+            <p>
+              Jeg er Andriod-udvikler. Kort fortalt betyder det, at jeg udvkler
+              frontend til android-apps. Det er mig du skal takke for, at
+              android- versionen fungere ligeså godt som iOS-versionen
+            </p>
+            <br />
+            <p>Fun Fact:</p>
+            <p>"Jeg stinker til fun facts"</p>
+            <br />
+
+            <div class="employeeGoals">
+              <h1>Mine mål for 2019</h1>
+              <p>
+                Her vil du se de mål dig og din medarbejder har lavet sidste
+                gang i havde MUS.
+              </p>
+              <h3>Mål 1</h3>
+              <p>Kursus om digital markedsføring d. 06/06 - 2019.</p>
+              <h3>Mål 2</h3>
+              <p>Være mere positiv overfor konstruktiv kritik</p>
+              <h3>Mål 3</h3>
+              <p>Deltag i flere sociale arrangementer</p>
+            </div>
           </article>
-          <article class="evalueringList">
-            <div class="evalueringsearch">
-              <i class="fas fa-search"></i>
-              <input type="text" placeholder="Søg" />
-            </div>
-            <div class="evalueringItem">
-              <div class="evalueringItemName">
-                <h3>Evaluering</h3>
-                <h2>Winnie Andersen</h2>
+          <article class="medarbejderHistory" id="medarbejderHistory">
+            <h2>Historik</h2>
+            <div class="musHistoryItem">
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
               </div>
-              <div class="evalueringItemDate">
-                <div>
-                  <h3>Idag</h3>
-                  <input type="checkbox" name="" id="" />
-                </div>
-                <div>
-                  <h3>Specifik dato</h3>
-                  <input type="checkbox" name="check" id="" />
-                  <input type="date" name="" id="" class="dateInput" />
-                  <input
-                    type="datetime"
-                    name=""
-                    id=""
-                    class="dateTimeinput"
-                    placeholder="Kl."
-                  />
-                </div>
+              <div class="conversationInfo">
+                <h3>Klippekort</h3>
+                <p>20-03-2017</p>
               </div>
-              <div class="evalueringItemCheckbox">
-                <input type="checkbox" name="" id="" />
+              <div class="linkConversation">
+                <a href="DAhistorik-samtale01LED.html">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
             </div>
-            <div class="evalueringItem">
-              <div class="evalueringItemName">
-                <h3>Evaluering</h3>
-                <h2>Jonas Svanegård</h2>
+            <div class="musHistoryItem">
+              <div class="conversationName">
+                <h2>Henrik Grove</h2>
               </div>
-              <div class="evalueringItemDate">
-                <div>
-                  <h3>Idag</h3>
-                  <input type="checkbox" name="" id="" />
-                </div>
-                <div>
-                  <h3>Specifik dato</h3>
-                  <input type="checkbox" name="check" id="" />
-                  <input type="date" name="" id="" class="dateInput" />
-                  <input
-                    type="datetime"
-                    name=""
-                    id=""
-                    class="dateTimeinput"
-                    placeholder="Kl."
-                  />
-                </div>
+              <div class="conversationInfo">
+                <h3>Klippekort</h3>
+                <p>20-03-2017</p>
               </div>
-              <div class="evalueringItemCheckbox">
-                <input type="checkbox" name="" id="" />
+              <div class="linkConversation">
+                <a href="DAhistorik-samtale01LED.html">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
             </div>
-            <button class="standardBtn blue" onclick="evalueringConfirm()">
-              Send
-            </button>
+            <a href="DAmedarbejder-01-historik.html" class="standardBtn blue"
+              >Historik</a
+            >
           </article>
         </section>
       </section>
     </main>
+    <script src="../../js/medarbejderload.js" async defer></script>
     <script src="../../js/modal.js"></script>
-    <script src="../../js/LEDevaluering.js"></script>
   </body>
 </html>
