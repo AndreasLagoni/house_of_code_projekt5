@@ -476,6 +476,7 @@ textarea {
   .medarbejderMainContent {
     width: 65%;
     padding-right: 0;
+    padding-left: 0;
   }
   .medarbejderHistory {
     width: 40%;

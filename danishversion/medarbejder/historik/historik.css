@@ -509,3 +509,11 @@ textarea {
     display: inline-block;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .medarbejderMainContent {
+    width: 65%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
